@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>Marketing Infrastructure Audit | Afiniti | Strategnik</title>
+  <title>Afiniti Marketing Infrastructure Audit | Strategic Growth Assessment</title>
   <meta name="description" content="A comprehensive analysis of Afiniti's marketing gaps, competitive positioning, and 12-month rebuild roadmap">
+  <meta property="og:title" content="Afiniti Marketing Infrastructure Audit | Strategic Growth Assessment">
+  <meta property="og:description" content="A comprehensive analysis of Afiniti's marketing gaps, competitive positioning, and 12-month rebuild roadmap">
+  <meta property="og:type" content="website">
   <link rel="icon" type="image/svg+xml" href="https://strategnik.com/favicon.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <!-- Header -->
   <header class="site-header">
-    <nav class="container">
+    <nav>
       <a href="https://strategnik.com" class="logo">
-        <img src="https://strategnik.com/logo.png" alt="Strategnik" height="80">
+        <img src="https://strategnik.com/logo.png" alt="Strategnik">
       </a>
       <div class="nav-links">
         <a href="#situation">Situation</a>
@@ -24,42 +28,44 @@
         <a href="#roadmap">Roadmap</a>
         <a href="#metrics">Metrics</a>
       </div>
-      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="24" height="24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+      <button class="mobile-menu-btn" onclick="toggleMobileNav()">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
         </svg>
       </button>
     </nav>
     <div class="mobile-nav" id="mobileNav">
-      <a href="#situation">The Situation</a>
-      <a href="#strengths">What's Working</a>
-      <a href="#gaps">The Gaps</a>
-      <a href="#competitive">Competitive</a>
-      <a href="#roadmap">Action Plan</a>
-      <a href="#metrics">Metrics</a>
+      <a href="#situation" onclick="toggleMobileNav()">Situation</a>
+      <a href="#strengths" onclick="toggleMobileNav()">Strengths</a>
+      <a href="#gaps" onclick="toggleMobileNav()">Gaps</a>
+      <a href="#competitive" onclick="toggleMobileNav()">Competitive</a>
+      <a href="#roadmap" onclick="toggleMobileNav()">Roadmap</a>
+      <a href="#metrics" onclick="toggleMobileNav()">Metrics</a>
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- Section 1: Hero -->
   <section class="hero">
-    <div class="container-narrow">
-      <p class="hero-label">Marketing Infrastructure Audit</p>
-      <h1>$2.5 Billion in Verified Value.<br><span class="highlight">Zero Visibility to the Buyers Who Need It.</span></h1>
+    <div class="container">
+      <span class="hero-label">Marketing Infrastructure Audit</span>
+      <h1><span class="highlight">$2.5 Billion</span> in Verified Value.<br>Zero Visibility to the Buyers Who Need It.</h1>
       <p class="hero-subtitle">A Marketing Infrastructure Audit for Afiniti</p>
       <p class="hero-attribution">Prepared by Nick Talbert | <a href="https://strategnik.com">strategnik.com</a></p>
       <div class="hero-cta">
-        <a href="#roadmap" class="btn btn-primary">View 12-Month Plan</a>
-        <a href="#situation" class="btn btn-secondary">Read Analysis</a>
+        <a href="#situation" class="btn btn-primary">Read the Audit</a>
+        <a href="#close" class="btn btn-secondary">Let's Talk</a>
       </div>
     </div>
   </section>
 
   <!-- Section 2: The Situation -->
-  <section id="situation" class="section">
+  <section class="section" id="situation">
     <div class="container">
-      <p class="section-label">The Situation</p>
-      <h2>Strong Technology. Invisible Marketing.</h2>
-      <p class="section-intro">Afiniti holds patented technology, blue-chip client proof points, and fresh marketplace partnerships with Five9, NICE, and AWS. It also holds near-zero search visibility, no G2 listing, no analyst coverage, and a Wikipedia page frozen in 2021. The competitive window is closing.</p>
+      <span class="section-label">The Situation</span>
+      <h2>The Paradox</h2>
+      <p class="section-intro">
+        Afiniti holds patented technology, blue-chip client proof points, and fresh marketplace partnerships with Five9, NICE, and AWS. It also holds near-zero search visibility, no G2 listing, no analyst coverage, a Wikipedia page frozen in 2021, and a team of ~7 marketers with no CMO. The competitive window is closing.
+      </p>
 
       <div class="data-grid">
         <div class="data-card">
@@ -69,8 +75,8 @@
         </div>
         <div class="data-card">
           <div class="data-value">0</div>
-          <div class="data-label">G2 / Capterra Listings</div>
-          <div class="data-context">Competitors: 300-900+ reviews</div>
+          <div class="data-label">Review Platform Listings</div>
+          <div class="data-context">G2, Capterra, Gartner Peer Insights</div>
         </div>
         <div class="data-card">
           <div class="data-value">1</div>
@@ -79,73 +85,79 @@
         </div>
         <div class="data-card">
           <div class="data-value">2021</div>
-          <div class="data-label">Wikipedia Last Update</div>
+          <div class="data-label">Wikipedia Last Updated</div>
           <div class="data-context">Pre-bankruptcy, pre-CEO transitions</div>
         </div>
         <div class="data-card">
           <div class="data-value">0</div>
-          <div class="data-label">AI Engine Appearances</div>
+          <div class="data-label">AI Answer Engine Appearances</div>
           <div class="data-context">Missing from ChatGPT, Perplexity, Gemini</div>
         </div>
         <div class="data-card highlight">
           <div class="data-value">100%</div>
           <div class="data-label">Client Retention 2025</div>
-          <div class="data-context">The product works — marketing doesn't</div>
+          <div class="data-context">The product works. Marketing doesn't.</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Section 3: What's Working -->
-  <section id="strengths" class="section">
+  <section class="section" id="strengths">
     <div class="container">
-      <p class="section-label">What's Working</p>
-      <h2>Building Blocks for Growth</h2>
-      <p class="section-intro">Before critiquing gaps, recognize what's strong. These aren't compliments — they're the foundation a marketing rebuild will leverage.</p>
+      <span class="section-label">What's Working</span>
+      <h2>Building Blocks, Not Starting From Zero</h2>
+      <p class="section-intro">
+        Before diagnosing what's broken, it's essential to recognize what's strong. These aren't compliments — they're the foundation any rebuild must leverage.
+      </p>
 
       <div class="strengths-grid">
         <div class="strength-card">
-          <div class="strength-number">01</div>
+          <div class="strength-number">STRENGTH 01</div>
           <h3>Partnership Momentum</h3>
           <p>Three marketplace launches in 9 months (AWS, Five9, NICE CXone). Multi-platform distribution away from Avaya dependence. Each partnership = co-marketing opportunity, backlink authority, and platform validation.</p>
         </div>
         <div class="strength-card">
-          <div class="strength-number">02</div>
-          <h3>Proof Points That Competitors Can't Match</h3>
-          <p>Named C-suite testimonials from AT&T, Virgin Media O2, TIM SpA, Accenture. T-Mobile: $70M incremental annual revenue from 50M optimized calls. No competitor has this depth of named, quantified enterprise validation.</p>
+          <div class="strength-number">STRENGTH 02</div>
+          <h3>Proof Points Competitors Can't Match</h3>
+          <p>Named C-suite testimonials from AT&T, Virgin Media O2, TIM SpA, Accenture. T-Mobile: $70M incremental annual revenue from 50M optimized calls. No competitor has this depth of enterprise validation.</p>
         </div>
         <div class="strength-card">
-          <div class="strength-number">03</div>
+          <div class="strength-number">STRENGTH 03</div>
           <h3>Patented Differentiation</h3>
-          <p>On/off benchmarking methodology is genuinely unique — no competitor offers controlled, continuous measurement of AI impact. "Outcome orchestration" positioning could define a category if supported by content infrastructure.</p>
+          <p>On/off benchmarking methodology is genuinely unique — no competitor offers controlled, continuous measurement of AI impact. "Outcome orchestration" positioning could define a category if supported.</p>
         </div>
         <div class="strength-card">
-          <div class="strength-number">04</div>
+          <div class="strength-number">STRENGTH 04</div>
           <h3>LinkedIn Base</h3>
           <p>265K followers — larger than Observe.AI, Cresta, and Balto combined. Legacy audience, but a distribution channel that exists and can be reactivated.</p>
         </div>
         <div class="strength-card">
-          <div class="strength-number">05</div>
+          <div class="strength-number">STRENGTH 05</div>
           <h3>Wikipedia Structural Advantage</h3>
-          <p>Afiniti has a Wikipedia page. Cresta, Observe.AI, and Balto do not. Wikipedia drives 47.9% of ChatGPT's top-10 citation share. This is a durable differentiator — once updated.</p>
+          <p>Afiniti has a Wikipedia page. Cresta, Observe.AI, and Balto do not. Wikipedia drives 47.9% of ChatGPT's top-10 citation share. Durable differentiator — once updated.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Section 4: The Gaps -->
-  <section id="gaps" class="section">
+  <section class="section" id="gaps">
     <div class="container">
-      <p class="section-label">The Gaps</p>
+      <span class="section-label">The Gaps</span>
       <h2>What's Broken</h2>
-      <p class="section-intro">Each gap includes severity, what it costs Afiniti today, and what fixing it unlocks. Click to expand details.</p>
+      <p class="section-intro">
+        12 gaps organized by severity. Each includes what it costs Afiniti today and what fixing it unlocks. Click any gap to expand the full analysis.
+      </p>
 
       <!-- Critical Gaps -->
       <div class="gaps-section">
         <div class="gaps-section-header">
           <span class="severity-label critical">Critical</span>
+          <span style="color: var(--gray-400); font-size: 0.875rem;">4 gaps requiring immediate action</span>
         </div>
         <div class="gaps-grid">
+
           <div class="gap-card">
             <div class="gap-header" onclick="toggleGap(this)">
               <h4>Gap 1: Invisible on Review Platforms</h4>
@@ -158,7 +170,7 @@
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Competitive Benchmark</div>
-                <div class="gap-detail-value">Balto has 4.8/5 on G2 with 300+ reviews; NICE has 540+ Gartner Peer Insights reviews</div>
+                <div class="gap-detail-value">Balto: 4.8/5 on G2 with 300+ reviews. NICE: 540+ Gartner Peer Insights reviews</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Cost</div>
@@ -166,7 +178,11 @@
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">AEO Impact</div>
-                <div class="gap-detail-value highlight">G2 commands 6.7% of ChatGPT's top-10 citation share and 4% of Perplexity's</div>
+                <div class="gap-detail-value">G2 commands 6.7% of ChatGPT's top-10 citation share and 4% of Perplexity's</div>
+              </div>
+              <div class="gap-detail">
+                <div class="gap-detail-label">Fix Complexity</div>
+                <div class="gap-detail-value highlight">Medium — requires customer review generation campaign</div>
               </div>
             </div>
           </div>
@@ -183,11 +199,19 @@
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Risk</div>
-                <div class="gap-detail-value critical">Any AI model or buyer researching Afiniti encounters a 2018-era portrait with outdated information</div>
+                <div class="gap-detail-value critical">Zia Chishti's personal Wikipedia page is far more detailed — covers allegations, Congressional testimony, arbitration ruling</div>
+              </div>
+              <div class="gap-detail">
+                <div class="gap-detail-label">Cost</div>
+                <div class="gap-detail-value">Any AI model or buyer researching Afiniti encounters a 2018-era unicorn portrait with a misconduct footnote</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">AEO Impact</div>
                 <div class="gap-detail-value highlight">Wikipedia = 47.9% of ChatGPT's top-10 citation share (single largest source)</div>
+              </div>
+              <div class="gap-detail">
+                <div class="gap-detail-label">Fix Complexity</div>
+                <div class="gap-detail-value">High — requires neutral, well-sourced Wikipedia editing following guidelines</div>
               </div>
             </div>
           </div>
@@ -200,15 +224,23 @@
             <div class="gap-content">
               <div class="gap-detail">
                 <div class="gap-detail-label">Status</div>
-                <div class="gap-detail-value">Below SimilarWeb's 5K monthly visit threshold. No ranking for any category keyword. "Behavioral pairing AI" returns Google Patents — not Afiniti</div>
+                <div class="gap-detail-value">Below SimilarWeb's 5K monthly visit threshold. No ranking for any category keyword. Even "behavioral pairing AI" returns Google Patents — not Afiniti</div>
               </div>
               <div class="gap-detail">
-                <div class="gap-detail-label">Technical Root Causes</div>
-                <div class="gap-detail-value">No robots.txt/sitemap, no schema markup, no meta descriptions, JavaScript rendering issues, broken /resources/ page (410 error)</div>
+                <div class="gap-detail-label">Competitive Benchmark</div>
+                <div class="gap-detail-value">NICE owns "predictive behavioral routing" (6+ of top 10 results). Cresta generates substantially more organic traffic</div>
+              </div>
+              <div class="gap-detail">
+                <div class="gap-detail-label">Technical Root</div>
+                <div class="gap-detail-value">No robots.txt/sitemap, no schema markup, no meta descriptions, JavaScript rendering issues, broken /resources/ page (410 error), dual brand architecture</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Cost</div>
                 <div class="gap-detail-value critical">Invisible to every buyer who doesn't already know the company name</div>
+              </div>
+              <div class="gap-detail">
+                <div class="gap-detail-label">Fix Complexity</div>
+                <div class="gap-detail-value">High — requires technical SEO foundation + sustained content engine</div>
               </div>
             </div>
           </div>
@@ -221,7 +253,7 @@
             <div class="gap-content">
               <div class="gap-detail">
                 <div class="gap-detail-label">Status</div>
-                <div class="gap-detail-value">Single insurance whitepaper across the entire site. No case studies, no ROI calculator, no interactive demo, no webinars</div>
+                <div class="gap-detail-value">Single insurance whitepaper across the entire site. No case studies, no ROI calculator, no interactive demo, no webinars, no glossary, no educational content hub</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Competitive Benchmark</div>
@@ -229,10 +261,15 @@
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Cost</div>
-                <div class="gap-detail-value critical">Conversion architecture only serves prospects who already know Afiniti — and that pool is vanishingly small</div>
+                <div class="gap-detail-value critical">Conversion architecture only serves prospects who already know Afiniti — with near-zero search visibility, that pool is vanishingly small</div>
+              </div>
+              <div class="gap-detail">
+                <div class="gap-detail-label">Fix Complexity</div>
+                <div class="gap-detail-value highlight">Medium — content production, not technical infrastructure</div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
@@ -240,8 +277,10 @@
       <div class="gaps-section">
         <div class="gaps-section-header">
           <span class="severity-label high">High</span>
+          <span style="color: var(--gray-400); font-size: 0.875rem;">3 gaps limiting growth potential</span>
         </div>
         <div class="gaps-grid">
+
           <div class="gap-card">
             <div class="gap-header" onclick="toggleGap(this)">
               <h4>Gap 5: AI Answer Engines Can't Recommend Afiniti</h4>
@@ -250,15 +289,19 @@
             <div class="gap-content">
               <div class="gap-detail">
                 <div class="gap-detail-label">Status</div>
-                <div class="gap-detail-value">Not recommended by ChatGPT, Perplexity, or Gemini for any contact center AI query</div>
+                <div class="gap-detail-value">Not recommended by ChatGPT, Perplexity, or Gemini for any contact center AI query. "Behavioral pairing" doesn't surface as a concept</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Root Cause</div>
-                <div class="gap-detail-value">Absent from every high-weight citation source — Reddit (46.7% Perplexity share), YouTube (13.9%), G2, Wikipedia (outdated)</div>
+                <div class="gap-detail-value">Absent from every high-weight citation source — Reddit (46.7% Perplexity share), YouTube (13.9% Perplexity), G2, Wikipedia (outdated), analyst reports</div>
               </div>
               <div class="gap-detail">
-                <div class="gap-detail-label">Window</div>
-                <div class="gap-detail-value highlight">Citation patterns being established now will compound. No AI-layer competitor has meaningful Reddit or YouTube presence.</div>
+                <div class="gap-detail-label">Competitive Window</div>
+                <div class="gap-detail-value highlight">No AI-layer competitor has meaningful Reddit or YouTube presence. Citation patterns being established now will compound</div>
+              </div>
+              <div class="gap-detail">
+                <div class="gap-detail-label">Fix</div>
+                <div class="gap-detail-value">Fixing Gaps 1-4 addresses this systemically; dedicated AEO strategy accelerates it</div>
               </div>
             </div>
           </div>
@@ -271,7 +314,7 @@
             <div class="gap-content">
               <div class="gap-detail">
                 <div class="gap-detail-label">Status</div>
-                <div class="gap-detail-value">Not in any Gartner Magic Quadrant, Forrester Wave, or IDC MarketScape</div>
+                <div class="gap-detail-value">Not in any Gartner Magic Quadrant, Forrester Wave, or IDC MarketScape. Only analyst mention: boutique analyst quote in a 2020 Avaya press release</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Competitive Benchmark</div>
@@ -279,7 +322,11 @@
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Cost</div>
-                <div class="gap-detail-value critical">Missing from the single most influential buyer touchpoint</div>
+                <div class="gap-detail-value critical">Missing from the single most influential buyer touchpoint. Analysts feed AI citation sources (7% of top-10 share)</div>
+              </div>
+              <div class="gap-detail">
+                <div class="gap-detail-label">Fix Complexity</div>
+                <div class="gap-detail-value">High — requires analyst relations program, likely 6-12 months to initial inclusion</div>
               </div>
             </div>
           </div>
@@ -292,14 +339,19 @@
             <div class="gap-content">
               <div class="gap-detail">
                 <div class="gap-detail-label">Status</div>
-                <div class="gap-detail-value">Twitter/X suspended. Instagram: 6,229 followers, 48 posts. YouTube dormant. No podcast</div>
+                <div class="gap-detail-value">Twitter/X suspended. Instagram: 6,229 followers, 48 posts. YouTube dormant. No podcast, no TikTok</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Competitive Benchmark</div>
-                <div class="gap-detail-value">Genesys runs multiple podcasts. Balto's CEO hosts interview series. YouTube = 6-19% of AI platform citation share</div>
+                <div class="gap-detail-value">Genesys runs multiple podcasts. Balto's CEO hosts interview series. YouTube = 6-19% of AI platform top-10 citation share</div>
+              </div>
+              <div class="gap-detail">
+                <div class="gap-detail-label">Fix Complexity</div>
+                <div class="gap-detail-value highlight">Medium — prioritize YouTube and LinkedIn thought leadership; deprioritize X/Instagram/TikTok</div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
 
@@ -307,8 +359,10 @@
       <div class="gaps-section">
         <div class="gaps-section-header">
           <span class="severity-label medium">Medium</span>
+          <span style="color: var(--gray-400); font-size: 0.875rem;">3 gaps affecting efficiency</span>
         </div>
         <div class="gaps-grid">
+
           <div class="gap-card">
             <div class="gap-header" onclick="toggleGap(this)">
               <h4>Gap 8: Website Brand Architecture Conflict</h4>
@@ -317,11 +371,15 @@
             <div class="gap-content">
               <div class="gap-detail">
                 <div class="gap-detail-label">Status</div>
-                <div class="gap-detail-value">Homepage promotes new product suite while /products/ shows legacy tiers. Different navigation between sections. Legacy content referencing former CEO remains live</div>
+                <div class="gap-detail-value">Homepage promotes new product suite (Pairing, Agents, Orchestrator, Intelligence) while /products/ still shows legacy tiers (eXperienceAI Core/+/Elite). Different navigation menus between sections</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Cost</div>
                 <div class="gap-detail-value">Buyer confusion, diluted messaging, undermined credibility</div>
+              </div>
+              <div class="gap-detail">
+                <div class="gap-detail-label">Fix Complexity</div>
+                <div class="gap-detail-value highlight">Low-Medium — content and information architecture, not technology</div>
               </div>
             </div>
           </div>
@@ -340,6 +398,14 @@
                 <div class="gap-detail-label">Competitive Benchmark</div>
                 <div class="gap-detail-value">Balto runs dedicated competitor comparison landing pages for virtually every competitor — capturing high-intent search traffic</div>
               </div>
+              <div class="gap-detail">
+                <div class="gap-detail-label">Cost</div>
+                <div class="gap-detail-value">Missing buyers actively comparing solutions</div>
+              </div>
+              <div class="gap-detail">
+                <div class="gap-detail-label">Fix Complexity</div>
+                <div class="gap-detail-value highlight">Low — content creation, highly replicable Balto playbook</div>
+              </div>
             </div>
           </div>
 
@@ -351,23 +417,30 @@
             <div class="gap-content">
               <div class="gap-detail">
                 <div class="gap-detail-label">Status</div>
-                <div class="gap-detail-value">Marketplace listings exist but co-marketing content beyond press releases is limited. No joint case studies or co-branded webinars</div>
+                <div class="gap-detail-value">Marketplace listings exist but co-marketing content beyond press releases is limited. No joint case studies, co-branded webinars, or shared customer success stories</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Cost</div>
                 <div class="gap-detail-value">Leaving backlink authority, credibility transfer, and distribution on the table</div>
               </div>
+              <div class="gap-detail">
+                <div class="gap-detail-label">Fix Complexity</div>
+                <div class="gap-detail-value highlight">Low-Medium — relationship activation, not new infrastructure</div>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
 
-      <!-- Nice-to-Have -->
+      <!-- Nice-to-Have Gaps -->
       <div class="gaps-section">
         <div class="gaps-section-header">
-          <span class="severity-label low">Nice to Have</span>
+          <span class="severity-label low">Nice-to-Have</span>
+          <span style="color: var(--gray-400); font-size: 0.875rem;">2 gaps for future consideration</span>
         </div>
         <div class="gaps-grid">
+
           <div class="gap-card">
             <div class="gap-header" onclick="toggleGap(this)">
               <h4>Gap 11: Reddit/Quora Presence</h4>
@@ -376,11 +449,15 @@
             <div class="gap-content">
               <div class="gap-detail">
                 <div class="gap-detail-label">Status</div>
-                <div class="gap-detail-value">Zero presence on either platform</div>
+                <div class="gap-detail-value">Zero presence on either platform. No discussions in relevant subreddits (r/callcenters, r/customerservice, r/artificialintelligence)</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Opportunity</div>
                 <div class="gap-detail-value highlight">Reddit = #1 most-cited domain across AI platforms combined. No AI-layer competitor has claimed this territory. First-mover advantage available</div>
+              </div>
+              <div class="gap-detail">
+                <div class="gap-detail-label">Fix Complexity</div>
+                <div class="gap-detail-value">Low — requires consistent, educational community participation (not promotion)</div>
               </div>
             </div>
           </div>
@@ -393,26 +470,35 @@
             <div class="gap-content">
               <div class="gap-detail">
                 <div class="gap-detail-label">Status</div>
-                <div class="gap-detail-value">3.4/5 rating, 940+ reviews, 38% positive business outlook</div>
+                <div class="gap-detail-value">3.4/5 rating, 940+ reviews, 38% positive business outlook. Some reviews question technology legitimacy. 52% recommend to a friend</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Risk</div>
                 <div class="gap-detail-value">Impacts recruiting and can surface in buyer research</div>
               </div>
+              <div class="gap-detail">
+                <div class="gap-detail-label">Fix Complexity</div>
+                <div class="gap-detail-value">Medium-High — cultural, not purely marketing</div>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
+
     </div>
   </section>
 
   <!-- Section 5: Competitive Landscape -->
-  <section id="competitive" class="section">
+  <section class="section" id="competitive">
     <div class="container">
-      <p class="section-label">Competitive Landscape</p>
+      <span class="section-label">Competitive Landscape</span>
       <h2>Where Afiniti Sits</h2>
-      <p class="section-intro">Afiniti's competitive set is Tier 2 (Cresta, Observe.AI, Balto) — not NICE/Genesys. The AI-layer market has exploitable gaps: no competitor owns Wikipedia, Reddit, or YouTube.</p>
+      <p class="section-intro">
+        Afiniti's competitive set is Tier 2 (Cresta, Observe.AI, Balto) — not NICE/Genesys. The AI-layer market has exploitable gaps: no competitor owns Wikipedia, Reddit, or YouTube. The window to claim these is measured in months, not years.
+      </p>
 
+      <!-- 2x2 Matrix -->
       <div class="matrix-container">
         <h3 class="matrix-title">Positioning Matrix</h3>
         <div class="matrix-grid">
@@ -434,154 +520,680 @@
           </div>
         </div>
         <div class="matrix-axis">
-          <span>Marketing Infrastructure Maturity</span>
-          <span>AI Technology Differentiation</span>
+          <span>Marketing Infrastructure Maturity →</span>
+        </div>
+        <p style="text-align: center; color: var(--gray-400); font-size: 0.875rem; margin-top: 16px;">
+          Cresta and Observe.AI occupy the middle — growing on both axes
+        </p>
+      </div>
+
+      <!-- Competitor Table -->
+      <div class="matrix-container">
+        <h3 class="matrix-title">Marketing Infrastructure Comparison</h3>
+        <div style="overflow-x: auto;">
+          <table class="competitor-table">
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th>LinkedIn</th>
+                <th>G2</th>
+                <th>Wikipedia</th>
+                <th>Reddit</th>
+                <th>Analysts</th>
+                <th>YouTube</th>
+                <th>Podcast</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Afiniti</td>
+                <td class="check">265K</td>
+                <td class="missing">None</td>
+                <td class="limited">Outdated</td>
+                <td class="missing">None</td>
+                <td class="missing">None</td>
+                <td class="limited">Dormant</td>
+                <td class="missing">None</td>
+              </tr>
+              <tr>
+                <td>NICE</td>
+                <td class="check">400K+</td>
+                <td class="check">540+</td>
+                <td class="check">Current</td>
+                <td class="limited">Limited</td>
+                <td class="check">Leader</td>
+                <td class="check">Active</td>
+                <td class="check">Yes</td>
+              </tr>
+              <tr>
+                <td>Genesys</td>
+                <td class="check">300K+</td>
+                <td class="check">600+</td>
+                <td class="check">Current</td>
+                <td class="limited">Limited</td>
+                <td class="check">Leader</td>
+                <td class="check">Active</td>
+                <td class="check">Multiple</td>
+              </tr>
+              <tr>
+                <td>Cresta</td>
+                <td class="check">25K</td>
+                <td class="check">100+</td>
+                <td class="missing">None</td>
+                <td class="missing">None</td>
+                <td class="check">Forrester</td>
+                <td class="limited">Limited</td>
+                <td class="missing">None</td>
+              </tr>
+              <tr>
+                <td>Observe.AI</td>
+                <td class="check">35K</td>
+                <td class="check">200+</td>
+                <td class="missing">None</td>
+                <td class="missing">None</td>
+                <td class="limited">Some</td>
+                <td class="limited">Limited</td>
+                <td class="missing">None</td>
+              </tr>
+              <tr>
+                <td>Balto</td>
+                <td class="check">15K</td>
+                <td class="check">300+</td>
+                <td class="missing">None</td>
+                <td class="missing">None</td>
+                <td class="limited">Some</td>
+                <td class="check">Active</td>
+                <td class="check">Yes</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
-      <div class="matrix-container">
-        <h3 class="matrix-title">Competitor Benchmark</h3>
-        <table class="competitor-table">
-          <thead>
-            <tr>
-              <th>Dimension</th>
-              <th>Afiniti</th>
-              <th>Balto</th>
-              <th>Cresta</th>
-              <th>Observe.AI</th>
-              <th>NICE</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>LinkedIn Followers</td>
-              <td>265K</td>
-              <td>15K</td>
-              <td>25K</td>
-              <td>35K</td>
-              <td>450K</td>
-            </tr>
-            <tr>
-              <td>G2 Reviews</td>
-              <td class="missing">0</td>
-              <td class="check">300+</td>
-              <td class="check">150+</td>
-              <td class="check">200+</td>
-              <td class="check">500+</td>
-            </tr>
-            <tr>
-              <td>Wikipedia Page</td>
-              <td class="limited">Outdated</td>
-              <td class="missing">None</td>
-              <td class="missing">None</td>
-              <td class="missing">None</td>
-              <td class="check">Current</td>
-            </tr>
-            <tr>
-              <td>Reddit Presence</td>
-              <td class="missing">None</td>
-              <td class="missing">None</td>
-              <td class="missing">None</td>
-              <td class="missing">None</td>
-              <td class="limited">Limited</td>
-            </tr>
-            <tr>
-              <td>Analyst Coverage</td>
-              <td class="missing">None</td>
-              <td class="limited">Limited</td>
-              <td class="check">Forrester Leader</td>
-              <td class="check">Forrester</td>
-              <td class="check">Gartner Leader</td>
-            </tr>
-            <tr>
-              <td>Podcast</td>
-              <td class="missing">None</td>
-              <td class="check">Yes</td>
-              <td class="missing">None</td>
-              <td class="missing">None</td>
-              <td class="check">Multiple</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
     </div>
   </section>
 
-  <!-- Section 6: Action Plan -->
-  <section id="roadmap" class="section">
+  <!-- Section 6: First 30 Days -->
+  <section class="section" id="roadmap">
     <div class="container">
-      <p class="section-label">Action Plan</p>
-      <h2>The 12-Month Rebuild</h2>
-      <p class="section-intro">Phased implementation roadmap. Foundation first, then build, then scale.</p>
+      <span class="section-label">The First 30 Days</span>
+      <h2>Stop the Bleeding</h2>
+      <p class="section-intro">
+        Week-by-week sprint plan. The site is broken in ways that actively hurt credibility. Fix what's visibly wrong before building anything new.
+      </p>
 
       <div class="phase-tabs">
-        <button class="phase-tab active" onclick="showPhase('phase1', this)">Phase 1: Foundation</button>
-        <button class="phase-tab" onclick="showPhase('phase2', this)">Phase 2: Build</button>
-        <button class="phase-tab" onclick="showPhase('phase3', this)">Phase 3: Scale</button>
+        <button class="phase-tab active" onclick="switchPhase('week1')">Week 1: Triage</button>
+        <button class="phase-tab" onclick="switchPhase('week2')">Week 2: Credibility</button>
+        <button class="phase-tab" onclick="switchPhase('week3')">Week 3: Content</button>
+        <button class="phase-tab" onclick="switchPhase('week4')">Week 4: Launch Prep</button>
       </div>
 
-      <div id="phase1" class="phase-content active">
+      <!-- Week 1 -->
+      <div class="phase-content active" id="week1">
         <div class="phase-header">
-          <h3>Phase 1: Foundation</h3>
-          <p>Weeks 1-8 — Stop the bleeding. Fix what's broken before building anything new.</p>
+          <h3>Week 1: Triage</h3>
+          <p>Fix what's visibly wrong before building anything new</p>
         </div>
         <table class="action-table">
           <thead>
             <tr>
               <th>Action</th>
-              <th>Timeline</th>
-              <th>Impact</th>
+              <th>Why It Can't Wait</th>
+              <th>Deliverable</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Fix technical SEO: robots.txt, sitemap, schema markup, meta descriptions</td>
-              <td class="timeline">Weeks 1-2</td>
-              <td>Enables all future SEO</td>
+              <td>Fix /resources/ page (410 error)</td>
+              <td>Broken page visible to any prospect navigating the site</td>
+              <td>Working page or proper redirect</td>
             </tr>
             <tr>
-              <td>Resolve /resources/ 410 error</td>
-              <td class="timeline">Week 1</td>
-              <td>Recovers broken content hub</td>
+              <td>Deploy robots.txt + XML sitemap</td>
+              <td>Search engines can't properly crawl the site without these</td>
+              <td>Submitted to Google Search Console</td>
             </tr>
             <tr>
-              <td>Unify brand architecture: one product story, one navigation</td>
-              <td class="timeline">Weeks 2-4</td>
-              <td>Eliminates buyer confusion</td>
+              <td>Add meta descriptions to all key pages</td>
+              <td>Pages showing blank in search results</td>
+              <td>Meta descriptions on top 15 pages</td>
             </tr>
             <tr>
-              <td>Create and submit G2 and Capterra profiles</td>
-              <td class="timeline">Week 2</td>
-              <td>Establishes review platform presence</td>
+              <td>Audit legacy content referencing former CEO</td>
+              <td>Reputational liability sitting in the open</td>
+              <td>Redirect/remove list + execution</td>
             </tr>
             <tr>
-              <td>Launch customer review generation campaign (target: 25-30 reviews)</td>
-              <td class="timeline">Weeks 2-8</td>
-              <td>Builds credibility baseline</td>
-            </tr>
-            <tr>
-              <td>Draft Wikipedia update with neutral, well-sourced content</td>
-              <td class="timeline">Weeks 3-6</td>
-              <td>Highest-leverage single asset</td>
-            </tr>
-            <tr>
-              <td>Build "What is Outcome Orchestration?" pillar page</td>
-              <td class="timeline">Weeks 4-6</td>
-              <td>Category ownership foundation</td>
-            </tr>
-            <tr>
-              <td>Create 3 standalone case studies (T-Mobile, Virgin Media O2, AT&T)</td>
-              <td class="timeline">Weeks 4-8</td>
-              <td>Mid-funnel sales assets + AEO citations</td>
+              <td>Inventory existing proof points across site</td>
+              <td>Need to know what exists before building assets</td>
+              <td>Master spreadsheet of all claims, quotes, data points</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <div id="phase2" class="phase-content">
+      <!-- Week 2 -->
+      <div class="phase-content" id="week2">
         <div class="phase-header">
-          <h3>Phase 2: Build</h3>
-          <p>Months 3-6 — Create the content engine and distribution infrastructure that doesn't exist today.</p>
+          <h3>Week 2: Establish Credibility Infrastructure</h3>
+          <p>Create the profiles enterprise buyers expect to find during due diligence</p>
+        </div>
+        <table class="action-table">
+          <thead>
+            <tr>
+              <th>Action</th>
+              <th>Why It Can't Wait</th>
+              <th>Deliverable</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Create and submit G2 profile</td>
+              <td>Every day without a listing is a buyer who disqualifies Afiniti</td>
+              <td>Live G2 profile, categorized correctly</td>
+            </tr>
+            <tr>
+              <td>Create and submit Capterra profile</td>
+              <td>Second most-checked review platform in enterprise software</td>
+              <td>Live Capterra profile</td>
+            </tr>
+            <tr>
+              <td>Claim/update TrustRadius listing</td>
+              <td>Existing listing has zero reviews — worse than no listing</td>
+              <td>Updated profile with current product info</td>
+            </tr>
+            <tr>
+              <td>Launch customer review generation campaign</td>
+              <td>G2 profiles without reviews are empty shells. Target: 25-30 in 60 days</td>
+              <td>Outreach templates, CS coordination plan</td>
+            </tr>
+            <tr>
+              <td>Begin Wikipedia update research</td>
+              <td>47.9% of ChatGPT's citation share. Cannot be rushed</td>
+              <td>Source document with citations for every proposed edit</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Week 3 -->
+      <div class="phase-content" id="week3">
+        <div class="phase-header">
+          <h3>Week 3: Content Foundation</h3>
+          <p>Build mid-funnel assets that serve both marketing and sales</p>
+        </div>
+        <table class="action-table">
+          <thead>
+            <tr>
+              <th>Action</th>
+              <th>Why It Can't Wait</th>
+              <th>Deliverable</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Create standalone T-Mobile case study</td>
+              <td>$70M incremental annual revenue — most compelling proof point, currently buried</td>
+              <td>2-4 page downloadable PDF, gated</td>
+            </tr>
+            <tr>
+              <td>Create standalone Virgin Media O2 case study</td>
+              <td>Named CEO testimonial with quantified results — CEO-to-CEO social proof</td>
+              <td>2-4 page downloadable PDF, gated</td>
+            </tr>
+            <tr>
+              <td>Resolve dual brand architecture</td>
+              <td>Homepage says Outcome Orchestration; /products/ says eXperienceAI tiers</td>
+              <td>Unified product narrative document</td>
+            </tr>
+            <tr>
+              <td>Commission Wikipedia edit</td>
+              <td>Hire experienced Wikipedia editor</td>
+              <td>Contracted editor with draft timeline</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Week 4 -->
+      <div class="phase-content" id="week4">
+        <div class="phase-header">
+          <h3>Week 4: Demand Gen Launch Prep</h3>
+          <p>Set up infrastructure for programs that launch in Month 2</p>
+        </div>
+        <table class="action-table">
+          <thead>
+            <tr>
+              <th>Action</th>
+              <th>Why It Can't Wait</th>
+              <th>Deliverable</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Build "What is Outcome Orchestration?" pillar page</td>
+              <td>Category-defining content with FAQ schema. Foundation for all SEO/AEO</td>
+              <td>Live pillar page with schema markup</td>
+            </tr>
+            <tr>
+              <td>Spec interactive ROI calculator</td>
+              <td>Buyers search for this. Triple duty: SEO, lead capture, sales enablement</td>
+              <td>Requirements doc + wireframe</td>
+            </tr>
+            <tr>
+              <td>Create AT&T case study</td>
+              <td>Completes initial case study library across telco, media, enterprise</td>
+              <td>2-4 page downloadable PDF, gated</td>
+            </tr>
+            <tr>
+              <td>Map competitor comparison content plan</td>
+              <td>Following Balto's playbook</td>
+              <td>5 target pages with keyword research</td>
+            </tr>
+            <tr>
+              <td>Establish content calendar</td>
+              <td>No more batch-publishing. Minimum 2x/week, SEO-optimized</td>
+              <td>90-day editorial calendar</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 7: Demand Gen Programs -->
+  <section class="section" id="demandgen">
+    <div class="container">
+      <span class="section-label">Demand Gen Programs</span>
+      <h2>Building Pipeline from Zero</h2>
+      <p class="section-intro">
+        The core problem: Afiniti's current conversion architecture only serves buyers who already know the company. With near-zero search visibility, that's a vanishingly small pool. Every program below creates a path from "never heard of Afiniti" to "requesting a meeting."
+      </p>
+
+      <!-- Buyer Journey -->
+      <div class="journey-container">
+        <div class="journey-stage">
+          <div class="journey-label">Top of Funnel</div>
+          <div class="journey-title">Get Found</div>
+          <div class="journey-programs">Programs 1-4</div>
+        </div>
+        <div class="journey-arrow">→</div>
+        <div class="journey-stage">
+          <div class="journey-label">Mid-Funnel</div>
+          <div class="journey-title">Build the Case</div>
+          <div class="journey-programs">Programs 5-7</div>
+        </div>
+        <div class="journey-arrow">→</div>
+        <div class="journey-stage">
+          <div class="journey-label">Bottom of Funnel</div>
+          <div class="journey-title">Close</div>
+          <div class="journey-programs">Programs 8-10</div>
+        </div>
+      </div>
+
+      <!-- TOFU Programs -->
+      <div class="programs-section">
+        <h3 class="programs-section-title">Top of Funnel: Get Found</h3>
+
+        <div class="program-card">
+          <div class="program-header" onclick="toggleProgram(this)">
+            <div class="program-number">01</div>
+            <div class="program-info">
+              <h4>Category-Defining Content Engine</h4>
+              <p>Build topic cluster architecture around "outcome orchestration"</p>
+            </div>
+            <span class="program-toggle">+</span>
+          </div>
+          <div class="program-content">
+            <div class="program-details">
+              <p>Pillar page + supporting blog posts ("Outcome Orchestration vs. Predictive Routing," "What is Behavioral Pairing?", "Why 80% of Contact Center AI Projects Fail"). FAQ schema markup on all pages for featured snippet and AI answer engine capture.</p>
+              <p>2x/week minimum publishing cadence, SEO-optimized. Target keywords where Afiniti is currently invisible: "AI contact center optimization," "AI-powered call routing," "enterprise AI contact center"</p>
+            </div>
+            <div class="program-metrics">
+              <div class="metric-item">
+                <span class="metric-type">Lead Metric</span>
+                <span class="metric-value">Organic traffic from &lt;5K to 15-25K monthly within 6 months</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-type">Pipeline Metric</span>
+                <span class="metric-value">Marketing-sourced leads from organic search (baseline: ~0)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="program-card">
+          <div class="program-header" onclick="toggleProgram(this)">
+            <div class="program-number">02</div>
+            <div class="program-info">
+              <h4>Original Research Report</h4>
+              <p>"State of Contact Center AI Effectiveness" — leverage 20 years of behavioral pairing data</p>
+            </div>
+            <span class="program-toggle">+</span>
+          </div>
+          <div class="program-content">
+            <div class="program-details">
+              <p>Afiniti sits on 20 years of behavioral pairing data across billions of interactions. No competitor has this dataset depth. Annual research report with novel findings: which agent-caller matching factors drive the largest outcome deltas, failure patterns, measurable ROI benchmarks by industry.</p>
+              <p>Generates: earned media coverage, analyst attention, backlinks, AEO citations, gated lead capture. Distribution: Gated PDF, ungated executive summary, LinkedIn carousel series, webinar presentation.</p>
+            </div>
+            <div class="program-metrics">
+              <div class="metric-item">
+                <span class="metric-type">Lead Metric</span>
+                <span class="metric-value">Report downloads (target: 500+ in first 90 days)</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-type">Pipeline Metric</span>
+                <span class="metric-value">MQLs from report download → meeting request conversion</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="program-card">
+          <div class="program-header" onclick="toggleProgram(this)">
+            <div class="program-number">03</div>
+            <div class="program-info">
+              <h4>YouTube + LinkedIn Thought Leadership</h4>
+              <p>Explainer videos, executive Q&As, activate the 265K follower base</p>
+            </div>
+            <span class="program-toggle">+</span>
+          </div>
+          <div class="program-content">
+            <div class="program-details">
+              <p>YouTube: Explainer videos on behavioral pairing methodology, customer outcome stories, "Outcome Orchestration 101" series. YouTube = 13.9% of Perplexity's top-10 citation share, 18.8% of Google AI Overviews.</p>
+              <p>LinkedIn: Expand thought leadership beyond CDO to CEO Jerome Kapelus and broader team. Activate the 265K follower base. LinkedIn = 13% of Google AI Overviews top-10 citation share.</p>
+            </div>
+            <div class="program-metrics">
+              <div class="metric-item">
+                <span class="metric-type">Lead Metric</span>
+                <span class="metric-value">LinkedIn engagement rate, YouTube subscribers, view-through rates</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-type">Pipeline Metric</span>
+                <span class="metric-value">Inbound from LinkedIn DMs and YouTube CTAs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="program-card">
+          <div class="program-header" onclick="toggleProgram(this)">
+            <div class="program-number">04</div>
+            <div class="program-info">
+              <h4>Reddit Community Presence</h4>
+              <p>First-mover territory — Reddit = #1 most-cited domain across AI platforms</p>
+            </div>
+            <span class="program-toggle">+</span>
+          </div>
+          <div class="program-content">
+            <div class="program-details">
+              <p>Reddit = #1 most-cited domain across all major AI platforms combined (46.7% of Perplexity's top-10, 21% of Google AI Overviews). No AI-layer competitor has meaningful Reddit presence.</p>
+              <p>Approach: Educational participation in r/callcenters, r/customerservice, r/contactcenter. Share knowledge about AI-driven routing optimization. Answer questions. Never promote. This is a slow burn but compounds — posts get cited by AI models for months/years.</p>
+            </div>
+            <div class="program-metrics">
+              <div class="metric-item">
+                <span class="metric-type">Lead Metric</span>
+                <span class="metric-value">Brand mention volume in Reddit discussions</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-type">Pipeline Metric</span>
+                <span class="metric-value">Indirect — feeds AEO visibility which feeds all other programs</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOFU Programs -->
+      <div class="programs-section">
+        <h3 class="programs-section-title">Mid-Funnel: Build the Case</h3>
+
+        <div class="program-card">
+          <div class="program-header" onclick="toggleProgram(this)">
+            <div class="program-number">05</div>
+            <div class="program-info">
+              <h4>Interactive ROI Calculator</h4>
+              <p>Triple duty: SEO asset, lead capture mechanism, sales enablement tool</p>
+            </div>
+            <span class="program-toggle">+</span>
+          </div>
+          <div class="program-content">
+            <div class="program-details">
+              <p>Buyers actively search for "contact center AI ROI calculator" — few quality tools exist. Inputs: number of agents, average handle time, current conversion rate, industry. Outputs: projected revenue lift, FCR improvement, estimated payback period based on Afiniti's averages (10%+ revenue increase, 5%+ FCR improvement).</p>
+            </div>
+            <div class="program-metrics">
+              <div class="metric-item">
+                <span class="metric-type">Lead Metric</span>
+                <span class="metric-value">Calculator sessions, completion rate</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-type">Pipeline Metric</span>
+                <span class="metric-value">Gated report downloads → meeting requests</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="program-card">
+          <div class="program-header" onclick="toggleProgram(this)">
+            <div class="program-number">06</div>
+            <div class="program-info">
+              <h4>Case Study Library + Industry Landing Pages</h4>
+              <p>Convert scattered testimonials into 8-10 standalone, downloadable case studies</p>
+            </div>
+            <span class="program-toggle">+</span>
+          </div>
+          <div class="program-content">
+            <div class="program-details">
+              <p>Convert scattered website testimonials into standalone case studies across target verticals (telco, insurance, financial services, healthcare, travel/hospitality). Each: 2-4 pages, specific methodology, quantified before/after, named executive quotes.</p>
+              <p>Rebuild industry landing pages to anchor around case studies. Distribute through partner channels (Five9, NICE, AWS marketplace co-marketing).</p>
+            </div>
+            <div class="program-metrics">
+              <div class="metric-item">
+                <span class="metric-type">Lead Metric</span>
+                <span class="metric-value">Case study downloads by industry</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-type">Pipeline Metric</span>
+                <span class="metric-value">Industry-qualified leads from gated downloads</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="program-card">
+          <div class="program-header" onclick="toggleProgram(this)">
+            <div class="program-number">07</div>
+            <div class="program-info">
+              <h4>Competitor Comparison Content (Balto Playbook)</h4>
+              <p>Dedicated landing pages capturing buyers actively comparing solutions</p>
+            </div>
+            <span class="program-toggle">+</span>
+          </div>
+          <div class="program-content">
+            <div class="program-details">
+              <p>Dedicated landing pages: "Afiniti vs. Cresta," "Afiniti vs. Observe.AI," "NICE alternatives," "Genesys alternatives," "Five9 AI optimization." Each page: honest comparison matrix, differentiation points (patented on/off benchmarking, outcome-based pricing, platform-agnostic overlay).</p>
+              <p>SEO play: capture buyers actively comparing solutions — these are purchase-ready prospects forming shortlists. Balto does this for virtually every competitor. It works. It's directly replicable.</p>
+            </div>
+            <div class="program-metrics">
+              <div class="metric-item">
+                <span class="metric-type">Lead Metric</span>
+                <span class="metric-value">Organic traffic to comparison pages</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-type">Pipeline Metric</span>
+                <span class="metric-value">Meeting requests from comparison page visitors (highest intent traffic)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOFU Programs -->
+      <div class="programs-section">
+        <h3 class="programs-section-title">Bottom of Funnel: Close</h3>
+
+        <div class="program-card">
+          <div class="program-header" onclick="toggleProgram(this)">
+            <div class="program-number">08</div>
+            <div class="program-info">
+              <h4>G2 + Review Platform Social Proof</h4>
+              <p>Target: 100+ G2 reviews within 12 months (Balto benchmark: 300+ at 4.8/5)</p>
+            </div>
+            <span class="program-toggle">+</span>
+          </div>
+          <div class="program-content">
+            <div class="program-details">
+              <p>Integrate G2 rating badges across website, email signatures, sales decks, partner marketplace listings. Respond to every review (positive and negative). G2 commands 6.7% of ChatGPT's top-10 citation share and 4% of Perplexity's — reviews become AEO source material.</p>
+            </div>
+            <div class="program-metrics">
+              <div class="metric-item">
+                <span class="metric-type">Lead Metric</span>
+                <span class="metric-value">Review volume, average rating</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-type">Pipeline Metric</span>
+                <span class="metric-value">Influence on close rate (track via sales attribution surveys)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="program-card">
+          <div class="program-header" onclick="toggleProgram(this)">
+            <div class="program-number">09</div>
+            <div class="program-info">
+              <h4>Partner Co-Marketing Pipeline</h4>
+              <p>Fastest path to qualified pipeline — partner sales teams are already in the right conversations</p>
+            </div>
+            <span class="program-toggle">+</span>
+          </div>
+          <div class="program-content">
+            <div class="program-details">
+              <p>Five9, NICE CXone, and AWS Marketplace integrations are live but co-marketing is minimal. Joint webinars with partner sales teams (target: 1 per quarter per partner). Co-branded case studies showing Afiniti + [platform] results together. Marketplace listing optimization. Partner blog cross-posts.</p>
+            </div>
+            <div class="program-metrics">
+              <div class="metric-item">
+                <span class="metric-type">Lead Metric</span>
+                <span class="metric-value">Partner-sourced leads, co-marketing content engagement</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-type">Pipeline Metric</span>
+                <span class="metric-value">Partner-sourced pipeline value, partner-influenced revenue</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="program-card">
+          <div class="program-header" onclick="toggleProgram(this)">
+            <div class="program-number">10</div>
+            <div class="program-info">
+              <h4>Analyst Relations for Enterprise Credibility</h4>
+              <p>Brief Gartner, Forrester, IDC on Outcome Orchestration positioning</p>
+            </div>
+            <span class="program-toggle">+</span>
+          </div>
+          <div class="program-content">
+            <div class="program-details">
+              <p>Brief analysts on Outcome Orchestration positioning and post-bankruptcy trajectory. Realistic target: inclusion in adjacent research notes and market guides (not CCaaS Magic Quadrant — Afiniti is an optimization layer, not a platform).</p>
+              <p>Cresta achieved Forrester Leader status in Conversation Intelligence Q2 2025. Afiniti should target similar adjacent category recognition. Analyst coverage feeds enterprise buyer confidence (7% of top-10 AI platform results).</p>
+            </div>
+            <div class="program-metrics">
+              <div class="metric-item">
+                <span class="metric-type">Lead Metric</span>
+                <span class="metric-value">Analyst briefings completed, mentions in published research</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-type">Pipeline Metric</span>
+                <span class="metric-value">Enterprise deals where analyst coverage is cited as influence factor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 8: Priority Roadmap Months 2-12 -->
+  <section class="section" id="priority-roadmap">
+    <div class="container">
+      <span class="section-label">Priority Roadmap</span>
+      <h2>Months 2-12: Build and Scale</h2>
+      <p class="section-intro">
+        After the first 30 days establish the foundation, this is the build-and-scale sequence. Organized by priority tier — some things must happen before others regardless of calendar.
+      </p>
+
+      <div class="phase-tabs" id="priority-tabs">
+        <button class="phase-tab active" onclick="switchPriority('priority1')">Priority 1: Launch</button>
+        <button class="phase-tab" onclick="switchPriority('priority2')">Priority 2: Compound</button>
+        <button class="phase-tab" onclick="switchPriority('priority3')">Priority 3: Scale</button>
+      </div>
+
+      <!-- Priority 1 -->
+      <div class="priority-content active" id="priority1">
+        <div class="phase-header">
+          <h3>Priority 1: Launch Demand Gen Programs (Months 2-4)</h3>
+          <p>Foundation work from the first 30 days enables all of these</p>
+        </div>
+        <table class="action-table">
+          <thead>
+            <tr>
+              <th>Program</th>
+              <th>Launch</th>
+              <th>First Results</th>
+              <th>Dependency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Content engine (2x/week publishing)</td>
+              <td class="timeline">Month 2</td>
+              <td>Month 4-5</td>
+              <td>Pillar page live, editorial calendar set</td>
+            </tr>
+            <tr>
+              <td>ROI calculator</td>
+              <td class="timeline">Month 2-3</td>
+              <td>Immediate</td>
+              <td>Dev sprint from Week 4 spec</td>
+            </tr>
+            <tr>
+              <td>Competitor comparison pages (5 initial)</td>
+              <td class="timeline">Month 2-3</td>
+              <td>Month 3-4</td>
+              <td>Keyword research from Week 4</td>
+            </tr>
+            <tr>
+              <td>Partner co-marketing (first joint webinar)</td>
+              <td class="timeline">Month 3</td>
+              <td>Immediate</td>
+              <td>Partner relationship activation</td>
+            </tr>
+            <tr>
+              <td>LinkedIn thought leadership expansion</td>
+              <td class="timeline">Month 2</td>
+              <td>Month 3-4</td>
+              <td>Executive buy-in, content support</td>
+            </tr>
+            <tr>
+              <td>YouTube channel launch</td>
+              <td class="timeline">Month 3</td>
+              <td>Month 5-6</td>
+              <td>Video production capability</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Priority 2 -->
+      <div class="priority-content" id="priority2">
+        <div class="phase-header">
+          <h3>Priority 2: Compound Credibility (Months 3-6)</h3>
+          <p>Build on the foundation with sustained execution</p>
         </div>
         <table class="action-table">
           <thead>
@@ -593,53 +1205,44 @@
           </thead>
           <tbody>
             <tr>
-              <td>Launch 2x/week blog publishing cadence targeting keyword gaps</td>
+              <td>Wikipedia update published</td>
+              <td class="timeline">Month 3-4</td>
+              <td>Highest-leverage AEO asset (47.9% ChatGPT citation share)</td>
+            </tr>
+            <tr>
+              <td>G2 review milestone: 30+ reviews</td>
+              <td class="timeline">Month 4</td>
+              <td>Credibility threshold for enterprise buyer due diligence</td>
+            </tr>
+            <tr>
+              <td>Reddit community participation (ongoing)</td>
               <td class="timeline">Month 3+</td>
-              <td>Organic visibility foundation</td>
+              <td>AEO citation source, first-mover advantage</td>
             </tr>
             <tr>
-              <td>Build interactive ROI calculator</td>
-              <td class="timeline">Month 3</td>
-              <td>Lead capture + sales enablement</td>
+              <td>Original research report published</td>
+              <td class="timeline">Month 5-6</td>
+              <td>Earned media, analyst attention, gated lead capture</td>
             </tr>
             <tr>
-              <td>Create 5 competitor comparison pages (Balto playbook)</td>
-              <td class="timeline">Months 3-4</td>
-              <td>High-intent search traffic capture</td>
-            </tr>
-            <tr>
-              <td>Launch YouTube channel: behavioral pairing explainers, customer stories</td>
-              <td class="timeline">Month 3</td>
-              <td>AEO citation source (6-19% of top-10)</td>
-            </tr>
-            <tr>
-              <td>Initiate Reddit community participation (educational, not promotional)</td>
-              <td class="timeline">Month 3+</td>
-              <td>Reddit = #1 AI citation source</td>
-            </tr>
-            <tr>
-              <td>Begin analyst relations program: brief Gartner, Forrester, IDC</td>
+              <td>Analyst briefings initiated</td>
               <td class="timeline">Month 4</td>
               <td>6-12 month path to inclusion</td>
             </tr>
             <tr>
-              <td>Execute partner co-marketing: joint webinars with Five9, NICE, AWS</td>
-              <td class="timeline">Months 4-6</td>
-              <td>Backlinks + credibility transfer</td>
-            </tr>
-            <tr>
-              <td>Publish first original research report using anonymized proprietary data</td>
-              <td class="timeline">Months 5-6</td>
-              <td>Highest-impact content type</td>
+              <td>Case study library: 5+ published</td>
+              <td class="timeline">Month 4-5</td>
+              <td>Sales enablement + mid-funnel conversion</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <div id="phase3" class="phase-content">
+      <!-- Priority 3 -->
+      <div class="priority-content" id="priority3">
         <div class="phase-header">
-          <h3>Phase 3: Scale</h3>
-          <p>Months 7-12 — Compound the foundation. Shift from building to optimizing.</p>
+          <h3>Priority 3: Scale and Optimize (Months 6-12)</h3>
+          <p>Expand what's working, measure everything</p>
         </div>
         <table class="action-table">
           <thead>
@@ -651,164 +1254,222 @@
           </thead>
           <tbody>
             <tr>
-              <td>Establish AI Share of Voice measurement baseline and monthly tracking</td>
-              <td class="timeline">Month 7</td>
+              <td>Establish AI Share of Voice baseline + monthly tracking</td>
+              <td class="timeline">Month 6</td>
               <td>Measure AEO progress vs. competitors</td>
             </tr>
             <tr>
-              <td>Launch gated content library (minimum 5 assets per industry vertical)</td>
-              <td class="timeline">Months 7-9</td>
-              <td>Mid-funnel nurture capability</td>
-            </tr>
-            <tr>
-              <td>Pursue Gartner/Forrester inclusion for adjacent reports</td>
-              <td class="timeline">Months 7-12</td>
-              <td>Analyst-driven buyer influence</td>
-            </tr>
-            <tr>
-              <td>Scale review generation to 100+ G2 reviews</td>
-              <td class="timeline">Months 7-12</td>
+              <td>Scale G2 reviews to 100+</td>
+              <td class="timeline">Month 8-12</td>
               <td>Competitive parity with Balto</td>
             </tr>
             <tr>
-              <td>Launch customer advisory board</td>
+              <td>Launch gated content library (5+ assets per industry)</td>
+              <td class="timeline">Month 7-9</td>
+              <td>Full mid-funnel nurture capability</td>
+            </tr>
+            <tr>
+              <td>Evaluate paid search/SEM against organic traction</td>
+              <td class="timeline">Month 6-7</td>
+              <td>Data-driven paid amplification decision</td>
+            </tr>
+            <tr>
+              <td>Pursue analyst inclusion in published research</td>
+              <td class="timeline">Month 8-12</td>
+              <td>Enterprise credibility at scale</td>
+            </tr>
+            <tr>
+              <td>Customer advisory board launch</td>
               <td class="timeline">Month 8</td>
-              <td>Community + content + retention</td>
+              <td>Community + content + retention + product feedback</td>
             </tr>
             <tr>
-              <td>Evaluate paid search/SEM investment against organic traction</td>
-              <td class="timeline">Month 9</td>
-              <td>Data-driven paid amplification</td>
+              <td>Second original research report</td>
+              <td class="timeline">Month 10-11</td>
+              <td>Compounds authority from first report</td>
             </tr>
             <tr>
-              <td>Consider owned event around "Outcome Orchestration" category</td>
-              <td class="timeline">Months 10-12</td>
-              <td>Category authority + pipeline</td>
+              <td>Evaluate owned virtual event</td>
+              <td class="timeline">Month 10-12</td>
+              <td>Category authority + direct pipeline</td>
             </tr>
           </tbody>
         </table>
       </div>
+
     </div>
   </section>
 
-  <!-- Section 7: Metrics -->
-  <section id="metrics" class="section">
+  <!-- Section 9: Metrics Dashboard -->
+  <section class="section" id="metrics">
     <div class="container">
-      <p class="section-label">Success Metrics</p>
+      <span class="section-label">The Metrics That Matter</span>
       <h2>What Success Looks Like</h2>
-      <p class="section-intro">Dashboard view of baseline versus 6-month and 12-month targets.</p>
+      <p class="section-intro">
+        Two views: infrastructure metrics (is the foundation getting built?) and pipeline metrics (is it producing leads?). Infrastructure work IS pipeline work — they're the same program measured two ways.
+      </p>
 
-      <div class="metrics-grid">
-        <div class="metric-card">
-          <div class="metric-label">Organic Monthly Visits</div>
-          <div class="metric-row">
-            <span class="metric-baseline">&lt;5K</span>
-            <span class="metric-target">50-75K</span>
+      <div class="metrics-dashboard">
+        <!-- Infrastructure Panel -->
+        <div class="metrics-panel">
+          <h3 class="metrics-panel-title">Infrastructure Metrics</h3>
+          <p class="metrics-panel-subtitle">What's being built</p>
+
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-label">Organic Monthly Visits</div>
+              <div class="metric-row">
+                <span class="metric-baseline">&lt;5K today</span>
+                <span class="metric-target">50-75K</span>
+              </div>
+              <div class="metric-progress"><div class="metric-progress-bar" style="width: 7%;"></div></div>
+              <div class="metric-timeline">12-month target</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">G2 Reviews</div>
+              <div class="metric-row">
+                <span class="metric-baseline">0 today</span>
+                <span class="metric-target">100+</span>
+              </div>
+              <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%;"></div></div>
+              <div class="metric-timeline">12-month target</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Gated Content Assets</div>
+              <div class="metric-row">
+                <span class="metric-baseline">1 today</span>
+                <span class="metric-target">30+</span>
+              </div>
+              <div class="metric-progress"><div class="metric-progress-bar" style="width: 3%;"></div></div>
+              <div class="metric-timeline">12-month target</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">AI Answer Engine Appearances</div>
+              <div class="metric-row">
+                <span class="metric-baseline">0 today</span>
+                <span class="metric-target">All 3 major</span>
+              </div>
+              <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%;"></div></div>
+              <div class="metric-timeline">12-month target</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Blog Posts Published</div>
+              <div class="metric-row">
+                <span class="metric-baseline">0 new</span>
+                <span class="metric-target">100+</span>
+              </div>
+              <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%;"></div></div>
+              <div class="metric-timeline">12-month target</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Case Studies Published</div>
+              <div class="metric-row">
+                <span class="metric-baseline">0 today</span>
+                <span class="metric-target">10+</span>
+              </div>
+              <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%;"></div></div>
+              <div class="metric-timeline">12-month target</div>
+            </div>
           </div>
-          <div class="metric-progress"><div class="metric-progress-bar" style="width: 5%"></div></div>
         </div>
 
-        <div class="metric-card">
-          <div class="metric-label">G2 Reviews</div>
-          <div class="metric-row">
-            <span class="metric-baseline">0</span>
-            <span class="metric-target">100+</span>
-          </div>
-          <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%"></div></div>
-        </div>
+        <!-- Pipeline Panel -->
+        <div class="metrics-panel">
+          <h3 class="metrics-panel-title">Pipeline Metrics</h3>
+          <p class="metrics-panel-subtitle">What it's producing</p>
 
-        <div class="metric-card">
-          <div class="metric-label">Gated Content Assets</div>
-          <div class="metric-row">
-            <span class="metric-baseline">1</span>
-            <span class="metric-target">30+</span>
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <div class="metric-label">Marketing-Sourced Leads (Monthly)</div>
+              <div class="metric-row">
+                <span class="metric-baseline">~0 today</span>
+                <span class="metric-target">100-150</span>
+              </div>
+              <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%;"></div></div>
+              <div class="metric-timeline">12-month target</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Marketing-Sourced MQLs (Monthly)</div>
+              <div class="metric-row">
+                <span class="metric-baseline">~0 today</span>
+                <span class="metric-target">50-75</span>
+              </div>
+              <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%;"></div></div>
+              <div class="metric-timeline">12-month target</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Marketing-Sourced Pipeline (Quarterly)</div>
+              <div class="metric-row">
+                <span class="metric-baseline">~$0 today</span>
+                <span class="metric-target">$2-4M</span>
+              </div>
+              <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%;"></div></div>
+              <div class="metric-timeline">12-month target</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Demo/Meeting Requests (Monthly)</div>
+              <div class="metric-row">
+                <span class="metric-baseline">Low single digits</span>
+                <span class="metric-target">50-75</span>
+              </div>
+              <div class="metric-progress"><div class="metric-progress-bar" style="width: 5%;"></div></div>
+              <div class="metric-timeline">12-month target</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">ROI Calculator Completions (Monthly)</div>
+              <div class="metric-row">
+                <span class="metric-baseline">N/A</span>
+                <span class="metric-target">150+</span>
+              </div>
+              <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%;"></div></div>
+              <div class="metric-timeline">12-month target</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-label">Partner-Sourced Leads (Monthly)</div>
+              <div class="metric-row">
+                <span class="metric-baseline">Minimal</span>
+                <span class="metric-target">30-50</span>
+              </div>
+              <div class="metric-progress"><div class="metric-progress-bar" style="width: 5%;"></div></div>
+              <div class="metric-timeline">12-month target</div>
+            </div>
           </div>
-          <div class="metric-progress"><div class="metric-progress-bar" style="width: 3%"></div></div>
-        </div>
-
-        <div class="metric-card">
-          <div class="metric-label">AI Answer Engine Appearances</div>
-          <div class="metric-row">
-            <span class="metric-baseline">0</span>
-            <span class="metric-target">All 3 Major</span>
-          </div>
-          <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%"></div></div>
-        </div>
-
-        <div class="metric-card">
-          <div class="metric-label">Blog Posts Published</div>
-          <div class="metric-row">
-            <span class="metric-baseline">~20</span>
-            <span class="metric-target">+100</span>
-          </div>
-          <div class="metric-progress"><div class="metric-progress-bar" style="width: 17%"></div></div>
-        </div>
-
-        <div class="metric-card">
-          <div class="metric-label">YouTube Videos</div>
-          <div class="metric-row">
-            <span class="metric-baseline">0</span>
-            <span class="metric-target">30+</span>
-          </div>
-          <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%"></div></div>
-        </div>
-
-        <div class="metric-card">
-          <div class="metric-label">Analyst Mentions</div>
-          <div class="metric-row">
-            <span class="metric-baseline">0</span>
-            <span class="metric-target">3-5 Reports</span>
-          </div>
-          <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%"></div></div>
-        </div>
-
-        <div class="metric-card">
-          <div class="metric-label">Case Studies Published</div>
-          <div class="metric-row">
-            <span class="metric-baseline">0</span>
-            <span class="metric-target">10+</span>
-          </div>
-          <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%"></div></div>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- Section 8: The Close -->
-  <section class="cta-section">
+  <!-- Section 10: The Close -->
+  <section class="cta-section" id="close">
     <div class="container-narrow">
-      <p>This audit is a preview, not a pitch. The infrastructure gap is real, the competitive window is closing, and the building blocks exist. The question is execution velocity.</p>
+      <h2>The Close</h2>
+      <p>
+        This audit is a preview, not a pitch. The infrastructure gap is real, the competitive window is closing, and the building blocks exist. The question is execution velocity.
+      </p>
       <div class="cta-links">
-        <a href="https://calendly.com/nicktalbert-sfdr/30min" class="btn btn-primary">Let's Talk</a>
-        <a href="mailto:nick@strategnik.com">nick@strategnik.com</a>
-        <a href="https://www.linkedin.com/in/nick-talbert/">LinkedIn</a>
+        <a href="mailto:nick@strategnik.com" class="btn btn-primary">Let's Talk</a>
+        <a href="https://linkedin.com/in/nicktalbert" class="btn btn-secondary">LinkedIn</a>
       </div>
+      <p style="margin-top: 40px; font-size: 0.95rem;">
+        Nick Talbert | <a href="https://strategnik.com">strategnik.com</a>
+      </p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="site-footer">
-    <div class="container">
-      <img src="https://strategnik.com/logo.png" alt="Strategnik" height="40">
-      <p>Prepared by <a href="https://strategnik.com">Strategnik</a></p>
-      <p class="confidential">This document is confidential and intended solely for the use of Afiniti.</p>
-    </div>
+    <img src="https://strategnik.com/logo.png" alt="Strategnik" style="height: 60px;">
+    <p>Building growth infrastructure for technical products</p>
+    <p><a href="https://strategnik.com">strategnik.com</a></p>
+    <p class="confidential">This audit was prepared exclusively for Afiniti's hiring team. Please do not distribute.</p>
   </footer>
 
   <script>
-    // Mobile menu toggle
-    const menuBtn = document.getElementById('mobileMenuBtn');
-    const mobileNav = document.getElementById('mobileNav');
-
-    menuBtn.addEventListener('click', () => {
-      mobileNav.classList.toggle('open');
-    });
-
-    mobileNav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileNav.classList.remove('open');
-      });
-    });
+    // Mobile nav toggle
+    function toggleMobileNav() {
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
 
     // Gap card toggle
     function toggleGap(header) {
@@ -818,17 +1479,39 @@
       toggle.textContent = card.classList.contains('open') ? '−' : '+';
     }
 
-    // Phase tabs
-    function showPhase(phaseId, btn) {
-      document.querySelectorAll('.phase-content').forEach(p => p.classList.remove('active'));
-      document.querySelectorAll('.phase-tab').forEach(t => t.classList.remove('active'));
-      document.getElementById(phaseId).classList.add('active');
-      btn.classList.add('active');
+    // Program card toggle
+    function toggleProgram(header) {
+      const card = header.parentElement;
+      card.classList.toggle('open');
+      const toggle = header.querySelector('.program-toggle');
+      toggle.textContent = card.classList.contains('open') ? '−' : '+';
     }
 
-    // Smooth scroll
+    // Phase tabs (First 30 Days)
+    function switchPhase(phaseId) {
+      // Update tabs
+      document.querySelectorAll('#roadmap .phase-tab').forEach(tab => tab.classList.remove('active'));
+      event.target.classList.add('active');
+
+      // Update content
+      document.querySelectorAll('#roadmap .phase-content').forEach(content => content.classList.remove('active'));
+      document.getElementById(phaseId).classList.add('active');
+    }
+
+    // Priority tabs (Months 2-12)
+    function switchPriority(priorityId) {
+      // Update tabs
+      document.querySelectorAll('#priority-tabs .phase-tab').forEach(tab => tab.classList.remove('active'));
+      event.target.classList.add('active');
+
+      // Update content
+      document.querySelectorAll('.priority-content').forEach(content => content.classList.remove('active'));
+      document.getElementById(priorityId).classList.add('active');
+    }
+
+    // Smooth scroll for nav links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+      anchor.addEventListener('click', function(e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
@@ -837,5 +1520,6 @@
       });
     });
   </script>
+
 </body>
 </html>

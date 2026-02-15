@@ -851,6 +851,234 @@ a:hover {
   border-top: 1px solid var(--gray-800);
 }
 
+/* Buyer Journey Diagram */
+.journey-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 32px;
+  background: var(--gray-900);
+  border: 1px solid var(--gray-800);
+  border-radius: 12px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.journey-stage {
+  text-align: center;
+  padding: 24px 32px;
+  background: var(--bg-primary);
+  border: 1px solid var(--gray-800);
+  border-radius: 8px;
+  min-width: 180px;
+}
+
+.journey-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gray-500);
+  margin-bottom: 8px;
+  font-style: normal;
+}
+
+.journey-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+
+.journey-programs {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-style: normal;
+}
+
+.journey-arrow {
+  font-size: 1.5rem;
+  color: var(--gray-600);
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .journey-container {
+    flex-direction: column;
+  }
+  .journey-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+/* Programs Section */
+.programs-section {
+  margin-bottom: 48px;
+}
+
+.programs-section-title {
+  font-size: 1.25rem;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--gray-800);
+}
+
+.program-card {
+  background: var(--gray-900);
+  border: 1px solid var(--gray-800);
+  border-radius: 12px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.program-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.program-header:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.program-number {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+  font-style: normal;
+  color: var(--accent);
+  min-width: 32px;
+}
+
+.program-info {
+  flex: 1;
+}
+
+.program-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.program-info p {
+  font-size: 0.875rem;
+  color: var(--gray-400);
+  margin: 0;
+}
+
+.program-toggle {
+  color: var(--gray-400);
+  font-size: 1.25rem;
+  font-style: normal;
+  transition: transform 0.3s;
+}
+
+.program-card.open .program-toggle {
+  transform: rotate(180deg);
+}
+
+.program-content {
+  display: none;
+  padding: 0 24px 24px;
+  border-top: 1px solid var(--gray-800);
+}
+
+.program-card.open .program-content {
+  display: block;
+}
+
+.program-details {
+  padding-top: 20px;
+}
+
+.program-details p {
+  color: var(--gray-300);
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.program-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--gray-800);
+}
+
+.metric-item {
+  background: var(--bg-primary);
+  border: 1px solid var(--gray-800);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.metric-type {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gray-500);
+  margin-bottom: 8px;
+  font-style: normal;
+}
+
+.metric-value {
+  display: block;
+  color: var(--gray-300);
+  font-size: 0.9rem;
+}
+
+/* Priority Content */
+.priority-content {
+  display: none;
+}
+
+.priority-content.active {
+  display: block;
+}
+
+/* Metrics Dashboard */
+.metrics-dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 32px;
+}
+
+@media (max-width: 900px) {
+  .metrics-dashboard {
+    grid-template-columns: 1fr;
+  }
+}
+
+.metrics-panel {
+  background: var(--gray-900);
+  border: 1px solid var(--gray-800);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.metrics-panel-title {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.metrics-panel-subtitle {
+  font-size: 0.875rem;
+  color: var(--gray-400);
+  margin-bottom: 24px;
+}
+
+.metric-timeline {
+  font-size: 0.75rem;
+  color: var(--gray-500);
+  margin-top: 8px;
+  font-style: normal;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .matrix-grid {
