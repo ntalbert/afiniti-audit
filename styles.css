@@ -1,6 +1,23 @@
 /* Afiniti Audit - Dark Theme with Amber/Gold Accents */
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&family=JetBrains+Mono:wght@400;500&display=swap');
+/* Söhne Breit Fonts */
+@font-face {
+  font-family: 'Soehne Breit';
+  src: url('/fonts/soehne-breit-buch-kursiv.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Soehne Breit';
+  src: url('/fonts/soehne-breit-kraftig.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
   --bg-primary: #0C0E12;
@@ -31,7 +48,8 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Soehne Breit', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-style: italic;
   background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.6;
@@ -50,9 +68,14 @@ body {
 }
 
 /* Typography */
-h1, h2, h3 {
-  font-family: 'DM Serif Display', Georgia, serif;
-  font-weight: 400;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Soehne Breit', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.btn, .nav-links a, .mobile-nav a, .phase-tab {
+  font-style: normal;
 }
 
 .mono {
