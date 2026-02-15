@@ -837,12 +837,18 @@
       <div class="programs-section">
         <h3 class="programs-section-title">Top of Funnel: Get Found</h3>
 
+        <!-- Program 1: Content Engine -->
         <div class="program-card">
           <div class="program-header" onclick="toggleProgram(this)">
-            <div class="program-number">01</div>
+            <div class="program-icon">📄</div>
             <div class="program-info">
               <h4>Category-Defining Content Engine</h4>
               <p>Build topic cluster architecture around "outcome orchestration"</p>
+              <div class="function-badges">
+                <span class="function-badge primary badge-seo">SEO</span>
+                <span class="function-badge secondary badge-content">Content</span>
+                <span class="function-badge secondary badge-aeo">AEO</span>
+              </div>
             </div>
             <span class="program-toggle">+</span>
           </div>
@@ -861,22 +867,64 @@
                 <span class="metric-value">Marketing-sourced leads from organic search (baseline: ~0)</span>
               </div>
             </div>
+            <!-- Site Audit Cards -->
+            <div class="site-audit-section">
+              <div class="site-audit-title">Current State: Site Audit</div>
+              <div class="site-audit-grid">
+                <div class="site-audit-card">
+                  <div class="audit-card-header">
+                    <a href="https://afiniti.com/" target="_blank" class="audit-card-url">afiniti.com/</a>
+                    <span class="audit-status underperforming">Underperforming</span>
+                  </div>
+                  <p class="audit-card-annotation">"Outcome Orchestration" messaging exists but has zero supporting content infrastructure. No pillar page, no topic cluster, no internal links.</p>
+                </div>
+                <div class="site-audit-card">
+                  <div class="audit-card-header">
+                    <a href="https://afiniti.com/resources/" target="_blank" class="audit-card-url">afiniti.com/resources/</a>
+                    <span class="audit-status broken">Broken</span>
+                  </div>
+                  <p class="audit-card-annotation">Returns 410 error. This is where the content hub should live. Dead page = dead SEO authority.</p>
+                </div>
+                <div class="site-audit-card">
+                  <div class="audit-card-header">
+                    <a href="https://afiniti.com/products/" target="_blank" class="audit-card-url">afiniti.com/products/</a>
+                    <span class="audit-status outdated">Outdated</span>
+                  </div>
+                  <p class="audit-card-annotation">Still shows legacy eXperienceAI tiers while homepage promotes new suite. Dual brand architecture confuses crawlers.</p>
+                </div>
+              </div>
+              <div class="proposed-state">
+                <div class="proposed-state-title">Proposed State</div>
+                <ul>
+                  <li>New pillar page: /what-is-outcome-orchestration/ — 3,000+ words, FAQ schema</li>
+                  <li>Topic cluster spokes: /blog/outcome-orchestration-vs-predictive-routing/</li>
+                  <li>Fixed /resources/ hub linking to all content assets</li>
+                  <li>2x/week minimum publishing cadence</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
+        <!-- Program 2: Original Research -->
         <div class="program-card">
           <div class="program-header" onclick="toggleProgram(this)">
-            <div class="program-number">02</div>
+            <div class="program-icon">📊</div>
             <div class="program-info">
               <h4>Original Research Report</h4>
-              <p>"State of Contact Center AI Effectiveness" — leverage 20 years of behavioral pairing data</p>
+              <p>"State of Contact Center AI Effectiveness" — leverage 20 years of data</p>
+              <div class="function-badges">
+                <span class="function-badge primary badge-content">Content</span>
+                <span class="function-badge secondary badge-demandgen">Demand Gen</span>
+                <span class="function-badge secondary badge-aeo">AEO</span>
+                <span class="function-badge secondary badge-analyst">Analyst</span>
+              </div>
             </div>
             <span class="program-toggle">+</span>
           </div>
           <div class="program-content">
             <div class="program-details">
               <p>Afiniti sits on 20 years of behavioral pairing data across billions of interactions. No competitor has this dataset depth. Annual research report with novel findings: which agent-caller matching factors drive the largest outcome deltas, failure patterns, measurable ROI benchmarks by industry.</p>
-              <p>Generates: earned media coverage, analyst attention, backlinks, AEO citations, gated lead capture. Distribution: Gated PDF, ungated executive summary, LinkedIn carousel series, webinar presentation.</p>
             </div>
             <div class="program-metrics">
               <div class="metric-item">
@@ -888,15 +936,55 @@
                 <span class="metric-value">MQLs from report download → meeting request conversion</span>
               </div>
             </div>
+            <!-- Flow Diagram -->
+            <div class="flow-diagram">
+              <div class="flow-diagram-title">Program Flow: Data → Distribution → Outcomes</div>
+              <div class="flow-container">
+                <div class="flow-stage input">
+                  <div class="flow-stage-header">Data Inputs</div>
+                  <div class="flow-items">
+                    <div class="flow-item">20 Years Behavioral Pairing Data</div>
+                    <div class="flow-item">Billions of Interactions</div>
+                    <div class="flow-item">Anonymized Outcome Deltas</div>
+                  </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-stage distribution">
+                  <div class="flow-stage-header">Distribution</div>
+                  <div class="flow-items">
+                    <div class="flow-item">Gated PDF → Lead Capture</div>
+                    <div class="flow-item">Ungated Summary → SEO/AEO</div>
+                    <div class="flow-item">LinkedIn Carousel → Social</div>
+                    <div class="flow-item">Webinar → Live Pipeline</div>
+                  </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-stage outcome">
+                  <div class="flow-stage-header">Outcomes</div>
+                  <div class="flow-items">
+                    <div class="flow-item">Backlinks from Publications</div>
+                    <div class="flow-item">Analyst Attention</div>
+                    <div class="flow-item">AEO Citations</div>
+                    <div class="flow-item">500+ Downloads in 90 Days</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
+        <!-- Program 3: YouTube + LinkedIn -->
         <div class="program-card">
           <div class="program-header" onclick="toggleProgram(this)">
-            <div class="program-number">03</div>
+            <div class="program-icon">🎬</div>
             <div class="program-info">
               <h4>YouTube + LinkedIn Thought Leadership</h4>
               <p>Explainer videos, executive Q&As, activate the 265K follower base</p>
+              <div class="function-badges">
+                <span class="function-badge primary badge-social">Social</span>
+                <span class="function-badge secondary badge-aeo">AEO</span>
+                <span class="function-badge secondary badge-content">Content</span>
+              </div>
             </div>
             <span class="program-toggle">+</span>
           </div>
@@ -915,15 +1003,52 @@
                 <span class="metric-value">Inbound from LinkedIn DMs and YouTube CTAs</span>
               </div>
             </div>
+            <!-- Flow Diagram -->
+            <div class="flow-diagram">
+              <div class="flow-diagram-title">Channel Strategy → AEO Impact → Pipeline</div>
+              <div class="flow-container">
+                <div class="flow-stage input" style="--badge-color: #EF4444;">
+                  <div class="flow-stage-header" style="background: rgba(239, 68, 68, 0.15); color: #EF4444;">YouTube</div>
+                  <div class="flow-items">
+                    <div class="flow-item">Behavioral Pairing Explainers</div>
+                    <div class="flow-item">Customer Outcome Stories</div>
+                    <div class="flow-item">"Outcome Orchestration 101"</div>
+                  </div>
+                </div>
+                <div class="flow-stage input" style="--badge-color: #3B82F6;">
+                  <div class="flow-stage-header" style="background: rgba(59, 130, 246, 0.15); color: #3B82F6;">LinkedIn (265K)</div>
+                  <div class="flow-items">
+                    <div class="flow-item">CEO Thought Leadership</div>
+                    <div class="flow-item">Employee Advocacy</div>
+                    <div class="flow-item">Research Carousels</div>
+                  </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-stage outcome">
+                  <div class="flow-stage-header">AEO + Pipeline</div>
+                  <div class="flow-items">
+                    <div class="flow-item">YT = 18.8% Google AI Overviews</div>
+                    <div class="flow-item">LI = 13% Google AI Overviews</div>
+                    <div class="flow-item">Inbound DMs → Meetings</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
+        <!-- Program 4: Reddit -->
         <div class="program-card">
           <div class="program-header" onclick="toggleProgram(this)">
-            <div class="program-number">04</div>
+            <div class="program-icon">💬</div>
             <div class="program-info">
               <h4>Reddit Community Presence</h4>
               <p>First-mover territory — Reddit = #1 most-cited domain across AI platforms</p>
+              <div class="function-badges">
+                <span class="function-badge primary badge-community">Community</span>
+                <span class="function-badge secondary badge-aeo">AEO</span>
+                <span class="function-badge secondary badge-content">Content</span>
+              </div>
             </div>
             <span class="program-toggle">+</span>
           </div>
@@ -942,6 +1067,40 @@
                 <span class="metric-value">Indirect — feeds AEO visibility which feeds all other programs</span>
               </div>
             </div>
+            <!-- Flow Diagram -->
+            <div class="flow-diagram">
+              <div class="flow-diagram-title">Why Reddit: The AEO Opportunity</div>
+              <div class="flow-container">
+                <div class="flow-stage input" style="--badge-color: #F97316;">
+                  <div class="flow-stage-header" style="background: rgba(249, 115, 22, 0.15); color: #F97316;">Strategy</div>
+                  <div class="flow-items">
+                    <div class="flow-item">Answer in r/callcenters</div>
+                    <div class="flow-item">r/customerservice presence</div>
+                    <div class="flow-item">r/contactcenter expertise</div>
+                    <div class="flow-item">Educational, never promotional</div>
+                  </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-stage distribution" style="--badge-color: #8B5CF6;">
+                  <div class="flow-stage-header" style="background: rgba(139, 92, 246, 0.15); color: #8B5CF6;">Why It Works</div>
+                  <div class="flow-items">
+                    <div class="flow-item">Reddit = 46.7% Perplexity citations</div>
+                    <div class="flow-item">Reddit = 21% Google AI Overviews</div>
+                    <div class="flow-item">No competitor has presence</div>
+                    <div class="flow-item">Posts compound for years</div>
+                  </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-stage outcome">
+                  <div class="flow-stage-header">Impact</div>
+                  <div class="flow-items">
+                    <div class="flow-item">AI models cite Afiniti</div>
+                    <div class="flow-item">Feeds all other programs</div>
+                    <div class="flow-item">First-mover advantage</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -950,12 +1109,18 @@
       <div class="programs-section">
         <h3 class="programs-section-title">Mid-Funnel: Build the Case</h3>
 
+        <!-- Program 5: ROI Calculator -->
         <div class="program-card">
           <div class="program-header" onclick="toggleProgram(this)">
-            <div class="program-number">05</div>
+            <div class="program-icon">🧮</div>
             <div class="program-info">
               <h4>Interactive ROI Calculator</h4>
               <p>Triple duty: SEO asset, lead capture mechanism, sales enablement tool</p>
+              <div class="function-badges">
+                <span class="function-badge primary badge-demandgen">Demand Gen</span>
+                <span class="function-badge secondary badge-product">Product Mktg</span>
+                <span class="function-badge secondary badge-seo">SEO</span>
+              </div>
             </div>
             <span class="program-toggle">+</span>
           </div>
@@ -973,15 +1138,52 @@
                 <span class="metric-value">Gated report downloads → meeting requests</span>
               </div>
             </div>
+            <!-- Site Audit Cards -->
+            <div class="site-audit-section">
+              <div class="site-audit-title">Current State: Site Audit</div>
+              <div class="site-audit-grid">
+                <div class="site-audit-card">
+                  <div class="audit-card-header">
+                    <a href="https://afiniti.com/" target="_blank" class="audit-card-url">afiniti.com/</a>
+                    <span class="audit-status missing">Missing</span>
+                  </div>
+                  <p class="audit-card-annotation">Current CTAs go to generic "Request a Demo." No self-service conversion path for buyers not ready to talk to sales.</p>
+                </div>
+                <div class="site-audit-card">
+                  <div class="audit-card-header">
+                    <a href="https://afiniti.com/products/" target="_blank" class="audit-card-url">afiniti.com/products/</a>
+                    <span class="audit-status underperforming">Static</span>
+                  </div>
+                  <p class="audit-card-annotation">Claims "10%+ revenue increase" and "5%+ FCR improvement" but offers no way to model these against buyer's own business.</p>
+                </div>
+              </div>
+              <div class="proposed-state">
+                <div class="proposed-state-title">Proposed State</div>
+                <ul>
+                  <li>New page: /roi-calculator/ with interactive inputs</li>
+                  <li>Inputs: agents, AHT, conversion rate, industry</li>
+                  <li>Outputs: projected lift, FCR improvement, payback period</li>
+                  <li>Gated detailed report; top-line results shown immediately</li>
+                  <li>Cross-linked from homepage, industry pages, case studies</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
+        <!-- Program 6: Case Study Library -->
         <div class="program-card">
           <div class="program-header" onclick="toggleProgram(this)">
-            <div class="program-number">06</div>
+            <div class="program-icon">📚</div>
             <div class="program-info">
               <h4>Case Study Library + Industry Landing Pages</h4>
               <p>Convert scattered testimonials into 8-10 standalone, downloadable case studies</p>
+              <div class="function-badges">
+                <span class="function-badge primary badge-product">Product Mktg</span>
+                <span class="function-badge secondary badge-content">Content</span>
+                <span class="function-badge secondary badge-demandgen">Demand Gen</span>
+                <span class="function-badge secondary badge-seo">SEO</span>
+              </div>
             </div>
             <span class="program-toggle">+</span>
           </div>
@@ -1000,15 +1202,58 @@
                 <span class="metric-value">Industry-qualified leads from gated downloads</span>
               </div>
             </div>
+            <!-- Site Audit Cards -->
+            <div class="site-audit-section">
+              <div class="site-audit-title">Current State: Proof Points Buried</div>
+              <div class="site-audit-grid">
+                <div class="site-audit-card">
+                  <div class="audit-card-header">
+                    <a href="https://afiniti.com/" target="_blank" class="audit-card-url">T-Mobile Quote</a>
+                    <span class="audit-status underperforming">Buried</span>
+                  </div>
+                  <p class="audit-card-annotation">"$70M incremental annual revenue from 50M optimized calls" — most compelling proof point buried as a website quote, not a downloadable case study.</p>
+                </div>
+                <div class="site-audit-card">
+                  <div class="audit-card-header">
+                    <a href="https://afiniti.com/telecoms/" target="_blank" class="audit-card-url">afiniti.com/telecoms/</a>
+                    <span class="audit-status missing">No Case Studies</span>
+                  </div>
+                  <p class="audit-card-annotation">Generic outcome claims without anchored case studies. No gated downloads for lead capture.</p>
+                </div>
+                <div class="site-audit-card">
+                  <div class="audit-card-header">
+                    <a href="https://afiniti.com/financial-services/" target="_blank" class="audit-card-url">afiniti.com/financial-services/</a>
+                    <span class="audit-status missing">No Case Study</span>
+                  </div>
+                  <p class="audit-card-annotation">"12% financial services lift" claimed but no dedicated case study. No gated content for this vertical.</p>
+                </div>
+              </div>
+              <div class="proposed-state">
+                <div class="proposed-state-title">Proposed State</div>
+                <ul>
+                  <li>/case-studies/ hub page listing all case studies by industry</li>
+                  <li>/case-studies/t-mobile-70m-revenue-lift/ — standalone, gated</li>
+                  <li>/case-studies/virgin-media-o2/ — standalone, gated</li>
+                  <li>/case-studies/att-enterprise/ — standalone, gated</li>
+                  <li>Industry pages rebuilt around case studies, not generic claims</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
+        <!-- Program 7: Competitor Comparison -->
         <div class="program-card">
           <div class="program-header" onclick="toggleProgram(this)">
-            <div class="program-number">07</div>
+            <div class="program-icon">⚖️</div>
             <div class="program-info">
               <h4>Competitor Comparison Content (Balto Playbook)</h4>
               <p>Dedicated landing pages capturing buyers actively comparing solutions</p>
+              <div class="function-badges">
+                <span class="function-badge primary badge-seo">SEO</span>
+                <span class="function-badge secondary badge-product">Product Mktg</span>
+                <span class="function-badge secondary badge-demandgen">Demand Gen</span>
+              </div>
             </div>
             <span class="program-toggle">+</span>
           </div>
@@ -1027,6 +1272,36 @@
                 <span class="metric-value">Meeting requests from comparison page visitors (highest intent traffic)</span>
               </div>
             </div>
+            <!-- Site Audit Cards -->
+            <div class="site-audit-section">
+              <div class="site-audit-title">Current State: Zero Comparison Content</div>
+              <div class="site-audit-grid">
+                <div class="site-audit-card">
+                  <div class="audit-card-header">
+                    <a href="https://afiniti.com/" target="_blank" class="audit-card-url">afiniti.com/</a>
+                    <span class="audit-status missing">Missing</span>
+                  </div>
+                  <p class="audit-card-annotation">No "vs" pages, no "alternatives" pages anywhere. Buyers searching "[competitor] alternatives" find nothing from Afiniti.</p>
+                </div>
+                <div class="site-audit-card">
+                  <div class="audit-card-header">
+                    <a href="https://www.balto.ai/" target="_blank" class="audit-card-url">balto.ai (Reference)</a>
+                    <span class="audit-status" style="background: rgba(16, 185, 129, 0.15); color: #10B981;">Playbook</span>
+                  </div>
+                  <p class="audit-card-annotation">Balto runs dedicated competitor pages for virtually every competitor. "Observe.AI alternatives," "Cresta alternatives." This is the playbook to replicate.</p>
+                </div>
+              </div>
+              <div class="proposed-state">
+                <div class="proposed-state-title">Proposed: 5 Initial Comparison Pages</div>
+                <ul>
+                  <li>/compare/afiniti-vs-cresta/</li>
+                  <li>/compare/afiniti-vs-observe-ai/</li>
+                  <li>/compare/nice-alternatives/</li>
+                  <li>/compare/genesys-alternatives/</li>
+                  <li>/compare/five9-ai-optimization/</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1035,12 +1310,18 @@
       <div class="programs-section">
         <h3 class="programs-section-title">Bottom of Funnel: Close</h3>
 
+        <!-- Program 8: G2 Reviews -->
         <div class="program-card">
           <div class="program-header" onclick="toggleProgram(this)">
-            <div class="program-number">08</div>
+            <div class="program-icon">⭐</div>
             <div class="program-info">
               <h4>G2 + Review Platform Social Proof</h4>
               <p>Target: 100+ G2 reviews within 12 months (Balto benchmark: 300+ at 4.8/5)</p>
+              <div class="function-badges">
+                <span class="function-badge primary badge-aeo">AEO</span>
+                <span class="function-badge secondary badge-demandgen">Demand Gen</span>
+                <span class="function-badge secondary badge-product">Product Mktg</span>
+              </div>
             </div>
             <span class="program-toggle">+</span>
           </div>
@@ -1058,15 +1339,50 @@
                 <span class="metric-value">Influence on close rate (track via sales attribution surveys)</span>
               </div>
             </div>
+            <!-- Site Audit Cards -->
+            <div class="site-audit-section">
+              <div class="site-audit-title">Current State: No Review Presence</div>
+              <div class="site-audit-grid">
+                <div class="site-audit-card">
+                  <div class="audit-card-header">
+                    <a href="https://afiniti.com/" target="_blank" class="audit-card-url">afiniti.com/</a>
+                    <span class="audit-status missing">No Badges</span>
+                  </div>
+                  <p class="audit-card-annotation">No G2 badge, no review platform social proof anywhere. Compare to competitors: badges are standard trust signals.</p>
+                </div>
+                <div class="site-audit-card">
+                  <div class="audit-card-header">
+                    <a href="https://www.g2.com/categories/contact-center-ai" target="_blank" class="audit-card-url">G2 Contact Center AI</a>
+                    <span class="audit-status broken">Not Listed</span>
+                  </div>
+                  <p class="audit-card-annotation">Afiniti is not listed. Balto has 300+ reviews at 4.8/5. NICE has 540+ Gartner Peer Insights reviews.</p>
+                </div>
+              </div>
+              <div class="proposed-state">
+                <div class="proposed-state-title">Proposed State</div>
+                <ul>
+                  <li>G2 profile created under Contact Center AI</li>
+                  <li>Target: 25-30 reviews in 60 days, 100+ in 12 months</li>
+                  <li>Badges on homepage, industry pages, email signatures</li>
+                  <li>Every review responded to (positive and negative)</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
 
+        <!-- Program 9: Partner Co-Marketing -->
         <div class="program-card">
           <div class="program-header" onclick="toggleProgram(this)">
-            <div class="program-number">09</div>
+            <div class="program-icon">🤝</div>
             <div class="program-info">
               <h4>Partner Co-Marketing Pipeline</h4>
               <p>Fastest path to qualified pipeline — partner sales teams are already in the right conversations</p>
+              <div class="function-badges">
+                <span class="function-badge primary badge-partnerships">Partnerships</span>
+                <span class="function-badge secondary badge-demandgen">Demand Gen</span>
+                <span class="function-badge secondary badge-content">Content</span>
+              </div>
             </div>
             <span class="program-toggle">+</span>
           </div>
@@ -1084,15 +1400,54 @@
                 <span class="metric-value">Partner-sourced pipeline value, partner-influenced revenue</span>
               </div>
             </div>
+            <!-- Flow Diagram -->
+            <div class="flow-diagram">
+              <div class="flow-diagram-title">Partner Ecosystem → Co-Marketing → Pipeline</div>
+              <div class="flow-container">
+                <div class="flow-stage input" style="--badge-color: #6366F1;">
+                  <div class="flow-stage-header" style="background: rgba(99, 102, 241, 0.15); color: #6366F1;">Active Partners</div>
+                  <div class="flow-items">
+                    <div class="flow-item">AWS Marketplace</div>
+                    <div class="flow-item">Five9 CXone</div>
+                    <div class="flow-item">NICE CXone Integration</div>
+                  </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-stage distribution">
+                  <div class="flow-stage-header">Co-Marketing</div>
+                  <div class="flow-items">
+                    <div class="flow-item">Joint Webinars (1/quarter)</div>
+                    <div class="flow-item">Co-Branded Case Studies</div>
+                    <div class="flow-item">Marketplace Optimization</div>
+                    <div class="flow-item">Partner Blog Cross-Posts</div>
+                  </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-stage outcome">
+                  <div class="flow-stage-header">Pipeline</div>
+                  <div class="flow-items">
+                    <div class="flow-item">Partner-Sourced: 30-50/mo</div>
+                    <div class="flow-item">Partner-Influenced Revenue</div>
+                    <div class="flow-item">Credibility Transfer</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
+        <!-- Program 10: Analyst Relations -->
         <div class="program-card">
           <div class="program-header" onclick="toggleProgram(this)">
-            <div class="program-number">10</div>
+            <div class="program-icon">🏛️</div>
             <div class="program-info">
               <h4>Analyst Relations for Enterprise Credibility</h4>
               <p>Brief Gartner, Forrester, IDC on Outcome Orchestration positioning</p>
+              <div class="function-badges">
+                <span class="function-badge primary badge-analyst">Analyst Relations</span>
+                <span class="function-badge secondary badge-aeo">AEO</span>
+                <span class="function-badge secondary badge-demandgen">Demand Gen</span>
+              </div>
             </div>
             <span class="program-toggle">+</span>
           </div>
@@ -1109,6 +1464,39 @@
               <div class="metric-item">
                 <span class="metric-type">Pipeline Metric</span>
                 <span class="metric-value">Enterprise deals where analyst coverage is cited as influence factor</span>
+              </div>
+            </div>
+            <!-- Flow Diagram -->
+            <div class="flow-diagram">
+              <div class="flow-diagram-title">Briefings → Positioning → Impact Timeline</div>
+              <div class="flow-container">
+                <div class="flow-stage input" style="--badge-color: #64748B;">
+                  <div class="flow-stage-header" style="background: rgba(100, 116, 139, 0.15); color: #94A3B8;">Briefing Targets</div>
+                  <div class="flow-items">
+                    <div class="flow-item">Gartner (CCaaS Adjacent)</div>
+                    <div class="flow-item">Forrester (Conv. Intelligence)</div>
+                    <div class="flow-item">IDC (MarketScape)</div>
+                  </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-stage distribution">
+                  <div class="flow-stage-header">Positioning</div>
+                  <div class="flow-items">
+                    <div class="flow-item">"Outcome Orchestration" = New Category</div>
+                    <div class="flow-item">Post-Bankruptcy Trajectory</div>
+                    <div class="flow-item">Patented On/Off Benchmarking</div>
+                  </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-stage outcome">
+                  <div class="flow-stage-header">Impact</div>
+                  <div class="flow-items">
+                    <div class="flow-item">Mo 4: First Briefings</div>
+                    <div class="flow-item">Mo 6-8: Research Mentions</div>
+                    <div class="flow-item">Mo 8-12: Market Guide Inclusion</div>
+                    <div class="flow-item">Analysts = 7% AEO Citations</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
