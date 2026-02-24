@@ -113,183 +113,209 @@
               <thead>
                 <tr>
                   <th>URL</th>
-                  <th>Status</th>
-                  <th>Assessment</th>
+                  <th>HTTP Status</th>
+                  <th>Key SEO Issues</th>
                 </tr>
               </thead>
               <tbody>
+                <tr style="background: rgba(29, 226, 196, 0.04);">
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;" colspan="3"><strong style="color: var(--gray-300);">Core Pages</strong></td>
+                </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/</td>
-                  <td class="highlight-cell">200 OK — new nav</td>
-                  <td class="highlight-cell">Improved</td>
+                  <td class="highlight-cell">200</td>
+                  <td>No schema; meta description too long (~250+ chars); duplicate $2.5B paragraph; JS rendering dependency</td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/about-us/</td>
-                  <td class="highlight-cell">200 OK — new nav</td>
-                  <td class="highlight-cell">Stable</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/</td>
-                  <td class="warning-cell">410 GONE</td>
-                  <td class="warning-cell">NOT FIXED</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/afiniti-pairing/</td>
-                  <td class="highlight-cell">200 OK — new nav, FAQ</td>
-                  <td class="highlight-cell">Stable</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/experienceai/</td>
-                  <td class="warning-cell">200 OK — OLD nav</td>
-                  <td class="warning-cell">Still orphaned</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/experience-ai-plus/</td>
-                  <td class="warning-cell">200 OK — OLD nav</td>
-                  <td class="warning-cell">Still orphaned</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/experience-ai-elite/</td>
-                  <td class="muted-cell">200 OK — content swap</td>
-                  <td class="muted-cell">Needs 301 redirect</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/afiniti-inside/</td>
-                  <td class="warning-cell">410 GONE</td>
-                  <td class="warning-cell">Needs deindexing</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/industries/</td>
-                  <td class="warning-cell">LOREM IPSUM</td>
-                  <td class="warning-cell">NOT FIXED</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/industries/telco-media/</td>
-                  <td class="highlight-cell">200 OK — updated</td>
-                  <td class="highlight-cell">Updated</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/industries/financial-services/</td>
-                  <td class="highlight-cell">200 OK</td>
-                  <td class="highlight-cell">Stable</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/industries/healthcare/</td>
-                  <td class="highlight-cell">200 OK — updated</td>
-                  <td class="highlight-cell">Updated</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/industries/insurance/</td>
-                  <td class="highlight-cell">200 OK</td>
-                  <td class="highlight-cell">Stable</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/what-we-do</td>
-                  <td class="warning-cell">Duplicate homepage</td>
-                  <td class="warning-cell">Should 301 to /</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/resources/</td>
-                  <td class="warning-cell">410 GONE</td>
-                  <td class="warning-cell">Still broken</td>
+                  <td class="highlight-cell">200</td>
+                  <td>No schema; embedded video without VideoObject schema; good content depth</td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/contact/</td>
-                  <td class="warning-cell">200 OK — OLD nav</td>
-                  <td class="warning-cell">Still uses legacy template, 2025 copyright</td>
+                  <td class="warning-cell">200</td>
+                  <td class="warning-cell">Uses OLD nav template; 2025 copyright; references discontinued eXperienceAI in nav</td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/what-we-do</td>
+                  <td class="warning-cell">200 (duplicate)</td>
+                  <td class="warning-cell">Serves exact homepage content; no 301 redirect; Google shows stale cached title</td>
+                </tr>
+                <tr style="background: rgba(29, 226, 196, 0.04);">
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;" colspan="3"><strong style="color: var(--gray-300);">Products</strong></td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/</td>
+                  <td class="warning-cell">410 Gone</td>
+                  <td class="warning-cell">Still indexed by Google; no redirect to /products/afiniti-pairing/; link equity lost</td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/afiniti-pairing/</td>
+                  <td class="highlight-cell">200</td>
+                  <td>New nav; FAQ section present but missing FAQPage schema; good keyword-rich title</td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/experienceai/</td>
+                  <td class="warning-cell">200</td>
+                  <td class="warning-cell">OLD nav; missing H1 tag; typo in meta 'eXperienceAl' (lowercase L); orphaned</td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/experience-ai-plus/</td>
+                  <td class="warning-cell">200</td>
+                  <td class="warning-cell">OLD nav; meta description ~56 chars; orphaned from new site structure</td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/experience-ai-elite/</td>
+                  <td class="warning-cell">200</td>
+                  <td class="warning-cell">URL says 'elite' but serves Afiniti Pairing content; duplicate content; needs 301</td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/afiniti-inside/</td>
+                  <td class="warning-cell">410 Gone</td>
+                  <td class="warning-cell">Still indexed by Google; product discontinued; no redirect</td>
+                </tr>
+                <tr style="background: rgba(29, 226, 196, 0.04);">
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;" colspan="3"><strong style="color: var(--gray-300);">Industries</strong></td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/industries/</td>
+                  <td class="warning-cell">200</td>
+                  <td class="warning-cell">Lorem ipsum placeholder text on multiple industry cards; inconsistent heading hierarchy</td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/industries/telco-media/</td>
+                  <td class="highlight-cell">200</td>
+                  <td>No schema; good keyword-rich title</td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/industries/financial-services/</td>
+                  <td class="highlight-cell">200</td>
+                  <td>No schema; meta description too short (91 chars)</td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/industries/healthcare/</td>
+                  <td class="highlight-cell">200</td>
+                  <td>No schema; well-structured page</td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/industries/insurance/</td>
+                  <td class="highlight-cell">200</td>
+                  <td>No schema; broken double-slash link to //industries/insurance-form/</td>
+                </tr>
+                <tr style="background: rgba(29, 226, 196, 0.04);">
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;" colspan="3"><strong style="color: var(--gray-300);">Resources &amp; Content</strong></td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/resources/</td>
+                  <td class="warning-cell">410 Gone</td>
+                  <td class="warning-cell">Still indexed; still linked in nav dropdown; sub-sections live but parent dead</td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/blogs/</td>
-                  <td class="highlight-cell">200 OK — 15+ posts</td>
-                  <td class="highlight-cell">Active</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/afiniti-link/</td>
-                  <td class="highlight-cell">200 OK — new</td>
-                  <td class="highlight-cell">New since last audit</td>
+                  <td class="highlight-cell">200</td>
+                  <td>New nav; replacement for old /resources/</td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/videos/</td>
-                  <td class="highlight-cell">200 OK — new</td>
-                  <td class="highlight-cell">New since last audit</td>
+                  <td class="highlight-cell">200</td>
+                  <td>New nav</td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/industry-reports/</td>
-                  <td class="highlight-cell">200 OK — new</td>
-                  <td class="highlight-cell">New since last audit</td>
+                  <td class="highlight-cell">200</td>
+                  <td>New nav</td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/news/</td>
-                  <td class="highlight-cell">200 OK — new</td>
-                  <td class="highlight-cell">New since last audit</td>
+                  <td class="highlight-cell">200</td>
+                  <td>New nav</td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/testimonials/</td>
-                  <td class="warning-cell">200 OK — missing H1</td>
-                  <td class="warning-cell">Heading jumps to H3; no VideoObject schema</td>
+                  <td class="warning-cell">200</td>
+                  <td class="warning-cell">Missing H1 tag (jumps to H3); no VideoObject schema on video testimonials</td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/afiniti-link/</td>
+                  <td class="highlight-cell">200</td>
+                  <td>Present in both old and new nav templates</td>
+                </tr>
+                <tr style="background: rgba(29, 226, 196, 0.04);">
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;" colspan="3"><strong style="color: var(--gray-300);">Careers</strong></td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/careers/</td>
-                  <td class="warning-cell">200 OK — no schema</td>
-                  <td class="warning-cell">No JobPosting data; cannibalized by careers subdomain</td>
+                  <td class="warning-cell">200</td>
+                  <td class="warning-cell">No JobPosting schema; generic title (17 chars); Google rewrites title</td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/jobs/</td>
-                  <td class="warning-cell">200 OK — 4 listings</td>
-                  <td class="warning-cell">No JobPosting schema; generic title</td>
+                  <td class="warning-cell">200</td>
+                  <td class="warning-cell">No JobPosting schema; 4 listings; generic title (15 chars)</td>
+                </tr>
+                <tr style="background: rgba(29, 226, 196, 0.04);">
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;" colspan="3"><strong style="color: var(--gray-300);">Legal &amp; ESG</strong></td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/legal/</td>
-                  <td class="warning-cell">Template rendering bug</td>
-                  <td class="warning-cell">Link cards render twice; double-slash URLs</td>
+                  <td class="warning-cell">200</td>
+                  <td class="warning-cell">Link cards render twice (template bug); double-slash URLs; meta only 43 chars; no Terms of Service or Cookie Policy</td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/environmental-social-and-governance/</td>
-                  <td class="warning-cell">200 OK — outdated content</td>
-                  <td class="warning-cell">CEO quote attributes Hassan Afzal (not current CEO)</td>
+                  <td class="warning-cell">200</td>
+                  <td class="warning-cell">CEO quote attributes Hassan Afzal (current CEO is Jerome Kapelus); no /esg short URL</td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/ESG sub-pages (3+)</td>
-                  <td class="warning-cell">Invisible Unicode in titles</td>
-                  <td class="warning-cell">Zero-width space U+200B in title tags</td>
+                  <td class="warning-cell">200</td>
+                  <td class="warning-cell">Invisible Unicode zero-width space (U+200B) in title tags</td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/legal/responsible-ai/</td>
-                  <td class="warning-cell">Duplicate content</td>
-                  <td class="warning-cell">Separate page at /ESG/responsible-ai/ creates cannibalization</td>
+                  <td class="warning-cell">200</td>
+                  <td class="warning-cell">Duplicate content with /ESG/responsible-ai/; keyword cannibalization</td>
+                </tr>
+                <tr style="background: rgba(29, 226, 196, 0.04);">
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;" colspan="3"><strong style="color: var(--gray-300);">Dead / Legacy URLs (still indexed by Google)</strong></td>
                 </tr>
                 <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/contact-us-sales/ + 2 more</td>
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/contact-us-sales/, -investor/, -partnerships/</td>
                   <td class="warning-cell">404/410</td>
-                  <td class="warning-cell">Legacy contact URLs still indexed; no redirect to /contact/</td>
+                  <td class="warning-cell">No redirect to /contact/; link equity wasted</td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/verizon/</td>
-                  <td class="warning-cell">410 GONE</td>
-                  <td class="warning-cell">Client landing page removed; still indexed</td>
+                  <td class="warning-cell">410 Gone</td>
+                  <td class="warning-cell">Client landing page removed; no redirect</td>
+                </tr>
+                <tr>
+                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/offices/new-york</td>
+                  <td class="warning-cell">404</td>
+                  <td class="warning-cell">Entire /offices/ section removed; external backlinks from Glassdoor, ZoomInfo wasted</td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/news/detail/* (10+ URLs)</td>
-                  <td class="warning-cell">410 GONE</td>
-                  <td class="warning-cell">Entire legacy news path deprecated; all still indexed</td>
+                  <td class="warning-cell">410 Gone</td>
+                  <td class="warning-cell">Entire legacy news path deprecated; no redirects to /news/</td>
                 </tr>
                 <tr style="background: rgba(239, 68, 68, 0.04);">
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;" colspan="3"><strong style="color: var(--gray-300);">Subdomains</strong></td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">portal.afiniti.com</td>
-                  <td class="warning-cell">Indexed — no noindex</td>
-                  <td class="warning-cell">Meta description leaks "TMobile Portal" client name</td>
+                  <td class="warning-cell">200 — no noindex</td>
+                  <td class="warning-cell">Meta description leaks "TMobile Portal" client name; should be noindexed</td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">selfservice.afiniti.com</td>
-                  <td class="warning-cell">Indexed — no noindex</td>
-                  <td class="warning-cell">Shows BIO-key International branding, not Afiniti</td>
+                  <td class="warning-cell">200 — no noindex</td>
+                  <td class="warning-cell">Shows BIO-key International branding (© 2009-2021); should be noindexed</td>
                 </tr>
                 <tr>
                   <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">careers.afiniti.com</td>
-                  <td class="muted-cell">Indexed — content cannibalization</td>
-                  <td class="muted-cell">Duplicates /careers/ and /jobs/; identical meta descriptions on all job pages</td>
+                  <td class="muted-cell">200</td>
+                  <td class="muted-cell">Cannibalization with /careers/ and /jobs/; all job pages share identical meta description</td>
                 </tr>
               </tbody>
             </table>
