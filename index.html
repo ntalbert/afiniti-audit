@@ -62,9 +62,11 @@
         <a href="#situation" class="audit-nav-btn">Situation</a>
         <a href="#strengths" class="audit-nav-btn">Strengths</a>
         <a href="#gaps" class="audit-nav-btn">Gaps</a>
+        <a href="#ai-visibility" class="audit-nav-btn">AI Visibility</a>
         <a href="#competitive" class="audit-nav-btn">Competitive</a>
-        <a href="#roadmap" class="audit-nav-btn">Roadmap</a>
-        <a href="#demandgen" class="audit-nav-btn">Programs</a>
+        <a href="#sprint" class="audit-nav-btn">Sprint</a>
+        <a href="#strategy" class="audit-nav-btn">Strategy</a>
+        <a href="#team" class="audit-nav-btn">Team</a>
         <a href="#metrics" class="audit-nav-btn">Metrics</a>
       </div>
     </div>
@@ -494,7 +496,102 @@
     </div>
   </section>
 
-  <!-- Section 5: Competitive Landscape -->
+  <!-- Section 5: AI Citation Scorecard -->
+  <section class="section" id="ai-visibility">
+    <div class="container">
+      <span class="section-label">AI Visibility</span>
+      <h2>Afiniti's AI Citation Scorecard</h2>
+      <p class="section-intro" style="margin-bottom: 24px;">
+        AI platforms choose what to cite based on specific source types. The research is clear on which sources matter most — and Afiniti is absent or underrepresented on nearly all of them.
+      </p>
+
+      <!-- How AI platforms choose -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 40px;">
+        <div style="padding: 20px; border: 1px solid var(--border); border-radius: 12px; background: var(--card-bg);">
+          <h4 style="color: var(--white); margin-bottom: 8px;">ChatGPT</h4>
+          <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.6; margin-bottom: 8px;">700M+ weekly active users; 87.4% of AI referral traffic. Wikipedia is the #1 cited source at 7.8%. Reddit follows at 1.8%, then Forbes and G2 at 1.1%.</p>
+          <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.6;">~60% of queries answered from training knowledge without web search — if Afiniti's content isn't in the training data, it cannot appear in the majority of responses.</p>
+        </div>
+        <div style="padding: 20px; border: 1px solid var(--border); border-radius: 12px; background: var(--card-bg);">
+          <h4 style="color: var(--white); margin-bottom: 8px;">Perplexity</h4>
+          <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.6; margin-bottom: 8px;">780M+ queries/month; 6–10x higher CTR than ChatGPT. Every query triggers real-time web search. Averages 21.87 citations per response.</p>
+          <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.6;">Reddit, G2, and Gartner are top sources. Content freshness is critical — citations drop significantly after 2–3 days without updates.</p>
+        </div>
+        <div style="padding: 20px; border: 1px solid var(--border); border-radius: 12px; background: var(--card-bg);">
+          <h4 style="color: var(--white); margin-bottom: 8px;">Google AI Overviews</h4>
+          <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.6; margin-bottom: 8px;">Appearing in 50%+ of searches. Reddit, YouTube, Quora, and Wikipedia are top sources.</p>
+          <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.6;">Review platforms appear in 34.5% of commercial AI Overviews. 93.67% of citations link to at least one top-10 organic result.</p>
+        </div>
+      </div>
+
+      <!-- Citation Source Table -->
+      <div style="overflow-x: auto; margin-bottom: 32px;">
+        <table class="well-table" style="width: 100%;">
+          <thead>
+            <tr><th>Citation Source</th><th>Why It Matters</th><th>Afiniti Status</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Listicles / roundups</strong></td><td>32% of all LLM citations (177M citation analysis)</td><td class="warning-cell">Excluded from all "best contact center AI" lists</td></tr>
+            <tr><td><strong>G2 / Capterra / Gartner PI</strong></td><td>Review platform presence = ~3x citation likelihood</td><td class="warning-cell">No G2. No Capterra. No Gartner Peer Insights.</td></tr>
+            <tr><td><strong>Reddit</strong></td><td>#1 cited domain across LLMs (~40% of cases)</td><td class="warning-cell">Zero presence</td></tr>
+            <tr><td><strong>Wikipedia</strong></td><td>7.8% of ChatGPT citations; 78.8% of cited tools have Wikipedia pages</td><td class="muted-cell">⚠️ Page exists but leads with 2021 controversy</td></tr>
+            <tr><td><strong>YouTube</strong></td><td>~23% of LLM citations; 18.8% of AI Overview sources</td><td class="warning-cell">No channel</td></tr>
+            <tr><td><strong>Quora</strong></td><td>Consistent presence correlates with higher average citations</td><td class="warning-cell">Zero presence</td></tr>
+            <tr><td><strong>Analyst reports</strong></td><td>~7% of top-10 AI citations; enterprise buyer confidence signal</td><td class="warning-cell">No Gartner, Forrester, or IDC coverage</td></tr>
+            <tr><td><strong>LinkedIn</strong></td><td>13% of Google AI Overview citations</td><td class="muted-cell">⚠️ 265K followers but negligible content reach</td></tr>
+            <tr><td><strong>Original research / data</strong></td><td>AI models preferentially cite unique statistics and sourced data</td><td class="warning-cell">Zero published research despite 20 years of data</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Score Summary -->
+      <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px;">
+        <div style="flex: 1; min-width: 120px; padding: 16px; border-radius: 12px; background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.3); text-align: center;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 2rem; font-weight: 700; color: #22c55e;">0</div>
+          <div style="color: #22c55e; font-size: 0.85rem;">Green</div>
+        </div>
+        <div style="flex: 1; min-width: 120px; padding: 16px; border-radius: 12px; background: rgba(234, 179, 8, 0.1); border: 1px solid rgba(234, 179, 8, 0.3); text-align: center;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 2rem; font-weight: 700; color: #eab308;">2</div>
+          <div style="color: #eab308; font-size: 0.85rem;">Amber</div>
+        </div>
+        <div style="flex: 1; min-width: 120px; padding: 16px; border-radius: 12px; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); text-align: center;">
+          <div style="font-family: 'JetBrains Mono', monospace; font-size: 2rem; font-weight: 700; color: #ef4444;">7</div>
+          <div style="color: #ef4444; font-size: 0.85rem;">Red</div>
+        </div>
+      </div>
+
+      <p style="color: var(--gray-300); font-size: 0.95rem; line-height: 1.7; margin-bottom: 32px;">
+        <strong style="color: var(--white);">Afiniti is structurally invisible to the AI discovery layer.</strong> Competitors don't need to be better products — they just need to be present on the sources AI models cite. NICE, Genesys, and Cresta are present on 6-8 of these 9 sources. Afiniti is present on 2, both underperforming.
+      </p>
+
+      <p style="color: var(--gray-400); font-size: 0.9rem; line-height: 1.7; margin-bottom: 40px;">
+        <strong style="color: var(--turquoise);">The compounding problem:</strong> Brands appearing simultaneously on Wikipedia, Reddit, and G2 show significantly higher likelihood of being cited by both ChatGPT and Perplexity. Presence on 4+ third-party platforms correlates with a ~2.8x citation likelihood increase. Every month competitors build presence on these sources while Afiniti does not is a month where AI models learn to recommend those competitors instead.
+      </p>
+
+      <!-- Competitive AI Citation Matrix -->
+      <h3 style="color: var(--white); margin-bottom: 16px;">Competitive AI Citation Matrix</h3>
+      <div style="overflow-x: auto;">
+        <table class="well-table" style="width: 100%;">
+          <thead>
+            <tr><th>Source</th><th>Afiniti</th><th>NICE</th><th>Cresta</th><th>Genesys</th><th>Five9</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Wikipedia</td><td class="muted-cell">⚠️ Exists (dated)</td><td class="highlight-cell">✅</td><td class="highlight-cell">✅</td><td class="highlight-cell">✅</td><td class="highlight-cell">✅</td></tr>
+            <tr><td>Reddit</td><td class="warning-cell">❌</td><td class="highlight-cell">✅</td><td class="muted-cell">⚠️</td><td class="muted-cell">⚠️</td><td class="muted-cell">⚠️</td></tr>
+            <tr><td>YouTube</td><td class="warning-cell">❌</td><td class="highlight-cell">✅</td><td class="highlight-cell">✅</td><td class="highlight-cell">✅</td><td class="highlight-cell">✅</td></tr>
+            <tr><td>G2 / Reviews</td><td class="warning-cell">❌</td><td class="highlight-cell">✅ 540+ Gartner PI</td><td class="highlight-cell">✅</td><td class="highlight-cell">✅</td><td class="highlight-cell">✅</td></tr>
+            <tr><td>Listicles</td><td class="warning-cell">❌</td><td class="highlight-cell">✅ Every list</td><td class="highlight-cell">✅ Most lists</td><td class="highlight-cell">✅ Every list</td><td class="highlight-cell">✅ Most lists</td></tr>
+            <tr><td>Analyst coverage</td><td class="warning-cell">❌</td><td class="highlight-cell">✅ Gartner MQ #1</td><td class="highlight-cell">✅ Forrester Leader</td><td class="highlight-cell">✅ Gartner MQ Leader</td><td class="highlight-cell">✅ Gartner MQ</td></tr>
+            <tr><td>Original research</td><td class="warning-cell">❌</td><td class="highlight-cell">✅</td><td class="muted-cell">⚠️</td><td class="highlight-cell">✅</td><td class="muted-cell">⚠️</td></tr>
+            <tr><td>Definitions/glossary</td><td class="warning-cell">❌</td><td class="highlight-cell">✅</td><td class="muted-cell">⚠️</td><td class="highlight-cell">✅ Gold standard</td><td class="muted-cell">⚠️</td></tr>
+            <tr><td>LinkedIn thought leadership</td><td class="muted-cell">⚠️</td><td class="highlight-cell">✅</td><td class="highlight-cell">✅</td><td class="highlight-cell">✅</td><td class="highlight-cell">✅</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Competitive Landscape -->
   <section class="section" id="competitive">
     <div class="container">
       <span class="section-label">Competitive Landscape</span>
@@ -734,268 +831,292 @@
     </div>
   </section>
 
-  <!-- Section 6: Priority Action Plan -->
-  <section class="section" id="roadmap">
+  <!-- Section 7: The First 4 Weeks — Foundation Sprint -->
+  <section class="section" id="sprint">
     <div class="container">
-      <span class="section-label">Priority Action Plan</span>
-      <h2>Foundation → Content Velocity → Distribution → Scale</h2>
+      <span class="section-label">The First 4 Weeks</span>
+      <h2>Foundation Sprint</h2>
       <p class="section-intro">
-        21 actions organized across 5 time horizons. Week 1 closes the one remaining technical issue. Each subsequent phase builds on the one before it. The most time-sensitive opportunity is "Outcome Orchestration" category ownership — every week without a pillar page and glossary hub is a week where that advantage erodes.
+        Content production, citation gap closure, and technical fixes run in parallel. This sprint is identical regardless of team size — the execution tiers (Team section) scale what happens from Month 2 onward.
       </p>
 
-      <!-- Phase Accordion -->
+      <!-- Week Accordion -->
       <div class="week-accordion">
 
-        <!-- Phase 1: Week 1 -->
-        <div class="week-card open" id="phase1-card">
-          <div class="week-header" onclick="toggleWeek('phase1-card')">
+        <!-- Week 1 -->
+        <div class="week-card open" id="week1-card">
+          <div class="week-header" onclick="toggleWeek('week1-card')">
             <div class="week-header-left">
               <span class="week-number">Week 1</span>
-              <span class="week-theme">Emergency Fixes</span>
+              <span class="week-theme">Audit + Content Production Begins</span>
             </div>
             <div class="week-header-right">
-              <span class="tier-pill tier1"><span class="tier-pill-icon">🔴</span> 1 Action</span>
+              <span class="tier-pill tier1"><span class="tier-pill-icon">🔴</span> 8 Actions</span>
               <span class="week-toggle">▼</span>
             </div>
           </div>
           <div class="week-content">
-            <p style="color: var(--gray-400); font-size: 0.9rem; margin-bottom: 20px; padding-top: 16px;">The site's visual and navigational issues have been resolved. The one remaining technical fix closes the stale index issue.</p>
+            <p style="color: var(--turquoise); font-size: 0.85rem; font-weight: 600; margin-bottom: 8px; padding-top: 16px;">AUDIT & UNBLOCK</p>
             <div style="display: flex; flex-direction: column; gap: 12px;">
               <div class="deliverable-card tier1">
-                <div class="deliverable-name">1. Submit removal requests via Google Search Console</div>
+                <div class="deliverable-name">1. Strategic onboarding</div>
                 <div class="deliverable-meta">
-                  <span style="color: var(--gray-400); font-size: 0.85rem;">Legacy URLs still appearing in search results with outdated cached descriptions. Add noindex meta tags to any 410 response templates to prevent re-crawling.</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem;">Analytics audit, tool access (GA4, GSC, SEMrush/Ahrefs, social accounts, WordPress admin).</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier1">
+                <div class="deliverable-name">2. AI visibility baseline</div>
+                <div class="deliverable-meta">
+                  <span style="color: var(--gray-400); font-size: 0.85rem;">Test 15 high-intent prompts across ChatGPT, Perplexity, Claude, Gemini, AI Overviews. Document which competitors are cited, which sources referenced, where Afiniti appears or is absent.</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier1">
+                <div class="deliverable-name">3. Technical SEO</div>
+                <div class="deliverable-meta">
+                  <span class="function-badge primary badge-seo"><span class="badge-icon"></span>SEO</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem; margin-left: 8px;">Install Yoast/RankMath (robots.txt, sitemap, canonicals, basic schema). Verify crawlability. Check AI crawler access (OAI-SearchBot, PerplexityBot, ClaudeBot, Googlebot).</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier1">
+                <div class="deliverable-name">4. Submit Google Search Console removal requests</div>
+                <div class="deliverable-meta">
+                  <span style="color: var(--gray-400); font-size: 0.85rem;">Clear all stale cached pages from Google's index.</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier1">
+                <div class="deliverable-name">5. Listicle map</div>
+                <div class="deliverable-meta">
+                  <span style="color: var(--gray-400); font-size: 0.85rem;">Document every "best contact center AI" and "AI routing" listicle ranking page 1–2. Record inclusion status, author contacts.</span>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <!-- Phase 2: Month 1 -->
-        <div class="week-card" id="phase2-card">
-          <div class="week-header" onclick="toggleWeek('phase2-card')">
-            <div class="week-header-left">
-              <span class="week-number">Month 1</span>
-              <span class="week-theme">Technical Foundation</span>
-            </div>
-            <div class="week-header-right">
-              <span class="tier-pill tier1"><span class="tier-pill-icon">🔴</span> 5 Actions</span>
-              <span class="week-toggle">▼</span>
-            </div>
-          </div>
-          <div class="week-content">
-            <p style="color: var(--gray-400); font-size: 0.9rem; margin-bottom: 20px; padding-top: 16px;">Infrastructure that every subsequent program depends on.</p>
+            <p style="color: var(--turquoise); font-size: 0.85rem; font-weight: 600; margin-bottom: 8px; margin-top: 20px;">START PRODUCING</p>
             <div style="display: flex; flex-direction: column; gap: 12px;">
-              <div class="deliverable-card tier1">
-                <div class="deliverable-name">2. Verify and fix robots.txt + XML sitemap</div>
-                <div class="deliverable-meta">
-                  <span class="function-badge primary badge-seo"><span class="badge-icon"></span>SEO</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; margin-left: 8px;">Confirm these are accessible to crawlers; if suppressed by a security plugin, enable standard WordPress generation.</span>
-                </div>
-              </div>
-              <div class="deliverable-card tier1">
-                <div class="deliverable-name">3. Add structured data site-wide</div>
-                <div class="deliverable-meta">
-                  <span class="function-badge primary badge-seo"><span class="badge-icon"></span>SEO</span>
-                  <span class="function-badge secondary badge-aeo"><span class="badge-icon"></span>AEO</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; margin-left: 8px;">Organization schema (homepage), FAQPage (/products/afiniti-pairing/), Article (all blog posts), BreadcrumbList (site-wide), VideoObject (testimonials).</span>
-                </div>
-              </div>
-              <div class="deliverable-card tier1">
-                <div class="deliverable-name">4. Publish the "Outcome Orchestration" pillar page</div>
-                <div class="deliverable-meta">
-                  <span class="function-badge primary badge-seo"><span class="badge-icon"></span>SEO</span>
-                  <span class="function-badge secondary badge-aeo"><span class="badge-icon"></span>AEO</span>
-                  <span class="function-badge secondary badge-content"><span class="badge-icon"></span>Content</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">/what-is-outcome-orchestration/ — 3,000+ words, FAQ schema markup, internal links. Single most time-sensitive content asset.</span>
-                </div>
-              </div>
-              <div class="deliverable-card tier1">
-                <div class="deliverable-name">5. Launch the /definitions/ glossary hub</div>
-                <div class="deliverable-meta">
-                  <span class="function-badge primary badge-aeo"><span class="badge-icon"></span>AEO</span>
-                  <span class="function-badge secondary badge-seo"><span class="badge-icon"></span>SEO</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">5 initial pages targeting high-volume keywords. Replicate Genesys's AEO gold standard.</span>
-                </div>
-              </div>
-              <div class="deliverable-card tier1">
-                <div class="deliverable-name">6. Rebuild /resources/ as content hub</div>
+              <div class="deliverable-card tier2">
+                <div class="deliverable-name">6. Pillar page draft: "What Is Outcome Orchestration?"</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-content"><span class="badge-icon"></span>Content</span>
-                  <span class="function-badge secondary badge-seo"><span class="badge-icon"></span>SEO</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">Currently returns 410. Rebuild as the hub linking all gated and ungated content, or deindex and redirect to /blogs/.</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Phase 3: Months 2-3 -->
-        <div class="week-card" id="phase3-card">
-          <div class="week-header" onclick="toggleWeek('phase3-card')">
-            <div class="week-header-left">
-              <span class="week-number">Months 2-3</span>
-              <span class="week-theme">Content Velocity</span>
-            </div>
-            <div class="week-header-right">
-              <span class="tier-pill tier2"><span class="tier-pill-icon">⚡</span> 5 Actions</span>
-              <span class="week-toggle">▼</span>
-            </div>
-          </div>
-          <div class="week-content">
-            <p style="color: var(--gray-400); font-size: 0.9rem; margin-bottom: 20px; padding-top: 16px;">Foundation is set. Now fill the content void at velocity.</p>
-            <div style="display: flex; flex-direction: column; gap: 12px;">
-              <div class="deliverable-card tier2">
-                <div class="deliverable-name">7. Increase blog publishing to 2x/week</div>
-                <div class="deliverable-meta">
-                  <span class="function-badge primary badge-content"><span class="badge-icon"></span>Content</span>
-                  <span class="function-badge secondary badge-seo"><span class="badge-icon"></span>SEO</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">Keyword-targeted posts, not just thought leadership. Topic clusters around outcome orchestration.</span>
+                  <span class="function-badge secondary badge-aeo"><span class="badge-icon"></span>AEO</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">3,000+ words, AEO-optimized structure. Begin writing Day 1.</span>
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">8. Publish first 3 competitor comparison pages</div>
-                <div class="deliverable-meta">
-                  <span class="function-badge primary badge-seo"><span class="badge-icon"></span>SEO</span>
-                  <span class="function-badge secondary badge-product"><span class="badge-icon"></span>Product Mktg</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">/compare/afiniti-vs-cresta/, /compare/nice-alternatives/, /compare/afiniti-vs-observe-ai/</span>
-                </div>
-              </div>
-              <div class="deliverable-card tier2">
-                <div class="deliverable-name">9. Build and launch ROI calculator</div>
-                <div class="deliverable-meta">
-                  <span class="function-badge primary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
-                  <span class="function-badge secondary badge-product"><span class="badge-icon"></span>Product Mktg</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">/roi-calculator/ — agents, AHT, conversion rate inputs → projected revenue lift, FCR improvement, payback period.</span>
-                </div>
-              </div>
-              <div class="deliverable-card tier2">
-                <div class="deliverable-name">10. Create first 2 downloadable case studies</div>
-                <div class="deliverable-meta">
-                  <span class="function-badge primary badge-product"><span class="badge-icon"></span>Product Mktg</span>
-                  <span class="function-badge secondary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">VMO2 and AT&T are the strongest testimonial sources. 2-4 page gated PDFs with quantified before/after.</span>
-                </div>
-              </div>
-              <div class="deliverable-card tier2">
-                <div class="deliverable-name">11. Create G2 profile and begin review generation</div>
+                <div class="deliverable-name">7. Definitions hub architecture</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-aeo"><span class="badge-icon"></span>AEO</span>
-                  <span class="function-badge secondary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">Target 25-30 reviews in first 60 days. G2 = 6.7% of ChatGPT's top-10 citation share.</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem; margin-left: 8px;">5 initial pages mapped with keyword targets.</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier2">
+                <div class="deliverable-name">8. Editorial calendar</div>
+                <div class="deliverable-meta">
+                  <span class="function-badge primary badge-content"><span class="badge-icon"></span>Content</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem; margin-left: 8px;">30 articles mapped across a 12-week calendar with keyword targets.</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Phase 4: Months 4-6 -->
-        <div class="week-card" id="phase4-card">
-          <div class="week-header" onclick="toggleWeek('phase4-card')">
+        <!-- Week 2 -->
+        <div class="week-card" id="week2-card">
+          <div class="week-header" onclick="toggleWeek('week2-card')">
             <div class="week-header-left">
-              <span class="week-number">Months 4-6</span>
-              <span class="week-theme">Distribution & Authority</span>
+              <span class="week-number">Week 2</span>
+              <span class="week-theme">First Content Published + Citation Gaps Closed</span>
             </div>
             <div class="week-header-right">
-              <span class="tier-pill tier2"><span class="tier-pill-icon">⚡</span> 5 Actions</span>
+              <span class="tier-pill tier1"><span class="tier-pill-icon">🔴</span> 7 Actions</span>
               <span class="week-toggle">▼</span>
             </div>
           </div>
           <div class="week-content">
-            <p style="color: var(--gray-400); font-size: 0.9rem; margin-bottom: 20px; padding-top: 16px;">Content exists. Now distribute it and build third-party authority.</p>
+            <p style="color: var(--turquoise); font-size: 0.85rem; font-weight: 600; margin-bottom: 8px; padding-top: 16px;">CLOSE CITATION GAPS</p>
             <div style="display: flex; flex-direction: column; gap: 12px;">
-              <div class="deliverable-card tier2">
-                <div class="deliverable-name">12. Launch YouTube content series</div>
+              <div class="deliverable-card tier1">
+                <div class="deliverable-name">1. Create G2, Capterra, and Gartner Peer Insights profiles</div>
+                <div class="deliverable-meta">
+                  <span class="function-badge primary badge-aeo"><span class="badge-icon"></span>AEO</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem; margin-left: 8px;">Review platform presence = ~3x ChatGPT citation multiplier.</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier1">
+                <div class="deliverable-name">2. Launch review generation campaign</div>
+                <div class="deliverable-meta">
+                  <span style="color: var(--gray-400); font-size: 0.85rem;">Target 25 G2 + 15 Capterra + 10 Gartner PI in first 60 days.</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier1">
+                <div class="deliverable-name">3. Activate CEO LinkedIn posting cadence</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-social"><span class="badge-icon"></span>Social</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem; margin-left: 8px;">3x/week minimum.</span>
+                </div>
+              </div>
+            </div>
+            <p style="color: var(--turquoise); font-size: 0.85rem; font-weight: 600; margin-bottom: 8px; margin-top: 20px;">PUBLISH</p>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <div class="deliverable-card tier2">
+                <div class="deliverable-name">4. Publish "What Is Outcome Orchestration?" pillar page</div>
+                <div class="deliverable-meta">
+                  <span class="function-badge primary badge-seo"><span class="badge-icon"></span>SEO</span>
                   <span class="function-badge secondary badge-aeo"><span class="badge-icon"></span>AEO</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">Start with "Outcome Orchestration 101." YouTube = 13.9% of Perplexity citations, 18.8% of Google AI Overviews.</span>
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">13. Begin analyst briefing outreach</div>
+                <div class="deliverable-name">5. Publish first 2 definitions hub pages</div>
                 <div class="deliverable-meta">
-                  <span class="function-badge primary badge-analyst"><span class="badge-icon"></span>Analyst</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">Gartner, Forrester, IDC. Target Forrester Conversation Intelligence Wave where Cresta achieved Leader status.</span>
+                  <span class="function-badge primary badge-aeo"><span class="badge-icon"></span>AEO</span>
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">14. Activate partner co-marketing</div>
+                <div class="deliverable-name">6. Draft first 2 competitor comparison pages</div>
                 <div class="deliverable-meta">
-                  <span class="function-badge primary badge-partnerships"><span class="badge-icon"></span>Partnerships</span>
-                  <span class="function-badge secondary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">First joint webinar with Five9 or NICE. Co-branded case studies. Marketplace listing optimization.</span>
+                  <span class="function-badge primary badge-seo"><span class="badge-icon"></span>SEO</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem; margin-left: 8px;">Afiniti vs Cresta, NICE alternatives.</span>
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">15. Begin Reddit community presence</div>
+                <div class="deliverable-name">7. Begin restructuring top 5 existing blog posts for AI extraction</div>
                 <div class="deliverable-meta">
-                  <span class="function-badge primary badge-community"><span class="badge-icon"></span>Community</span>
-                  <span class="function-badge secondary badge-aeo"><span class="badge-icon"></span>AEO</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">Educational contributions only in r/callcenters, r/customerservice, r/contactcenter. Reddit = #1 AI citation source.</span>
-                </div>
-              </div>
-              <div class="deliverable-card tier2">
-                <div class="deliverable-name">16. Commission original research report</div>
-                <div class="deliverable-meta">
-                  <span class="function-badge primary badge-content"><span class="badge-icon"></span>Content</span>
-                  <span class="function-badge secondary badge-analyst"><span class="badge-icon"></span>Analyst</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">"State of Contact Center AI Effectiveness" — leverage 20-year dataset. Begin data analysis and research design.</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem;">Direct answers, question headings, FAQ schema.</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Phase 5: Months 6-12 -->
-        <div class="week-card" id="phase5-card">
-          <div class="week-header" onclick="toggleWeek('phase5-card')">
+        <!-- Week 3 -->
+        <div class="week-card" id="week3-card">
+          <div class="week-header" onclick="toggleWeek('week3-card')">
             <div class="week-header-left">
-              <span class="week-number">Months 6-12</span>
-              <span class="week-theme">Compounding</span>
+              <span class="week-number">Week 3</span>
+              <span class="week-theme">Content Velocity + Community Launch</span>
             </div>
             <div class="week-header-right">
-              <span class="tier-pill tier2"><span class="tier-pill-icon">⚡</span> 5 Actions</span>
+              <span class="tier-pill tier2"><span class="tier-pill-icon">⚡</span> 8 Actions</span>
               <span class="week-toggle">▼</span>
             </div>
           </div>
           <div class="week-content">
-            <p style="color: var(--gray-400); font-size: 0.9rem; margin-bottom: 20px; padding-top: 16px;">Programs compound. Scale what works, measure everything, build authority.</p>
+            <p style="color: var(--turquoise); font-size: 0.85rem; font-weight: 600; margin-bottom: 8px; padding-top: 16px;">CLOSE REMAINING GAPS</p>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <div class="deliverable-card tier1">
+                <div class="deliverable-name">1. Reddit community launch</div>
+                <div class="deliverable-meta">
+                  <span class="function-badge primary badge-community"><span class="badge-icon"></span>Community</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem; margin-left: 8px;">Educational participation in r/callcenters, r/contactcenter.</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier1">
+                <div class="deliverable-name">2. YouTube channel creation</div>
+                <div class="deliverable-meta">
+                  <span class="function-badge primary badge-social"><span class="badge-icon"></span>Social</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem; margin-left: 8px;">First video — CEO-recorded, low production value is fine for launch.</span>
+                </div>
+              </div>
+            </div>
+            <p style="color: var(--turquoise); font-size: 0.85rem; font-weight: 600; margin-bottom: 8px; margin-top: 20px;">BUILD PIPELINE</p>
             <div style="display: flex; flex-direction: column; gap: 12px;">
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">17. Publish original research report</div>
-                <div class="deliverable-meta">
-                  <span class="function-badge primary badge-content"><span class="badge-icon"></span>Content</span>
-                  <span class="function-badge secondary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">Full distribution: gated PDF, ungated summary, webinar, LinkedIn series, press release. Target 500+ downloads in 90 days.</span>
-                </div>
-              </div>
-              <div class="deliverable-card tier2">
-                <div class="deliverable-name">18. Expand competitor comparison library to 10+ pages</div>
+                <div class="deliverable-name">3. Publish first 2 competitor comparison pages</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-seo"><span class="badge-icon"></span>SEO</span>
-                  <span class="function-badge secondary badge-product"><span class="badge-icon"></span>Product Mktg</span>
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">19. Scale case study library to cover all 5 industries</div>
-                <div class="deliverable-meta">
-                  <span class="function-badge primary badge-product"><span class="badge-icon"></span>Product Mktg</span>
-                  <span class="function-badge secondary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
-                </div>
-              </div>
-              <div class="deliverable-card tier2">
-                <div class="deliverable-name">20. Target 100+ G2 reviews</div>
+                <div class="deliverable-name">4. Publish 3 more definitions hub pages (5 total live)</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-aeo"><span class="badge-icon"></span>AEO</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">Competitive parity with Balto. Integrate G2 badges on all landing pages and partner listings.</span>
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">21. Achieve first analyst mention in published research</div>
+                <div class="deliverable-name">5. Publish first 2 keyword-targeted blog articles</div>
                 <div class="deliverable-meta">
-                  <span class="function-badge primary badge-analyst"><span class="badge-icon"></span>Analyst</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">Research note, market guide, or Forrester Wave inclusion. The longest compound cycle in the program.</span>
+                  <span class="function-badge primary badge-content"><span class="badge-icon"></span>Content</span>
+                  <span class="function-badge secondary badge-seo"><span class="badge-icon"></span>SEO</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier2">
+                <div class="deliverable-name">6. First case study draft (VMO2)</div>
+                <div class="deliverable-meta">
+                  <span class="function-badge primary badge-product"><span class="badge-icon"></span>Product Mktg</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem; margin-left: 8px;">Video testimonial already exists as source material.</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier2">
+                <div class="deliverable-name">7. CDO and CGO LinkedIn cadence launched</div>
+                <div class="deliverable-meta">
+                  <span class="function-badge primary badge-social"><span class="badge-icon"></span>Social</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier2">
+                <div class="deliverable-name">8. ROI calculator specification complete</div>
+                <div class="deliverable-meta">
+                  <span class="function-badge primary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Week 4 -->
+        <div class="week-card" id="week4-card">
+          <div class="week-header" onclick="toggleWeek('week4-card')">
+            <div class="week-header-left">
+              <span class="week-number">Week 4</span>
+              <span class="week-theme">Fill Gaps + Measurement</span>
+            </div>
+            <div class="week-header-right">
+              <span class="tier-pill tier2"><span class="tier-pill-icon">⚡</span> 7 Actions</span>
+              <span class="week-toggle">▼</span>
+            </div>
+          </div>
+          <div class="week-content">
+            <div style="display: flex; flex-direction: column; gap: 12px; padding-top: 16px;">
+              <div class="deliverable-card tier2">
+                <div class="deliverable-name">1. Publish first case study</div>
+                <div class="deliverable-meta">
+                  <span class="function-badge primary badge-product"><span class="badge-icon"></span>Product Mktg</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier2">
+                <div class="deliverable-name">2. Publish 2 more keyword-targeted blog articles</div>
+                <div class="deliverable-meta">
+                  <span class="function-badge primary badge-content"><span class="badge-icon"></span>Content</span>
+                  <span class="function-badge secondary badge-seo"><span class="badge-icon"></span>SEO</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier2">
+                <div class="deliverable-name">3. Newsletter "The Outcome Report" — design + first edition drafted</div>
+                <div class="deliverable-meta">
+                  <span class="function-badge primary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem; margin-left: 8px;">Welcome sequence, first edition ready to send.</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier2">
+                <div class="deliverable-name">4. Research report scoping</div>
+                <div class="deliverable-meta">
+                  <span style="color: var(--gray-400); font-size: 0.85rem;">Data availability assessment, report outline, timeline to first edition.</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier2">
+                <div class="deliverable-name">5. Partner co-marketing outreach</div>
+                <div class="deliverable-meta">
+                  <span class="function-badge primary badge-partnerships"><span class="badge-icon"></span>Partnerships</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem; margin-left: 8px;">Initial conversations with Five9 and NICE marketing teams about joint webinar.</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier2">
+                <div class="deliverable-name">6. 30-day AI visibility re-test</div>
+                <div class="deliverable-meta">
+                  <span style="color: var(--gray-400); font-size: 0.85rem;">Re-run same 15 prompts, measure changes.</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier2">
+                <div class="deliverable-name">7. Month 2–12 roadmap finalized, KPI baselines set</div>
+                <div class="deliverable-meta">
+                  <span style="color: var(--gray-400); font-size: 0.85rem;">Execution tier selected, targets calibrated to actual capacity.</span>
                 </div>
               </div>
             </div>
@@ -1004,96 +1125,49 @@
 
       </div>
 
-      <!-- Phase Progression Chart -->
-      <div class="tier-shift-chart">
-        <div class="tier-shift-title">The Progression: Cleanup → Foundation → Velocity → Distribution → Compound</div>
-        <div class="tier-shift-rows">
-          <div class="tier-shift-row">
-            <span class="tier-shift-label">Week 1</span>
-            <div class="tier-shift-bar">
-              <div class="tier-shift-segment triage" style="width: 100%;"></div>
-              <div class="tier-shift-segment pipeline" style="width: 0%;"></div>
-            </div>
-            <span class="tier-shift-percent">Index Cleanup</span>
-          </div>
-          <div class="tier-shift-row">
-            <span class="tier-shift-label">Month 1</span>
-            <div class="tier-shift-bar">
-              <div class="tier-shift-segment triage" style="width: 30%;"></div>
-              <div class="tier-shift-segment pipeline" style="width: 70%;"></div>
-            </div>
-            <span class="tier-shift-percent">30% Fix / 70% Build</span>
-          </div>
-          <div class="tier-shift-row">
-            <span class="tier-shift-label">Mo 2-3</span>
-            <div class="tier-shift-bar">
-              <div class="tier-shift-segment triage" style="width: 20%;"></div>
-              <div class="tier-shift-segment pipeline" style="width: 80%;"></div>
-            </div>
-            <span class="tier-shift-percent">20% Fix / 80% Build</span>
-          </div>
-          <div class="tier-shift-row">
-            <span class="tier-shift-label">Mo 4-6</span>
-            <div class="tier-shift-bar">
-              <div class="tier-shift-segment triage" style="width: 0%;"></div>
-              <div class="tier-shift-segment pipeline" style="width: 100%;"></div>
-            </div>
-            <span class="tier-shift-percent">100% Build + Distribute</span>
-          </div>
-          <div class="tier-shift-row">
-            <span class="tier-shift-label">Mo 6-12</span>
-            <div class="tier-shift-bar">
-              <div class="tier-shift-segment triage" style="width: 0%;"></div>
-              <div class="tier-shift-segment pipeline" style="width: 100%;"></div>
-            </div>
-            <span class="tier-shift-percent">100% Compound</span>
-          </div>
+      <!-- Sprint Output Summary -->
+      <div style="margin-top: 48px; padding: 24px; border: 1px solid var(--border); border-radius: 12px; background: var(--card-bg);">
+        <h3 style="color: var(--white); margin-bottom: 16px;">Sprint Output Summary</h3>
+        <div style="overflow-x: auto;">
+          <table class="well-table" style="width: 100%;">
+            <thead>
+              <tr><th>Content Type</th><th>Count</th><th>Purpose</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Pillar page</td><td>1</td><td>Category definition + head term anchor</td></tr>
+              <tr><td>Definitions hub pages</td><td>5</td><td>AEO extraction targets</td></tr>
+              <tr><td>Competitor comparison pages</td><td>2</td><td>High-intent buyer capture</td></tr>
+              <tr><td>Keyword-targeted blog articles</td><td>4</td><td>Topic cluster + organic traffic</td></tr>
+              <tr><td>Case study</td><td>1</td><td>Bottom-funnel conversion</td></tr>
+              <tr><td>Existing posts restructured</td><td>5</td><td>Quick wins — already indexed</td></tr>
+              <tr><td>Review platform profiles created</td><td>3+</td><td>AI citation source foundation</td></tr>
+              <tr><td style="color: var(--white); font-weight: 600;">Total new/updated pages</td><td style="color: var(--turquoise); font-weight: 700;">21</td><td></td></tr>
+            </tbody>
+          </table>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- Section 7: Demand Generation Programs -->
-  <section class="section" id="demandgen">
+  <!-- Section 8: The Strategic Plan — 6 Fronts -->
+  <section class="section" id="strategy">
     <div class="container">
-      <span class="section-label">Demand Generation Programs</span>
-      <h2>10 Programs Mapped to the Buyer Journey</h2>
+      <span class="section-label">The Strategic Plan</span>
+      <h2>Six Interconnected Fronts</h2>
       <p class="section-intro">
-        Each program is designed for a company in Afiniti's exact position: one shipping product, a category claim that needs defending, a content void that needs filling, and a partnership network that needs activating.
+        The first four are marketing-executed. The fifth requires partnership activation. The sixth requires executive alignment on decisions that extend beyond marketing's scope but directly impact marketing effectiveness.
       </p>
 
-      <!-- Buyer Journey -->
-      <div class="journey-container">
-        <div class="journey-stage">
-          <div class="journey-label">Top of Funnel</div>
-          <div class="journey-title">"Get Found"</div>
-          <div class="journey-programs">Content Engine, Research, YouTube + LinkedIn, Reddit</div>
-        </div>
-        <div class="journey-arrow">→</div>
-        <div class="journey-stage">
-          <div class="journey-label">Mid-Funnel</div>
-          <div class="journey-title">"Build the Case"</div>
-          <div class="journey-programs">ROI Calculator, Case Studies, Comparisons</div>
-        </div>
-        <div class="journey-arrow">→</div>
-        <div class="journey-stage">
-          <div class="journey-label">Bottom of Funnel</div>
-          <div class="journey-title">"Close"</div>
-          <div class="journey-programs">G2 + Reviews, Partners, Analysts</div>
-        </div>
-      </div>
+      <div class="phase-section" id="fronts-phase">
 
-      <!-- Programs -->
-      <div class="phase-section" id="programs-phase">
-
-        <!-- Program 1: Content Engine -->
+        <!-- Front 1: SEO + AEO Content Engine -->
         <div class="compound-program-card">
           <div class="compound-program-header" onclick="toggleProgram(this)">
-            <div class="compound-time-badge">Months 1-6</div>
+            <div class="compound-time-badge">Months 1–6</div>
             <div class="program-info">
-              <h4>1. Category-Defining Content Engine</h4>
-              <p>Build topic cluster architecture around "outcome orchestration" before competitors absorb the term</p>
+              <h4>Front 1: SEO + AEO Content Engine</h4>
+              <p>The single most urgent investment — transform content from brand journalism into a search and citation acquisition engine</p>
               <div class="function-badges">
                 <span class="function-badge primary badge-seo"><span class="badge-icon"></span>SEO</span>
                 <span class="function-badge secondary badge-content"><span class="badge-icon"></span>Content</span>
@@ -1104,32 +1178,39 @@
           </div>
           <div class="program-content">
             <div class="program-details">
-              <p><strong>The gap this closes:</strong> Zero page-1 rankings for any non-branded keyword. No pillar pages, no glossary, no "What is...?" content. The "Outcome Orchestration" term has a narrow window before Genesys's "Experience Orchestration" or Pega's "Decisioning Hub" absorbs the concept.</p>
-              <p><strong>What to build:</strong> Pillar page at /what-is-outcome-orchestration/ (3,000+ words, FAQ schema). Topic cluster spokes: outcome orchestration vs predictive routing, what is behavioral pairing, why contact center AI projects fail, AI contact center routing explained. Glossary hub at /definitions/ with 20+ structured definition pages. Rebuild /resources/ as the content hub. Shift to 2x/week keyword-targeted publishing.</p>
-            </div>
-            <div class="program-metrics">
-              <div class="metric-item">
-                <span class="metric-type">Site Infrastructure Needed</span>
-                <span class="metric-value">/resources/ → rebuild as content hub | Verify robots.txt + XML sitemap accessibility | Deploy Organization, FAQPage, BreadcrumbList, Article schema site-wide | Add self-referencing canonical tags via Yoast or RankMath | Deindex stale cached pages via Google Search Console</span>
+              <p><strong>Owner:</strong> Content Lead + SEO resource</p>
+              <p>Zero page-1 rankings for any non-branded keyword, no content optimized for AI extraction, and a blog publishing narrative thought leadership that AI systems cannot extract structured answers from. Every piece of content must rank in traditional search AND be structured for extraction by AI models.</p>
+              <p style="margin-top: 12px;"><strong>Content architecture:</strong></p>
+              <div style="overflow-x: auto; margin: 12px 0;">
+                <table class="well-table" style="width: 100%;">
+                  <thead><tr><th>Content Type</th><th>% of LLM Citations</th><th>Sprint Priority</th></tr></thead>
+                  <tbody>
+                    <tr><td>Pillar pages</td><td>Broad category citation</td><td>Week 2: "What Is Outcome Orchestration?" live</td></tr>
+                    <tr><td>Glossary/definitions hub</td><td>High (AI extracts definitions)</td><td>Week 3: 5 initial pages</td></tr>
+                    <tr><td>Competitor comparisons</td><td>High-intent</td><td>Weeks 3–4: first 3 pages</td></tr>
+                    <tr><td>Topic cluster articles</td><td>19.4% (educational)</td><td>Week 3+: 2x/week ongoing</td></tr>
+                    <tr><td>Case studies</td><td>Bottom-funnel + factual</td><td>Week 4+: 1/month ongoing</td></tr>
+                  </tbody>
+                </table>
               </div>
-              <div class="metric-item">
-                <span class="metric-type">Realistic Trajectory</span>
-                <span class="metric-value">Organic traffic from &lt;5K to 15-25K monthly within 6 months. "Outcome orchestration" category ownership within 3 months if pillar page launches in Month 1.</span>
-              </div>
+              <p><strong>"Outcome Orchestration" category claim:</strong> Single most time-sensitive content asset. Pillar page at /what-is-outcome-orchestration/ (3,000+ words). Topic cluster spokes: vs predictive routing, what is behavioral pairing, why contact center AI projects fail, AI contact center routing explained.</p>
+              <p style="margin-top: 12px;"><strong>Glossary/definitions hub:</strong> Replicate Genesys's /definitions/ strategy — the AEO gold standard. 20+ structured definition pages.</p>
+              <p style="margin-top: 12px;"><strong>Competitor comparison content:</strong> 5 initial pages expanding to 10+. /compare/afiniti-vs-cresta/, /compare/nice-alternatives/, etc. Highest-intent organic visitors.</p>
+              <p style="margin-top: 12px;"><strong>Freshness protocol:</strong> Pillar pages refreshed monthly. Comparison pages monthly. Definitions quarterly. Top 10 posts monthly.</p>
+              <p style="margin-top: 12px;"><strong>Site infrastructure:</strong> Deploy Yoast/RankMath → robots.txt, sitemap, canonical tags, schema. Add Organization, FAQPage, Article, BreadcrumbList, VideoObject schemas. Rebuild /resources/ as content hub.</p>
             </div>
           </div>
         </div>
 
-        <!-- Program 2: Original Research -->
+        <!-- Front 2: Proprietary Data Moat -->
         <div class="compound-program-card">
           <div class="compound-program-header" onclick="toggleProgram(this)">
-            <div class="compound-time-badge">Months 4-6</div>
+            <div class="compound-time-badge">Months 1–3</div>
             <div class="program-info">
-              <h4>2. Original Research — "State of Contact Center AI Effectiveness"</h4>
-              <p>Leverage 20 years of behavioral pairing data to create the highest-leverage content asset Afiniti can produce</p>
+              <h4>Front 2: Build the Proprietary Data Moat</h4>
+              <p>Leverage 20 years of behavioral pairing data — 1.4B optimized calls — to create content no competitor can replicate</p>
               <div class="function-badges">
                 <span class="function-badge primary badge-content"><span class="badge-icon"></span>Content</span>
-                <span class="function-badge secondary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
                 <span class="function-badge secondary badge-aeo"><span class="badge-icon"></span>AEO</span>
                 <span class="function-badge secondary badge-analyst"><span class="badge-icon"></span>Analyst</span>
               </div>
@@ -1138,290 +1219,163 @@
           </div>
           <div class="program-content">
             <div class="program-details">
-              <p><strong>The gap this closes:</strong> Afiniti claims $2.5B in verified value and 1.4B optimized calls but publishes zero data-driven content that third parties can cite. No analyst coverage means no external validation. Original research creates both.</p>
-              <p><strong>Distribution creates a citation flywheel:</strong> Industry publications link to the ungated summary → analysts notice and request briefings → AI models cite the data → more publications reference it.</p>
+              <p><strong>Owner:</strong> Data Analyst + Content Lead</p>
+              <p>Afiniti possesses aggregate contact center optimization data that no competitor can replicate — 20 years across telco, financial services, healthcare, insurance, and travel. This data is currently unused as a marketing asset.</p>
+              <p style="margin-top: 12px;"><strong>What the report should include:</strong> Average outcome lift by industry vertical (anonymized). AI ON/OFF benchmarking delta distributions. Agent performance patterns. First-call resolution and AHT impacts. Year-over-year compounding effects.</p>
+              <p style="margin-top: 12px;"><strong>Why this matters for AI visibility:</strong> Original research creates data points that force AI models to cite Afiniti directly. Articles containing unique statistics are significantly more likely to appear in AI-generated answers.</p>
+              <p style="margin-top: 12px;"><strong>Distribution:</strong> Ungated executive summary + gated full report. CEO/CDO LinkedIn series. BusinessWire press release. Pitch to DMG Consulting, CX Today, No Jitter. Co-branded versions with partners. Conference presentations.</p>
             </div>
             <div class="program-metrics">
-              <div class="metric-item">
-                <span class="metric-type">Structure</span>
-                <span class="metric-value">Gated full PDF (lead capture), ungated executive summary (SEO + AEO), LinkedIn carousel series (social reach), webinar presentation (live pipeline), press release with media pitches (earned media + backlinks).</span>
-              </div>
               <div class="metric-item">
                 <span class="metric-type">Target</span>
-                <span class="metric-value">500+ gated downloads in 90 days post-launch. Research findings feed 3-6 months of content calendar. Analyst briefing leverage by month 6.</span>
+                <span class="metric-value">500+ gated downloads in 90 days. First analyst briefing leverage by month 6. 10+ third-party articles citing Afiniti data within 12 months.</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Program 3: YouTube + LinkedIn -->
+        <!-- Front 3: AI Citation Source Network -->
         <div class="compound-program-card">
           <div class="compound-program-header" onclick="toggleProgram(this)">
-            <div class="compound-time-badge">Months 2-6</div>
+            <div class="compound-time-badge">Starts Week 1</div>
             <div class="program-info">
-              <h4>3. YouTube + LinkedIn Thought Leadership</h4>
-              <p>Activate the 265K follower base + build YouTube presence in the two highest-impact AEO channels</p>
+              <h4>Front 3: Build the AI Citation Source Network</h4>
+              <p>Close the citation source gaps — the structural foundation that makes all other content visible to AI</p>
               <div class="function-badges">
-                <span class="function-badge primary badge-social"><span class="badge-icon"></span>Social</span>
-                <span class="function-badge secondary badge-aeo"><span class="badge-icon"></span>AEO</span>
-                <span class="function-badge secondary badge-content"><span class="badge-icon"></span>Content</span>
+                <span class="function-badge primary badge-aeo"><span class="badge-icon"></span>AEO</span>
+                <span class="function-badge secondary badge-social"><span class="badge-icon"></span>Social</span>
+                <span class="function-badge secondary badge-community"><span class="badge-icon"></span>Community</span>
               </div>
             </div>
             <span class="program-toggle">+</span>
           </div>
           <div class="program-content">
             <div class="program-details">
-              <p><strong>The gap this closes:</strong> 265K LinkedIn followers with negligible content reach. YouTube is 13.9% of Perplexity top-10 citations and 18.8% of Google AI Overviews. LinkedIn is 13% of Google AI Overviews. These are the two highest-impact AEO channels after owned content.</p>
-            </div>
-            <div class="program-metrics">
-              <div class="metric-item">
-                <span class="metric-type">YouTube Series</span>
-                <span class="metric-value">Explainer videos (Behavioral Pairing methodology), customer outcome stories, "Outcome Orchestration 101" series, executive Q&As. Cross-post transcripts to /blogs/ for SEO value.</span>
+              <p><strong>Owner:</strong> Existing team + CEO + CGO</p>
+              <p><strong>Review platform launch:</strong> Create G2, Capterra, Gartner Peer Insights profiles. Target 25 G2 + 15 Capterra + 10 Gartner PI in first 60 days. 100+ G2 reviews by 12 months.</p>
+              <p style="margin-top: 12px;"><strong>YouTube channel:</strong> Four content series — "Outcome Orchestration 101" (monthly), Customer Outcome Stories (monthly), Executive Q&As (monthly), "How AI Routing Actually Works" (monthly). Cross-post transcripts to /blogs/ for SEO.</p>
+              <p style="margin-top: 12px;"><strong>Reddit + community:</strong> Educational answers in r/callcenters, r/contactcenter. 3–5 comments/week by Month 2–3. Original posts by Month 4–6. No contact center AI vendor has a deliberate Reddit presence — first-mover advantage available.</p>
+              <p style="margin-top: 12px;"><strong>LinkedIn activation:</strong></p>
+              <div style="overflow-x: auto; margin: 8px 0;">
+                <table class="well-table" style="width: 100%;">
+                  <thead><tr><th>Channel</th><th>Cadence</th><th>Content</th></tr></thead>
+                  <tbody>
+                    <tr><td>CEO Jerome Kapelus</td><td>3–5x/week</td><td>Outcome Orchestration perspective, industry POV, customer wins</td></tr>
+                    <tr><td>CDO Dr. Caroline O'Brien</td><td>2–3x/week</td><td>Technical AI content, product vision, data insights</td></tr>
+                    <tr><td>CGO Chris Karp</td><td>2x/week</td><td>Partnership announcements, market commentary</td></tr>
+                    <tr><td>Company page</td><td>Daily</td><td>Blog cross-posts, video clips, research snippets</td></tr>
+                  </tbody>
+                </table>
               </div>
-              <div class="metric-item">
-                <span class="metric-type">LinkedIn Program</span>
-                <span class="metric-value">CEO Jerome Kapelus thought leadership (weekly), CDO content expansion, employee advocacy activation, research snippet carousels.</span>
-              </div>
+              <p style="margin-top: 12px;"><strong>Wikipedia improvement:</strong> Update with current information — new CEO, Outcome Orchestration launch, partnership milestones, bankruptcy emergence. Must meet Wikipedia neutrality standards.</p>
+              <p style="margin-top: 12px;"><strong>Earned media targets:</strong> Bylined articles in VentureBeat, HBR, or MIT Sloan. Trade press: CX Today, No Jitter, CustomerThink. Conference speaking: Enterprise Connect, CCW, partner events.</p>
             </div>
           </div>
         </div>
 
-        <!-- Program 4: Reddit -->
+        <!-- Front 4: Demand Generation Infrastructure -->
         <div class="compound-program-card">
           <div class="compound-program-header" onclick="toggleProgram(this)">
-            <div class="compound-time-badge">Months 4-12</div>
+            <div class="compound-time-badge">Months 2–6</div>
             <div class="program-info">
-              <h4>4. Reddit Community Presence</h4>
-              <p>Build presence in the #1 most-cited domain across all AI platforms</p>
-              <div class="function-badges">
-                <span class="function-badge primary badge-community"><span class="badge-icon"></span>Community</span>
-                <span class="function-badge secondary badge-aeo"><span class="badge-icon"></span>AEO</span>
-              </div>
-            </div>
-            <span class="program-toggle">+</span>
-          </div>
-          <div class="program-content">
-            <div class="program-details">
-              <p><strong>The gap this closes:</strong> Reddit is the #1 most-cited domain across all AI platforms — 46.7% of Perplexity top-10 citations, 21% of Google AI Overviews. No contact center AI vendor has a deliberate Reddit presence. First-mover advantage is available.</p>
-              <p>Educational, never promotional contributions to r/callcenters, r/customerservice, r/contactcenter, and r/artificialintelligence. Posts compound — they get cited by AI models for months and years. Enterprise buyers increasingly research Reddit before purchasing decisions.</p>
-            </div>
-            <div class="program-metrics">
-              <div class="metric-item">
-                <span class="metric-type">Approach</span>
-                <span class="metric-value">Knowledge sharing about AI routing, behavioral pairing methodology, contact center optimization. No AI-layer competitor has meaningful Reddit presence.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Program 5: ROI Calculator -->
-        <div class="compound-program-card">
-          <div class="compound-program-header" onclick="toggleProgram(this)">
-            <div class="compound-time-badge">Months 2-3</div>
-            <div class="program-info">
-              <h4>5. Interactive ROI Calculator</h4>
-              <p>Create the self-service conversion path that doesn't exist today</p>
+              <h4>Front 4: Demand Generation Infrastructure</h4>
+              <p>Build multiple conversion paths — enterprise buyers need more than "Request a Meeting"</p>
               <div class="function-badges">
                 <span class="function-badge primary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
                 <span class="function-badge secondary badge-product"><span class="badge-icon"></span>Product Mktg</span>
-                <span class="function-badge secondary badge-seo"><span class="badge-icon"></span>SEO</span>
               </div>
             </div>
             <span class="program-toggle">+</span>
           </div>
           <div class="program-content">
             <div class="program-details">
-              <p><strong>The gap this closes:</strong> The only conversion mechanism on afiniti.com is "Request a Meeting" — which requires a human to respond. No self-service conversion path exists. Afiniti claims 10%+ revenue lift but provides no way to model that claim.</p>
-            </div>
-            <div class="program-metrics">
-              <div class="metric-item">
-                <span class="metric-type">Page</span>
-                <span class="metric-value">/roi-calculator/ — Inputs: number of agents, average handle time, current conversion rate, industry vertical. Outputs: projected revenue lift, FCR improvement, estimated payback period.</span>
-              </div>
-              <div class="metric-item">
-                <span class="metric-type">Conversion Architecture</span>
-                <span class="metric-value">Top-line results shown immediately; detailed PDF report gated behind email capture. Cross-linked from homepage, all industry pages, case studies, competitor comparison pages. FAQ + HowTo schema markup.</span>
-              </div>
+              <p><strong>Owner:</strong> Demand Gen hire + Product Marketing</p>
+              <p><strong>Interactive ROI calculator:</strong> /roi-calculator/ — Inputs: number of agents, average handle time, current conversion rate, industry vertical. Top-line results shown immediately; detailed PDF report gated behind email capture. FAQ + HowTo schema markup. Afiniti's ON/OFF benchmarking makes the ROI claim more defensible than any competitor.</p>
+              <p style="margin-top: 12px;"><strong>Case study library:</strong> /case-studies/ hub page. Individual gated studies: Virgin Media O2, AT&T, TIM, insurance client ($450M+ premiums), financial services client (12% loan sales increase). 2 by Month 2, 5 by Month 6, all 5 verticals by Month 12.</p>
+              <p style="margin-top: 12px;"><strong>Newsletter — "The Outcome Report":</strong> Biweekly, 500–800 words. One industry insight, one data point, one deeper resource link. CTA on every blog post, LinkedIn promotion, partner newsletter cross-promotion. Targets: 500+ at 90 days, 2,000+ at 6 months, 5,000+ at 12 months.</p>
             </div>
           </div>
         </div>
 
-        <!-- Program 6: Case Studies -->
+        <!-- Front 5: Partner Co-Marketing -->
         <div class="compound-program-card">
           <div class="compound-program-header" onclick="toggleProgram(this)">
-            <div class="compound-time-badge">Months 2-6</div>
+            <div class="compound-time-badge">Months 2–12</div>
             <div class="program-info">
-              <h4>6. Case Study Library + Industry Landing Pages</h4>
-              <p>Turn buried testimonial snippets into the most compelling mid-funnel content in the space</p>
-              <div class="function-badges">
-                <span class="function-badge primary badge-product"><span class="badge-icon"></span>Product Mktg</span>
-                <span class="function-badge secondary badge-content"><span class="badge-icon"></span>Content</span>
-                <span class="function-badge secondary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
-              </div>
-            </div>
-            <span class="program-toggle">+</span>
-          </div>
-          <div class="program-content">
-            <div class="program-details">
-              <p><strong>The gap this closes:</strong> Afiniti's most compelling proof points (VMO2 CEO quote, AT&T 80/20 testing, TIM competitive advantage) are buried as website testimonial snippets. None exist as downloadable, shareable case studies.</p>
-            </div>
-            <div class="program-metrics">
-              <div class="metric-item">
-                <span class="metric-type">What to Build</span>
-                <span class="metric-value">/case-studies/ hub page. Individual gated studies: Virgin Media O2, AT&T, TIM, insurance client ($450M+ lifetime premiums), financial services client (12% loan sales increase). Each: 2-4 page PDF, methodology, quantified before/after, named executive quotes.</span>
-              </div>
-              <div class="metric-item">
-                <span class="metric-type">Distribution</span>
-                <span class="metric-value">Rebuild industry landing pages to anchor around case studies. Distribute through Five9, NICE, and AWS partner channels.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Program 7: Competitor Comparisons -->
-        <div class="compound-program-card">
-          <div class="compound-program-header" onclick="toggleProgram(this)">
-            <div class="compound-time-badge">Months 2-12</div>
-            <div class="program-info">
-              <h4>7. Competitor Comparison Content</h4>
-              <p>Capture high-intent buyers actively comparing solutions — replicate the Balto playbook</p>
-              <div class="function-badges">
-                <span class="function-badge primary badge-seo"><span class="badge-icon"></span>SEO</span>
-                <span class="function-badge secondary badge-product"><span class="badge-icon"></span>Product Mktg</span>
-                <span class="function-badge secondary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
-              </div>
-            </div>
-            <span class="program-toggle">+</span>
-          </div>
-          <div class="program-content">
-            <div class="program-details">
-              <p><strong>The gap this closes:</strong> Zero competitor comparison content exists anywhere on afiniti.com. Every buyer who searches "[competitor] alternatives" or "Afiniti vs [competitor]" finds nothing from Afiniti. Balto.ai runs dedicated comparison pages for virtually every competitor, capturing high-intent purchase-ready traffic.</p>
-            </div>
-            <div class="program-metrics">
-              <div class="metric-item">
-                <span class="metric-type">Initial 5 Pages</span>
-                <span class="metric-value">/compare/afiniti-vs-cresta/ | /compare/afiniti-vs-observe-ai/ | /compare/nice-alternatives/ | /compare/genesys-alternatives/ | /compare/five9-ai-optimization/</span>
-              </div>
-              <div class="metric-item">
-                <span class="metric-type">Each Page</span>
-                <span class="metric-value">Honest comparison matrix, differentiation points (patented ON/OFF benchmarking, outcome-based pricing, platform-agnostic overlay), CTA to meeting. Highest-intent organic visitors on the entire site.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Program 8: G2 + Reviews -->
-        <div class="compound-program-card">
-          <div class="compound-program-header" onclick="toggleProgram(this)">
-            <div class="compound-time-badge">Months 2-12</div>
-            <div class="program-info">
-              <h4>8. G2 + Review Platform Social Proof</h4>
-              <p>Build credible review volume on the platforms enterprise buyers trust</p>
-              <div class="function-badges">
-                <span class="function-badge primary badge-aeo"><span class="badge-icon"></span>AEO</span>
-                <span class="function-badge secondary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
-                <span class="function-badge secondary badge-product"><span class="badge-icon"></span>Product Mktg</span>
-              </div>
-            </div>
-            <span class="program-toggle">+</span>
-          </div>
-          <div class="program-content">
-            <div class="program-details">
-              <p><strong>The gap this closes:</strong> Afiniti is not listed on G2. No review platform presence exists. Compare: Balto has 300+ reviews at 4.8/5, NICE has 540+ Gartner Peer Insights reviews. Enterprise buyers check these platforms as standard due diligence. Review sites are also heavily cited by AI systems.</p>
-            </div>
-            <div class="program-metrics">
-              <div class="metric-item">
-                <span class="metric-type">Timeline</span>
-                <span class="metric-value">Month 2: Create G2, Capterra, TrustRadius profiles → Month 2-3: 25-30 reviews → Month 4-6: 50+ reviews → Month 8-12: 100+ reviews</span>
-              </div>
-              <div class="metric-item">
-                <span class="metric-type">AEO Impact</span>
-                <span class="metric-value">G2 = 6.7% of ChatGPT's top-10 citation share, 4% of Perplexity's. G2 badges on landing pages increase conversion; G2 data feeds analyst research.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Program 9: Partner Co-Marketing -->
-        <div class="compound-program-card">
-          <div class="compound-program-header" onclick="toggleProgram(this)">
-            <div class="compound-time-badge">Months 3-12</div>
-            <div class="program-info">
-              <h4>9. Partner Co-Marketing Pipeline</h4>
-              <p>Activate 4 platform partnerships that are currently generating zero co-marketing output</p>
+              <h4>Front 5: Partner Co-Marketing Pipeline</h4>
+              <p>Activate 4 platform partnerships — the highest-leverage demand gen channel available</p>
               <div class="function-badges">
                 <span class="function-badge primary badge-partnerships"><span class="badge-icon"></span>Partnerships</span>
                 <span class="function-badge secondary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
-                <span class="function-badge secondary badge-content"><span class="badge-icon"></span>Content</span>
               </div>
             </div>
             <span class="program-toggle">+</span>
           </div>
           <div class="program-content">
             <div class="program-details">
-              <p><strong>The gap this closes:</strong> Afiniti has four active platform partnerships (AWS, Avaya, Five9, NICE) but no visible co-marketing activation. These partners' sales teams already talk to Afiniti's exact buyers daily. Their domains carry domain authority that would generate high-value backlinks.</p>
+              <p><strong>Owner:</strong> CGO Chris Karp + Partnerships team</p>
+              <p>Four active partnerships (AWS, Avaya, Five9, NICE) but no visible co-marketing activation. These partners' sales teams already talk to Afiniti's exact buyers daily.</p>
+              <div style="overflow-x: auto; margin: 12px 0;">
+                <table class="well-table" style="width: 100%;">
+                  <thead><tr><th>Activity</th><th>Cadence</th><th>Owner</th></tr></thead>
+                  <tbody>
+                    <tr><td>Joint webinar</td><td>1 per quarter per partner</td><td>Marketing + Partner Marketing</td></tr>
+                    <tr><td>Co-branded case study</td><td>1 per partner per year</td><td>Product Marketing</td></tr>
+                    <tr><td>Marketplace listing optimization</td><td>Quarterly refresh</td><td>Content Lead</td></tr>
+                    <tr><td>Partner blog cross-post</td><td>1 per partner per quarter</td><td>Content Lead</td></tr>
+                    <tr><td>Partner newsletter feature</td><td>2x per year per partner</td><td>Partnerships</td></tr>
+                    <tr><td>Joint conference presence</td><td>At partner events</td><td>CGO</td></tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
             <div class="program-metrics">
-              <div class="metric-item">
-                <span class="metric-type">What to Build</span>
-                <span class="metric-value">Joint webinars (1/quarter/partner minimum), co-branded case studies, marketplace listing optimization (AWS, NICE CXexchange), partner blog cross-posts and newsletter features.</span>
-              </div>
               <div class="metric-item">
                 <span class="metric-type">Target</span>
-                <span class="metric-value">30-50 partner-sourced leads per month within 12 months.</span>
+                <span class="metric-value">30–50 partner-sourced leads per month. Partner-influenced revenue attribution tracking in place by Month 3.</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Program 10: Analyst Relations -->
+        <!-- Front 6: Strategic Recommendations -->
         <div class="compound-program-card">
           <div class="compound-program-header" onclick="toggleProgram(this)">
-            <div class="compound-time-badge">Months 4-12</div>
+            <div class="compound-time-badge">Leadership</div>
             <div class="program-info">
-              <h4>10. Analyst Relations for Enterprise Credibility</h4>
-              <p>Build presence in the research that enterprise buyers trust most</p>
+              <h4>Front 6: Strategic Recommendations Beyond Marketing Scope</h4>
+              <p>Decisions that extend beyond marketing's scope but directly impact marketing effectiveness</p>
               <div class="function-badges">
                 <span class="function-badge primary badge-analyst"><span class="badge-icon"></span>Analyst</span>
-                <span class="function-badge secondary badge-aeo"><span class="badge-icon"></span>AEO</span>
-                <span class="function-badge secondary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
+                <span class="function-badge secondary badge-product"><span class="badge-icon"></span>Product</span>
               </div>
             </div>
             <span class="program-toggle">+</span>
           </div>
           <div class="program-content">
             <div class="program-details">
-              <p><strong>The gap this closes:</strong> Zero analyst coverage. No Gartner, Forrester, or IDC recognition. Analyst reports account for ~7% of top-10 AI platform citations and are the #1 enterprise buyer confidence signal.</p>
-              <p><strong>Positioning approach:</strong> "Outcome Orchestration" = new category (not CCaaS platform), post-bankruptcy trajectory with new leadership, patented ON/OFF benchmarking as differentiator. Target Forrester Conversation Intelligence Wave where Cresta already achieved Leader status — not Gartner CCaaS MQ (Afiniti is an optimization layer, not a platform).</p>
-            </div>
-            <div class="program-metrics">
-              <div class="metric-item">
-                <span class="metric-type">Timeline</span>
-                <span class="metric-value">Month 4: First briefings with Gartner, Forrester, IDC → Month 6-8: Mentions in research notes → Month 8-12: Target inclusion in published research</span>
-              </div>
-              <div class="metric-item">
-                <span class="metric-type">Impact</span>
-                <span class="metric-value">Analysts feed enterprise buyer confidence + ~7% of top-10 AI platform citation share. Original research report (Program 2) provides the briefing ammunition.</span>
-              </div>
+              <p><strong>Analyst Relations for Enterprise Credibility:</strong> Zero analyst coverage — no Gartner, Forrester, or IDC recognition. Position as "Outcome Orchestration" = new category (not CCaaS platform). Month 4: first briefings. Month 6–8: mentions in research notes. Month 8–12: inclusion in published research.</p>
+              <p style="margin-top: 12px;"><strong>Ship the "Coming Soon" Products:</strong> Three of four announced products are "coming soon." This is the single largest credibility risk. Every month Afiniti maintains "coming soon" labels, the gap between announcement and delivery erodes market trust. Marketing can generate awareness, but it cannot sustain interest in products that don't ship.</p>
+              <p style="margin-top: 12px;"><strong>Resolve the Self-Reported Metrics Question:</strong> "$2.5B in verified incremental value" and "100% client retention in 2025" are powerful claims — and entirely self-reported. Third-party validation through analyst coverage, named case studies, or independent benchmarking should be prioritized.</p>
             </div>
           </div>
         </div>
 
-        <!-- Programs Summary -->
+        <!-- Fronts Summary -->
         <div class="phase-summary-bar">
           <div class="summary-stat">
-            <div class="summary-stat-value">10</div>
-            <div class="summary-stat-label">Programs</div>
+            <div class="summary-stat-value">6</div>
+            <div class="summary-stat-label">Strategic Fronts</div>
           </div>
           <div class="summary-divider"></div>
           <div class="summary-stat">
-            <div class="summary-stat-value">1-12 Months</div>
-            <div class="summary-stat-label">Execution Horizon</div>
+            <div class="summary-stat-value">4 Marketing</div>
+            <div class="summary-stat-label">+ 1 Partnerships + 1 Executive</div>
           </div>
           <div class="summary-divider"></div>
           <div class="summary-stat">
-            <div class="summary-stat-value">Full Funnel</div>
-            <div class="summary-stat-label">Get Found → Build the Case → Close</div>
+            <div class="summary-stat-value">Compounding</div>
+            <div class="summary-stat-label">Each front reinforces the others</div>
           </div>
         </div>
       </div>
@@ -1429,152 +1383,229 @@
     </div>
   </section>
 
-  <!-- Section 8: Metrics Dashboard -->
-  <section class="section" id="metrics">
+  <!-- Section 9: Team & Resource Planning -->
+  <section class="section" id="team">
     <div class="container">
-      <span class="section-label">The Metrics That Matter</span>
-      <h2>What Success Looks Like</h2>
-      <p class="section-intro">
-        Two views: ecosystem metrics (is the foundation getting built?) and pipeline metrics (is it producing leads?). Ecosystem work IS pipeline work — they're the same program measured two ways.
+      <span class="section-label">Team & Resource Planning</span>
+      <h2>Three Execution Tiers</h2>
+      <p class="section-intro" style="margin-bottom: 12px;">
+        The strategic fronts are the same across all three tiers. What differs is cadence, depth, and which compounds are active vs. deferred. Targets shown for the Refactored tier.
+      </p>
+      <p style="color: var(--gray-400); font-size: 0.9rem; margin-bottom: 32px;">
+        CGO Chris Karp has been in role since October 2025 — roughly 4 months. The content and demand gen infrastructure is being built from near-zero.
       </p>
 
-      <div class="metrics-dashboard">
-        <!-- Ecosystem Panel -->
-        <div class="metrics-panel">
-          <h3 class="metrics-panel-title">Ecosystem Metrics</h3>
-          <p class="metrics-panel-subtitle">What's being built</p>
+      <!-- Tier Tabs -->
+      <div style="display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap;">
+        <button class="tier-tab active" onclick="switchTier('ideal')" id="tab-ideal" style="padding: 10px 20px; border-radius: 8px; border: 1px solid var(--border); background: var(--turquoise); color: var(--bg); font-weight: 600; cursor: pointer; font-size: 0.9rem;">Ideal</button>
+        <button class="tier-tab" onclick="switchTier('refactored')" id="tab-refactored" style="padding: 10px 20px; border-radius: 8px; border: 1px solid var(--border); background: var(--card-bg); color: var(--gray-300); font-weight: 600; cursor: pointer; font-size: 0.9rem;">Refactored</button>
+        <button class="tier-tab" onclick="switchTier('minimal')" id="tab-minimal" style="padding: 10px 20px; border-radius: 8px; border: 1px solid var(--border); background: var(--card-bg); color: var(--gray-300); font-weight: 600; cursor: pointer; font-size: 0.9rem;">Minimal</button>
+      </div>
 
-          <div class="metrics-grid">
-            <div class="metric-card">
-              <div class="metric-label">Organic Monthly Visits</div>
-              <div class="metric-row">
-                <span class="metric-baseline">&lt;5K today</span>
-                <span class="metric-target">50-75K</span>
-              </div>
-              <div class="metric-progress"><div class="metric-progress-bar" style="width: 7%;"></div></div>
-              <div class="metric-timeline">12-month target</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">G2 Reviews</div>
-              <div class="metric-row">
-                <span class="metric-baseline">0 today</span>
-                <span class="metric-target">100+</span>
-              </div>
-              <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%;"></div></div>
-              <div class="metric-timeline">12-month target</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">Gated Content Assets</div>
-              <div class="metric-row">
-                <span class="metric-baseline">~1 today</span>
-                <span class="metric-target">30+</span>
-              </div>
-              <div class="metric-progress"><div class="metric-progress-bar" style="width: 3%;"></div></div>
-              <div class="metric-timeline">12-month target</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">AI Answer Engine Appearances</div>
-              <div class="metric-row">
-                <span class="metric-baseline">0 today</span>
-                <span class="metric-target">All 3 major</span>
-              </div>
-              <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%;"></div></div>
-              <div class="metric-timeline">12-month target</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">Blog Posts Published</div>
-              <div class="metric-row">
-                <span class="metric-baseline">~15 existing</span>
-                <span class="metric-target">100+</span>
-              </div>
-              <div class="metric-progress"><div class="metric-progress-bar" style="width: 15%;"></div></div>
-              <div class="metric-timeline">12-month target</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">Case Studies Published</div>
-              <div class="metric-row">
-                <span class="metric-baseline">0 today</span>
-                <span class="metric-target">10+</span>
-              </div>
-              <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%;"></div></div>
-              <div class="metric-timeline">12-month target</div>
-            </div>
-          </div>
+      <!-- Full Comparison Table -->
+      <div style="overflow-x: auto; margin-bottom: 40px;">
+        <table class="well-table" style="width: 100%;" id="tier-table">
+          <thead>
+            <tr><th>Dimension</th><th>Ideal</th><th>Refactored</th><th>Minimal</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Team</strong></td><td>3 FTE + CGO + freelance</td><td>2 FTE + CGO + freelance</td><td>1 FTE + CGO</td></tr>
+            <tr><td><strong>Article cadence</strong></td><td class="highlight-cell">3x/week (160/yr)</td><td>2x/week (108/yr)</td><td class="muted-cell">1x/week (52/yr)</td></tr>
+            <tr><td><strong>Definitions hub pages</strong></td><td class="highlight-cell">20+</td><td>10+</td><td class="muted-cell">5</td></tr>
+            <tr><td><strong>Comparison pages</strong></td><td class="highlight-cell">10+</td><td>5</td><td class="muted-cell">3</td></tr>
+            <tr><td><strong>Case studies</strong></td><td class="highlight-cell">10+ (all 5 verticals)</td><td>5</td><td class="muted-cell">3</td></tr>
+            <tr><td><strong>YouTube</strong></td><td class="highlight-cell">Month 2, biweekly</td><td>Month 4, monthly</td><td class="warning-cell">Deferred</td></tr>
+            <tr><td><strong>Research report</strong></td><td class="highlight-cell">Full scope, semi-annual</td><td>Lighter scope, annual</td><td class="muted-cell">Blog series instead</td></tr>
+            <tr><td><strong>Newsletter</strong></td><td class="highlight-cell">Biweekly</td><td>Monthly</td><td class="warning-cell">Deferred</td></tr>
+            <tr><td><strong>Reddit</strong></td><td class="highlight-cell">5/week</td><td>3/week</td><td class="muted-cell">1/week</td></tr>
+            <tr><td><strong>CEO LinkedIn</strong></td><td class="highlight-cell">5x/week</td><td>3x/week</td><td class="muted-cell">2x/week</td></tr>
+            <tr><td><strong>G2 reviews (12mo)</strong></td><td class="highlight-cell">100+</td><td>60+</td><td class="muted-cell">25+</td></tr>
+            <tr><td><strong>Partner webinars</strong></td><td class="highlight-cell">1/quarter/partner</td><td>2/year total</td><td class="muted-cell">1/year total</td></tr>
+            <tr><td><strong>Content refresh</strong></td><td class="highlight-cell">Monthly (top 10)</td><td>Monthly (top 10)</td><td class="muted-cell">Quarterly</td></tr>
+            <tr><td><strong>Est. AI visibility (12mo)</strong></td><td class="highlight-cell">50%+</td><td>30–40%</td><td class="warning-cell">15–25%</td></tr>
+            <tr><td><strong>Est. organic traffic (12mo)</strong></td><td class="highlight-cell">5–8x baseline</td><td>3–5x baseline</td><td class="muted-cell">2–3x baseline</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Honest Trade-offs -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-bottom: 40px;">
+        <div style="padding: 20px; border: 1px solid var(--border); border-radius: 12px; background: var(--card-bg);">
+          <h4 style="color: var(--turquoise); margin-bottom: 8px;">Ideal → Refactored</h4>
+          <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.6;">~30% less content volume, deferred video, lighter research report. AI visibility ceiling drops from 50%+ to 30–40% at 12 months. Still builds a credible content moat. <strong style="color: var(--gray-300);">This is the right starting point for most post-restructuring companies.</strong></p>
         </div>
-
-        <!-- Pipeline Panel -->
-        <div class="metrics-panel">
-          <h3 class="metrics-panel-title">Pipeline Metrics</h3>
-          <p class="metrics-panel-subtitle">What it's producing</p>
-
-          <div class="metrics-grid">
-            <div class="metric-card">
-              <div class="metric-label">Marketing-Sourced Leads (Monthly)</div>
-              <div class="metric-row">
-                <span class="metric-baseline">~0 today</span>
-                <span class="metric-target">100-150</span>
-              </div>
-              <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%;"></div></div>
-              <div class="metric-timeline">12-month target</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">Marketing-Sourced MQLs (Monthly)</div>
-              <div class="metric-row">
-                <span class="metric-baseline">~0 today</span>
-                <span class="metric-target">50-75</span>
-              </div>
-              <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%;"></div></div>
-              <div class="metric-timeline">12-month target</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">Marketing-Sourced Pipeline (Quarterly)</div>
-              <div class="metric-row">
-                <span class="metric-baseline">~$0 today</span>
-                <span class="metric-target">$2-4M</span>
-              </div>
-              <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%;"></div></div>
-              <div class="metric-timeline">12-month target</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">Demo/Meeting Requests (Monthly)</div>
-              <div class="metric-row">
-                <span class="metric-baseline">Low single digits</span>
-                <span class="metric-target">50-75</span>
-              </div>
-              <div class="metric-progress"><div class="metric-progress-bar" style="width: 5%;"></div></div>
-              <div class="metric-timeline">12-month target</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">ROI Calculator Completions (Monthly)</div>
-              <div class="metric-row">
-                <span class="metric-baseline">N/A</span>
-                <span class="metric-target">150+</span>
-              </div>
-              <div class="metric-progress"><div class="metric-progress-bar" style="width: 0%;"></div></div>
-              <div class="metric-timeline">12-month target</div>
-            </div>
-            <div class="metric-card">
-              <div class="metric-label">Partner-Sourced Leads (Monthly)</div>
-              <div class="metric-row">
-                <span class="metric-baseline">Minimal</span>
-                <span class="metric-target">30-50</span>
-              </div>
-              <div class="metric-progress"><div class="metric-progress-bar" style="width: 5%;"></div></div>
-              <div class="metric-timeline">12-month target</div>
-            </div>
-          </div>
+        <div style="padding: 20px; border: 1px solid var(--border); border-radius: 12px; background: var(--card-bg);">
+          <h4 style="color: var(--high); margin-bottom: 8px;">Refactored → Minimal</h4>
+          <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.6;">At 1x/week, content compounds too slowly for meaningful organic traffic growth before Month 8. No YouTube means invisibility on a ~23% citation source. No newsletter means no retainable audience. <strong style="color: var(--gray-300);">Keeps Afiniti in the game but does not build a moat.</strong></p>
+        </div>
+        <div style="padding: 20px; border: 1px solid var(--border); border-radius: 12px; background: var(--card-bg);">
+          <h4 style="color: var(--white); margin-bottom: 8px;">The Upgrade Trigger</h4>
+          <p style="color: var(--gray-400); font-size: 0.85rem; line-height: 1.6;">When organic traffic growth proves the content-to-traffic flywheel is working. If 1x/week publishing generates measurable growth by Month 4, that's the business case for expanding to 2x/week. <strong style="color: var(--gray-300);">Do not pre-invest in Ideal before proving the foundation works.</strong></p>
         </div>
       </div>
 
+      <!-- Critical Hire -->
+      <div style="padding: 24px; border: 1px solid var(--turquoise); border-radius: 12px; background: rgba(29, 226, 196, 0.05);">
+        <h4 style="color: var(--turquoise); margin-bottom: 8px;">Critical Hire: Content Lead With Domain Expertise</h4>
+        <p style="color: var(--gray-300); font-size: 0.9rem; line-height: 1.7;">A generalist content marketer will produce mediocre work in this domain. Afiniti needs someone who understands contact center technology, AI routing, and the CCaaS landscape. Recruit from: contact center software companies, industry analysts (DMG Consulting, Metrigy alumni), CX technology publications, or enterprise AI marketing teams. <strong style="color: var(--white);">This is the critical path item — every other element of this plan depends on it.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 10: Metrics Dashboard -->
+  <section class="section" id="metrics">
+    <div class="container">
+      <span class="section-label">Key Metrics</span>
+      <h2>Three Measurement Views</h2>
+      <p class="section-intro">
+        AI citation metrics, ecosystem metrics, and pipeline metrics. All interconnected — citation source building IS demand generation. Targets shown for the Refactored tier.
+      </p>
+
+      <!-- AI Citation Metrics -->
+      <div style="margin-bottom: 40px;">
+        <h3 style="color: var(--turquoise); margin-bottom: 16px;">AI Citation Metrics</h3>
+        <div style="overflow-x: auto;">
+          <table class="well-table" style="width: 100%;">
+            <thead>
+              <tr><th>Metric</th><th>Current</th><th>90 Days</th><th>6 Months</th><th>12 Months</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>AI visibility (15-prompt battery)</td><td class="warning-cell">~0%</td><td>10–15%</td><td>25–35%</td><td class="highlight-cell">40–50%</td></tr>
+              <tr><td>ChatGPT appearances (of 15)</td><td class="warning-cell">0</td><td>1–3</td><td>4–6</td><td class="highlight-cell">7+</td></tr>
+              <tr><td>Perplexity appearances (of 15)</td><td class="warning-cell">0</td><td>2–4</td><td>5–8</td><td class="highlight-cell">10+</td></tr>
+              <tr><td>Google AI Overview inclusions</td><td class="warning-cell">0</td><td>1–2</td><td>3–5</td><td class="highlight-cell">7+</td></tr>
+              <tr><td>Citation source coverage (of 9)</td><td class="warning-cell">0✅ 2⚠️ 7❌</td><td>2✅ 3⚠️ 4❌</td><td>4✅ 3⚠️ 2❌</td><td class="highlight-cell">6✅ 2⚠️ 1❌</td></tr>
+              <tr><td>Wikipedia</td><td class="muted-cell">⚠️ Dated</td><td>Updated</td><td>✅ Current</td><td class="highlight-cell">✅ Maintained</td></tr>
+              <tr><td>Reddit contributions</td><td class="warning-cell">0</td><td>20+</td><td>60+</td><td class="highlight-cell">150+</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Ecosystem Metrics -->
+      <div style="margin-bottom: 40px;">
+        <h3 style="color: var(--turquoise); margin-bottom: 16px;">Ecosystem Metrics</h3>
+        <div style="overflow-x: auto;">
+          <table class="well-table" style="width: 100%;">
+            <thead>
+              <tr><th>Metric</th><th>Current</th><th>90 Days</th><th>6 Months</th><th>12 Months</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Organic monthly visits (non-branded)</td><td class="warning-cell">Near 0</td><td>1.5–2x</td><td>3–5x</td><td class="highlight-cell">5–8x</td></tr>
+              <tr><td>G2 reviews</td><td class="warning-cell">0</td><td>25+</td><td>60+</td><td class="highlight-cell">100+</td></tr>
+              <tr><td>Total cross-platform reviews</td><td class="warning-cell">0</td><td>50+</td><td>125+</td><td class="highlight-cell">250+</td></tr>
+              <tr><td>Blog posts (cumulative new)</td><td class="warning-cell">0</td><td>15+</td><td>50+</td><td class="highlight-cell">108+</td></tr>
+              <tr><td>Definitions hub pages</td><td class="warning-cell">0</td><td>5</td><td>10+</td><td class="highlight-cell">20+</td></tr>
+              <tr><td>Comparison pages</td><td class="warning-cell">0</td><td>2</td><td>5+</td><td class="highlight-cell">10+</td></tr>
+              <tr><td>Case studies published</td><td class="warning-cell">0</td><td>1</td><td>5</td><td class="highlight-cell">10+</td></tr>
+              <tr><td>Newsletter subscribers</td><td class="warning-cell">0</td><td>250+</td><td>1,000+</td><td class="highlight-cell">2,500+</td></tr>
+              <tr><td>YouTube subscribers</td><td class="warning-cell">0</td><td>50+</td><td>300+</td><td class="highlight-cell">1,000+</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Pipeline Metrics -->
+      <div>
+        <h3 style="color: var(--turquoise); margin-bottom: 16px;">Pipeline Metrics</h3>
+        <div style="overflow-x: auto;">
+          <table class="well-table" style="width: 100%;">
+            <thead>
+              <tr><th>Metric</th><th>Current</th><th>90 Days</th><th>6 Months</th><th>12 Months</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Marketing-sourced leads/mo</td><td class="warning-cell">Near 0</td><td>10–20</td><td>40–60</td><td class="highlight-cell">80–120</td></tr>
+              <tr><td>Demo/meeting requests from web</td><td class="warning-cell">Low</td><td>15–25</td><td>40–60</td><td class="highlight-cell">75–100</td></tr>
+              <tr><td>ROI calculator completions/mo</td><td class="muted-cell">N/A</td><td class="muted-cell">N/A (building)</td><td>50+</td><td class="highlight-cell">150+</td></tr>
+              <tr><td>Research report downloads</td><td class="muted-cell">N/A</td><td class="muted-cell">N/A</td><td>250+</td><td class="highlight-cell">500+</td></tr>
+              <tr><td>Partner-sourced leads/mo</td><td class="warning-cell">Minimal</td><td>5–10</td><td>15–25</td><td class="highlight-cell">30–50</td></tr>
+              <tr><td>AI-referred traffic/mo</td><td class="warning-cell">~0</td><td class="muted-cell">Tracking</td><td>200+</td><td class="highlight-cell">1,000+</td></tr>
+              <tr><td>Content-attributed pipeline (% of total)</td><td class="warning-cell">~0%</td><td class="muted-cell">Tracking</td><td>10–15%</td><td class="highlight-cell">20–30%</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 11: Risks and Mitigations -->
+  <section class="section" id="risks">
+    <div class="container">
+      <span class="section-label">Risks and Mitigations</span>
+      <h2>What Could Go Wrong</h2>
+      <div style="overflow-x: auto;">
+        <table class="well-table" style="width: 100%;">
+          <thead>
+            <tr><th>Risk</th><th>Impact</th><th>Mitigation</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Content Lead hire delayed or wrong fit</strong></td>
+              <td class="warning-cell">Delays entire engine 3–6 months</td>
+              <td>Begin recruiting immediately. Use freelance CX/CCaaS writers as bridge. This is the critical path item.</td>
+            </tr>
+            <tr>
+              <td><strong>"Coming soon" products don't ship</strong></td>
+              <td class="warning-cell">Credibility erodes; awareness without product</td>
+              <td>Marketing should not promote "coming soon" products in demand gen. Focus all claims on Afiniti Pairing, which is shipping and proven.</td>
+            </tr>
+            <tr>
+              <td><strong>Research report blocked by data access</strong></td>
+              <td>Proprietary data moat cannot be built</td>
+              <td>Start with manually exportable, anonymized aggregate data. First report does not need a real-time pipeline.</td>
+            </tr>
+            <tr>
+              <td><strong>Leadership expects results in 6 weeks</strong></td>
+              <td class="warning-cell">Strategy abandoned before compounding</td>
+              <td>Set expectations explicitly: content compounds over 6–12 months. Quick wins (comparison pages, review profiles, LinkedIn) produce visible activity while long-term assets build.</td>
+            </tr>
+            <tr>
+              <td><strong>Partners view Afiniti as feature, not partner</strong></td>
+              <td>Co-marketing deprioritized; absorption risk</td>
+              <td>Deliver measurable value to partner customers that partners cannot replicate. Make Afiniti indispensable within partner ecosystems.</td>
+            </tr>
+            <tr>
+              <td><strong>NICE or Five9 builds native outcome orchestration</strong></td>
+              <td class="warning-cell">Category claim threatened</td>
+              <td>Move fast on category content. The company that defines the term in search and AI systems owns it — even if the capability is replicated.</td>
+            </tr>
+            <tr>
+              <td><strong>Team tries too much at once</strong></td>
+              <td>Spread thin, nothing executed well</td>
+              <td>Choose one execution tier and execute fully. No podcast, no community platform, no certification program until the core content engine runs.</td>
+            </tr>
+            <tr>
+              <td><strong>AI citation patterns harden around competitors</strong></td>
+              <td class="warning-cell">Structural disadvantage compounds monthly</td>
+              <td>Citation source work (reviews, Reddit, YouTube, Wikipedia) starts Week 1 regardless of content engine readiness.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </section>
 
   <!-- CTA Section -->
   <section class="cta-section">
     <div class="container">
-      <h2>The Window Is Open.<br>It Won't Stay Open.</h2>
-      <p>
-        Every week without a pillar page, glossary hub, and supporting content cluster is a week where "outcome orchestration" as a category erodes. The programs above are the playbook. Let's talk about execution.
+      <h2>Three Layers. One Window.</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 32px; text-align: left;">
+        <div style="padding: 16px; border-left: 3px solid var(--turquoise);">
+          <h4 style="color: var(--white); margin-bottom: 4px;">Traditional visibility</h4>
+          <p style="color: var(--gray-400); font-size: 0.85rem;">The site is clean, the messaging is sharp — but zero content exists to capture buyers who search before they know Afiniti's name.</p>
+        </div>
+        <div style="padding: 16px; border-left: 3px solid var(--turquoise);">
+          <h4 style="color: var(--white); margin-bottom: 4px;">AI visibility</h4>
+          <p style="color: var(--gray-400); font-size: 0.85rem;">The most urgent layer. B2B buyers prompt ChatGPT, ask Perplexity, and read AI Overviews. Afiniti scores 0 green on 9 citation sources. Competitors score 6-8.</p>
+        </div>
+        <div style="padding: 16px; border-left: 3px solid var(--turquoise);">
+          <h4 style="color: var(--white); margin-bottom: 4px;">Category ownership</h4>
+          <p style="color: var(--gray-400); font-size: 0.85rem;">Highest leverage. "Outcome Orchestration" is Afiniti's best strategic asset and most time-sensitive opportunity.</p>
+        </div>
+      </div>
+      <p style="font-size: 1.1rem; color: var(--white); margin-bottom: 24px;">
+        <strong>Start where you can sustain. Prove the flywheel works. Scale when the data says to.</strong>
       </p>
       <div class="cta-links">
         <a href="https://calendly.com/nicktalbert/chat-with-nick" class="btn btn-primary" target="_blank">Schedule a Conversation</a>
@@ -1643,6 +1674,31 @@
       if (!wasOpen) {
         card.classList.add('open');
       }
+    }
+
+    // Tier Tab Switcher
+    function switchTier(tier) {
+      const tabs = document.querySelectorAll('.tier-tab');
+      tabs.forEach(t => {
+        t.style.background = 'var(--card-bg)';
+        t.style.color = 'var(--gray-300)';
+      });
+      const activeTab = document.getElementById('tab-' + tier);
+      activeTab.style.background = 'var(--turquoise)';
+      activeTab.style.color = 'var(--bg)';
+
+      // Highlight the selected tier column
+      const table = document.getElementById('tier-table');
+      const rows = table.querySelectorAll('tbody tr');
+      const colIndex = tier === 'ideal' ? 1 : tier === 'refactored' ? 2 : 3;
+      rows.forEach(row => {
+        const cells = row.querySelectorAll('td');
+        cells.forEach((cell, i) => {
+          if (i > 0) {
+            cell.style.opacity = (i === colIndex) ? '1' : '0.5';
+          }
+        });
+      });
     }
 
     // Smooth scroll for anchor links
