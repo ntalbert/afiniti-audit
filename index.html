@@ -74,9 +74,9 @@
   <section class="section" id="situation">
     <div class="container">
       <span class="section-label">The Situation</span>
-      <h2>Real Progress, Persistent Gaps</h2>
+      <h2>Real Progress, One Remaining Challenge: Discoverability</h2>
       <p class="section-intro" style="margin-bottom: 24px;">
-        <strong style="color: var(--white);">Afiniti has made real progress since its December 2024 bankruptcy emergence</strong> — stabilizing leadership under CEO Jerome Kapelus, securing four major platform partnerships (Avaya, AWS, Five9, NICE), and rebranding around "Outcome Orchestration."
+        <strong style="color: var(--white);">Afiniti has made meaningful progress since its December 2024 bankruptcy emergence</strong> — stabilizing leadership under CEO Jerome Kapelus, securing four major platform partnerships (Avaya, AWS, Five9, NICE), fixing most website technical issues, and rebranding around "Outcome Orchestration." The site looks credible now; the discoverability infrastructure behind it does not yet exist.
       </p>
       <div class="data-grid">
         <div class="data-card">
@@ -101,226 +101,14 @@
         </div>
       </div>
 
-      <!-- URL Status Table -->
-      <div style="margin-top: 48px;">
-        <div class="gap-card">
-          <div class="gap-header" onclick="toggleGap(this)">
-            <h4>Full URL Audit: 74 URLs Discovered Across Domain + Subdomains</h4>
-            <span class="gap-toggle">+</span>
-          </div>
-          <div class="gap-content" style="overflow-x: auto;">
-            <table class="well-table" style="margin-top: 16px; min-width: 700px;">
-              <thead>
-                <tr>
-                  <th>URL</th>
-                  <th>HTTP Status</th>
-                  <th>Key SEO Issues</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr style="background: rgba(29, 226, 196, 0.04);">
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;" colspan="3"><strong style="color: var(--gray-300);">Core Pages</strong></td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/</td>
-                  <td class="highlight-cell">200</td>
-                  <td>No schema; meta description too long (~250+ chars); duplicate $2.5B paragraph; JS rendering dependency</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/about-us/</td>
-                  <td class="highlight-cell">200</td>
-                  <td>No schema; embedded video without VideoObject schema; good content depth</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/contact/</td>
-                  <td class="warning-cell">200</td>
-                  <td class="warning-cell">Uses OLD nav template; 2025 copyright; references discontinued eXperienceAI in nav</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/what-we-do</td>
-                  <td class="warning-cell">200 (duplicate)</td>
-                  <td class="warning-cell">Serves exact homepage content; no 301 redirect; Google shows stale cached title</td>
-                </tr>
-                <tr style="background: rgba(29, 226, 196, 0.04);">
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;" colspan="3"><strong style="color: var(--gray-300);">Products</strong></td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/</td>
-                  <td class="warning-cell">410 Gone</td>
-                  <td class="warning-cell">Still indexed by Google; no redirect to /products/afiniti-pairing/; link equity lost</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/afiniti-pairing/</td>
-                  <td class="highlight-cell">200</td>
-                  <td>New nav; FAQ section present but missing FAQPage schema; good keyword-rich title</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/experienceai/</td>
-                  <td class="warning-cell">200</td>
-                  <td class="warning-cell">OLD nav; missing H1 tag; typo in meta 'eXperienceAl' (lowercase L); orphaned</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/experience-ai-plus/</td>
-                  <td class="warning-cell">200</td>
-                  <td class="warning-cell">OLD nav; meta description ~56 chars; orphaned from new site structure</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/experience-ai-elite/</td>
-                  <td class="warning-cell">200</td>
-                  <td class="warning-cell">URL says 'elite' but serves Afiniti Pairing content; duplicate content; needs 301</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/products/afiniti-inside/</td>
-                  <td class="warning-cell">410 Gone</td>
-                  <td class="warning-cell">Still indexed by Google; product discontinued; no redirect</td>
-                </tr>
-                <tr style="background: rgba(29, 226, 196, 0.04);">
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;" colspan="3"><strong style="color: var(--gray-300);">Industries</strong></td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/industries/</td>
-                  <td class="warning-cell">200</td>
-                  <td class="warning-cell">Lorem ipsum placeholder text on multiple industry cards; inconsistent heading hierarchy</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/industries/telco-media/</td>
-                  <td class="highlight-cell">200</td>
-                  <td>No schema; good keyword-rich title</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/industries/financial-services/</td>
-                  <td class="highlight-cell">200</td>
-                  <td>No schema; meta description too short (91 chars)</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/industries/healthcare/</td>
-                  <td class="highlight-cell">200</td>
-                  <td>No schema; well-structured page</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/industries/insurance/</td>
-                  <td class="highlight-cell">200</td>
-                  <td>No schema; broken double-slash link to //industries/insurance-form/</td>
-                </tr>
-                <tr style="background: rgba(29, 226, 196, 0.04);">
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;" colspan="3"><strong style="color: var(--gray-300);">Resources &amp; Content</strong></td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/resources/</td>
-                  <td class="warning-cell">410 Gone</td>
-                  <td class="warning-cell">Still indexed; still linked in nav dropdown; sub-sections live but parent dead</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/blogs/</td>
-                  <td class="highlight-cell">200</td>
-                  <td>New nav; replacement for old /resources/</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/videos/</td>
-                  <td class="highlight-cell">200</td>
-                  <td>New nav</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/industry-reports/</td>
-                  <td class="highlight-cell">200</td>
-                  <td>New nav</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/news/</td>
-                  <td class="highlight-cell">200</td>
-                  <td>New nav</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/testimonials/</td>
-                  <td class="warning-cell">200</td>
-                  <td class="warning-cell">Missing H1 tag (jumps to H3); no VideoObject schema on video testimonials</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/afiniti-link/</td>
-                  <td class="highlight-cell">200</td>
-                  <td>Present in both old and new nav templates</td>
-                </tr>
-                <tr style="background: rgba(29, 226, 196, 0.04);">
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;" colspan="3"><strong style="color: var(--gray-300);">Careers</strong></td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/careers/</td>
-                  <td class="warning-cell">200</td>
-                  <td class="warning-cell">No JobPosting schema; generic title (17 chars); Google rewrites title</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/jobs/</td>
-                  <td class="warning-cell">200</td>
-                  <td class="warning-cell">No JobPosting schema; 4 listings; generic title (15 chars)</td>
-                </tr>
-                <tr style="background: rgba(29, 226, 196, 0.04);">
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;" colspan="3"><strong style="color: var(--gray-300);">Legal &amp; ESG</strong></td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/legal/</td>
-                  <td class="warning-cell">200</td>
-                  <td class="warning-cell">Link cards render twice (template bug); double-slash URLs; meta only 43 chars; no Terms of Service or Cookie Policy</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/environmental-social-and-governance/</td>
-                  <td class="warning-cell">200</td>
-                  <td class="warning-cell">CEO quote attributes Hassan Afzal (current CEO is Jerome Kapelus); no /esg short URL</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/ESG sub-pages (3+)</td>
-                  <td class="warning-cell">200</td>
-                  <td class="warning-cell">Invisible Unicode zero-width space (U+200B) in title tags</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/legal/responsible-ai/</td>
-                  <td class="warning-cell">200</td>
-                  <td class="warning-cell">Duplicate content with /ESG/responsible-ai/; keyword cannibalization</td>
-                </tr>
-                <tr style="background: rgba(29, 226, 196, 0.04);">
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;" colspan="3"><strong style="color: var(--gray-300);">Dead / Legacy URLs (still indexed by Google)</strong></td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/contact-us-sales/, -investor/, -partnerships/</td>
-                  <td class="warning-cell">404/410</td>
-                  <td class="warning-cell">No redirect to /contact/; link equity wasted</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/verizon/</td>
-                  <td class="warning-cell">410 Gone</td>
-                  <td class="warning-cell">Client landing page removed; no redirect</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/offices/new-york</td>
-                  <td class="warning-cell">404</td>
-                  <td class="warning-cell">Entire /offices/ section removed; external backlinks from Glassdoor, ZoomInfo wasted</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">/news/detail/* (10+ URLs)</td>
-                  <td class="warning-cell">410 Gone</td>
-                  <td class="warning-cell">Entire legacy news path deprecated; no redirects to /news/</td>
-                </tr>
-                <tr style="background: rgba(239, 68, 68, 0.04);">
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;" colspan="3"><strong style="color: var(--gray-300);">Subdomains</strong></td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">portal.afiniti.com</td>
-                  <td class="warning-cell">200 — no noindex</td>
-                  <td class="warning-cell">Meta description leaks "TMobile Portal" client name; should be noindexed</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">selfservice.afiniti.com</td>
-                  <td class="warning-cell">200 — no noindex</td>
-                  <td class="warning-cell">Shows BIO-key International branding (© 2009-2021); should be noindexed</td>
-                </tr>
-                <tr>
-                  <td style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; font-style: normal;">careers.afiniti.com</td>
-                  <td class="muted-cell">200</td>
-                  <td class="muted-cell">Cannibalization with /careers/ and /jobs/; all job pages share identical meta description</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+      <!-- Key Context from Audit -->
+      <div style="margin-top: 48px; padding: 24px; border: 1px solid var(--border); border-radius: 12px; background: var(--card-bg);">
+        <p style="color: var(--gray-300); font-size: 0.95rem; line-height: 1.7; margin-bottom: 12px;">
+          <strong style="color: var(--white);">Website status: mostly clean, one remaining issue.</strong> Live browser verification confirms that the Afiniti web team has resolved the previously flagged technical issues — the site now presents a unified navigation, consistent branding, working redirects for legacy product URLs, and clean content rendering across all pages.
+        </p>
+        <p style="color: var(--gray-400); font-size: 0.9rem; line-height: 1.7;">
+          <strong style="color: var(--turquoise);">The one remaining technical issue:</strong> stale pages still indexed by Google. Legacy URLs that now return 410 or redirect still appear in Google search results with cached descriptions from 2024-2025. These need removal requests submitted via Google Search Console to clear the stale index entries.
+        </p>
       </div>
     </div>
   </section>
@@ -331,7 +119,7 @@
       <span class="section-label">What's Working</span>
       <h2>Building Blocks, Not Starting From Zero</h2>
       <p class="section-intro">
-        Before diagnosing what's broken, it's essential to recognize what's strong. These aren't compliments — they're the foundation any rebuild must leverage.
+        Before mapping the gaps, it's essential to recognize what's strong. These aren't compliments — they're the foundation any growth strategy must leverage.
       </p>
 
       <div class="strengths-grid">
@@ -375,48 +163,23 @@
       <span class="section-label">The Gaps</span>
       <h2>What Buyers Find Today</h2>
       <p class="section-intro" style="margin-bottom: 24px;">
-        This audit identified persistent technical defects, complete absence from organic and AI search, and a widening gap between Afiniti's product vision and market reality. Every finding below was verified against the live site on February 24, 2026.
+        The website's visual and navigational issues have been largely resolved — the remaining gaps are invisible to users but visible to search engines and AI systems. These are the infrastructure and content gaps that the discoverability strategy depends on. Every finding below was verified on February 24, 2026.
       </p>
       <p style="color: var(--gray-400); font-size: 0.9rem; margin-bottom: 32px;">
-        14 gaps organized by severity. Each includes what it costs Afiniti today and what fixing it unlocks. Click any gap to expand.
+        12 gaps organized by severity. Each includes what it costs Afiniti today and what fixing it unlocks. Click any gap to expand.
       </p>
 
       <!-- Critical Gaps -->
       <div class="gaps-section">
         <div class="gaps-section-header">
           <span class="severity-label critical">Critical</span>
-          <span style="color: var(--gray-400); font-size: 0.875rem;">5 gaps requiring immediate action</span>
+          <span style="color: var(--gray-400); font-size: 0.875rem;">4 gaps requiring immediate action</span>
         </div>
         <div class="gaps-grid">
 
           <div class="gap-card">
             <div class="gap-header" onclick="toggleGap(this)">
-              <h4>Gap 1: Lorem Ipsum Still Live on /industries/</h4>
-              <span class="gap-toggle">+</span>
-            </div>
-            <div class="gap-content">
-              <div class="gap-detail">
-                <div class="gap-detail-label">Status</div>
-                <div class="gap-detail-value">All five industry card descriptions on the /industries/ hub page display "Lorem ipsum dolor sit amet" as placeholder text. Flagged in previous audit — remains unfixed.</div>
-              </div>
-              <div class="gap-detail">
-                <div class="gap-detail-label">Direct Quote from Live Page</div>
-                <div class="gap-detail-value" style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; font-style: normal;">Travel & Hospitality: Lorem ipsum dolor sit amet — $115m — Lorem ipsum dolor sit amet</div>
-              </div>
-              <div class="gap-detail">
-                <div class="gap-detail-label">Cost</div>
-                <div class="gap-detail-value critical">For a company claiming $2.5 billion in verified value, this is a credibility-destroying defect. Any enterprise buyer clicking "Industries" from the nav encounters dummy copy.</div>
-              </div>
-              <div class="gap-detail">
-                <div class="gap-detail-label">Fix Complexity</div>
-                <div class="gap-detail-value highlight">30 minutes of work — write 1-2 sentence descriptions for each industry card.</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="gap-card">
-            <div class="gap-header" onclick="toggleGap(this)">
-              <h4>Gap 2: Zero Organic Search Visibility</h4>
+              <h4>Gap 1: Zero Organic Search Visibility</h4>
               <span class="gap-toggle">+</span>
             </div>
             <div class="gap-content">
@@ -456,7 +219,7 @@
 
           <div class="gap-card">
             <div class="gap-header" onclick="toggleGap(this)">
-              <h4>Gap 3: Three "Coming Soon" Products in a Shipped-Agent Market</h4>
+              <h4>Gap 2: Three "Coming Soon" Products in a Shipped-Agent Market</h4>
               <span class="gap-toggle">+</span>
             </div>
             <div class="gap-content">
@@ -470,7 +233,7 @@
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Cost</div>
-                <div class="gap-detail-value critical">The credibility window between announcing products and delivering them is narrow — especially for a company emerging from bankruptcy. Three "coming soon" labels signal vaporware to enterprise buyers.</div>
+                <div class="gap-detail-value critical">The credibility window between announcing products and delivering them is narrow. Three "coming soon" labels may create hesitation for enterprise buyers evaluating competitive alternatives.</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Fix Complexity</div>
@@ -481,7 +244,7 @@
 
           <div class="gap-card">
             <div class="gap-header" onclick="toggleGap(this)">
-              <h4>Gap 4: Zero Structured Data on Any Page</h4>
+              <h4>Gap 3: Zero Structured Data on Any Page</h4>
               <span class="gap-toggle">+</span>
             </div>
             <div class="gap-content">
@@ -506,7 +269,7 @@
 
           <div class="gap-card">
             <div class="gap-header" onclick="toggleGap(this)">
-              <h4>Gap 5: AI Answer Engines Can't Recommend Afiniti</h4>
+              <h4>Gap 4: AI Answer Engines Can't Recommend Afiniti</h4>
               <span class="gap-toggle">+</span>
             </div>
             <div class="gap-content">
@@ -524,7 +287,7 @@
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Fix</div>
-                <div class="gap-detail-value highlight">Fixing Gaps 1-4 + building a content engine addresses this systemically. The content formats needed are known — Afiniti produces none of them at scale.</div>
+                <div class="gap-detail-value highlight">Fixing Gaps 1-3 + building a content engine addresses this systemically. The content formats needed are known — Afiniti produces none of them at scale.</div>
               </div>
             </div>
           </div>
@@ -542,7 +305,7 @@
 
           <div class="gap-card">
             <div class="gap-header" onclick="toggleGap(this)">
-              <h4>Gap 6: No robots.txt, No XML Sitemap</h4>
+              <h4>Gap 5: No robots.txt, No XML Sitemap</h4>
               <span class="gap-toggle">+</span>
             </div>
             <div class="gap-content">
@@ -563,28 +326,28 @@
 
           <div class="gap-card">
             <div class="gap-header" onclick="toggleGap(this)">
-              <h4>Gap 7: Orphaned Legacy Product Pages</h4>
+              <h4>Gap 6: Stale Legacy Pages Still Indexed by Google</h4>
               <span class="gap-toggle">+</span>
             </div>
             <div class="gap-content">
               <div class="gap-detail">
                 <div class="gap-detail-label">Status</div>
-                <div class="gap-detail-value">/products/experienceai/ and /products/experience-ai-plus/ still serve the OLD nav template with eXperienceAI branding. /products/ returns 410 Gone. /products/experience-ai-elite/ has content swapped to Pairing but no 301 redirect. /products/afiniti-inside/ returns 410 but remains indexed. Additionally, /products/experienceai/ is missing its H1 tag entirely, and /testimonials/ skips from no H1 directly to H3 — heading hierarchy violations that hurt both SEO and accessibility.</div>
+                <div class="gap-detail-value">Legacy URLs that now return 410 or redirect still appear in Google search results with cached descriptions from 2024-2025. The site's redirects and navigation have been fixed, but Google's index hasn't caught up.</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Cost</div>
-                <div class="gap-detail-value critical">A buyer who finds these via Google encounters a completely different site architecture than someone arriving at the homepage. This signals organizational chaos during enterprise due diligence.</div>
+                <div class="gap-detail-value critical">Buyers arriving via stale Google links encounter outdated content or error pages. The brand-new Outcome Orchestration positioning is undermined by legacy eXperienceAI descriptions still appearing in search results.</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Fix Complexity</div>
-                <div class="gap-detail-value highlight">Low — 301 redirect all legacy product URLs to /products/afiniti-pairing/. Submit deindex requests for dead pages.</div>
+                <div class="gap-detail-value highlight">Low — submit removal requests via Google Search Console. Add noindex meta tags to any 410 response templates to prevent re-crawling.</div>
               </div>
             </div>
           </div>
 
           <div class="gap-card">
             <div class="gap-header" onclick="toggleGap(this)">
-              <h4>Gap 8: Zero Analyst Coverage</h4>
+              <h4>Gap 7: Zero Analyst Coverage</h4>
               <span class="gap-toggle">+</span>
             </div>
             <div class="gap-content">
@@ -609,7 +372,7 @@
 
           <div class="gap-card">
             <div class="gap-header" onclick="toggleGap(this)">
-              <h4>Gap 9: No Review Platform Presence</h4>
+              <h4>Gap 8: No Review Platform Presence</h4>
               <span class="gap-toggle">+</span>
             </div>
             <div class="gap-content">
@@ -639,13 +402,13 @@
       <div class="gaps-section">
         <div class="gaps-section-header">
           <span class="severity-label medium">Medium</span>
-          <span style="color: var(--gray-400); font-size: 0.875rem;">4 gaps affecting efficiency</span>
+          <span style="color: var(--gray-400); font-size: 0.875rem;">3 gaps affecting efficiency</span>
         </div>
         <div class="gaps-grid">
 
           <div class="gap-card">
             <div class="gap-header" onclick="toggleGap(this)">
-              <h4>Gap 10: Blog Strategy Misaligned</h4>
+              <h4>Gap 9: Blog Strategy Misaligned</h4>
               <span class="gap-toggle">+</span>
             </div>
             <div class="gap-content">
@@ -670,71 +433,46 @@
 
           <div class="gap-card">
             <div class="gap-header" onclick="toggleGap(this)">
-              <h4>Gap 11: Brand Architecture Conflict</h4>
+              <h4>Gap 10: Brand Architecture Residual</h4>
               <span class="gap-toggle">+</span>
             </div>
             <div class="gap-content">
               <div class="gap-detail">
                 <div class="gap-detail-label">Status</div>
-                <div class="gap-detail-value">Homepage promotes Outcome Orchestration with the new 4-product suite. Orphaned pages still show eXperienceAI (Core/+/Elite) branding. AWS Marketplace listing (March 2025) still references eXperienceAI. Google's search index still serves stale descriptions.</div>
+                <div class="gap-detail-value">The site has been successfully rebranded around Outcome Orchestration with a unified navigation and consistent content. However, the eXperienceAI branding persists in two external locations: the AWS Marketplace listing (March 2025) and Google's cached search descriptions from 2024-2025.</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Cost</div>
-                <div class="gap-detail-value">Buyer confusion, diluted messaging, undermined credibility. A prospect arriving via Google may see legacy branding while the homepage pitches a different architecture entirely.</div>
+                <div class="gap-detail-value">A prospect arriving via Google or AWS Marketplace may encounter legacy eXperienceAI branding while the main site promotes Outcome Orchestration — creating messaging inconsistency.</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Fix Complexity</div>
-                <div class="gap-detail-value highlight">Low-Medium — 301 redirects, marketplace listing updates, and search index cleanup.</div>
+                <div class="gap-detail-value highlight">Low — AWS Marketplace listing update + Google Search Console deindex requests for stale cached descriptions.</div>
               </div>
             </div>
           </div>
 
           <div class="gap-card">
             <div class="gap-header" onclick="toggleGap(this)">
-              <h4>Gap 12: Duplicate and Dead Pages</h4>
+              <h4>Gap 11: No Competitor Comparison Content</h4>
               <span class="gap-toggle">+</span>
             </div>
             <div class="gap-content">
               <div class="gap-detail">
                 <div class="gap-detail-label">Status</div>
-                <div class="gap-detail-value">/what-we-do serves exact homepage content (no 301 redirect). /resources/ returns 410 Gone. /products/ returns 410 Gone. /products/afiniti-inside/ returns 410 but remains indexed. Duplicated footer copyright on every page ("© 2026 Afiniti. All rights reserved© 2026 Afiniti."). 10+ legacy /news/detail/* URLs return 410 but remain indexed by Google. Legacy contact URLs (/contact-us-sales/, /contact-us-investor/, /contact-us-partnerships/) return 404/410 with no redirects to /contact/. /verizon/ client landing page returns 410 — still indexed.</div>
+                <div class="gap-detail-value">Zero competitor comparison content exists anywhere on afiniti.com. Every buyer who searches "[competitor] alternatives" or "Afiniti vs [competitor]" finds nothing from Afiniti.</div>
               </div>
               <div class="gap-detail">
-                <div class="gap-detail-label">Technical Defects Found</div>
-                <div class="gap-detail-value">Double-slash URLs in internal links (//legal/patents/, //industries/insurance-form/). /legal/ hub page renders link cards twice (template rendering bug). ESG page attributes CEO quote to Hassan Afzal — current CEO is Jerome Kapelus (outdated content). Invisible Unicode zero-width space characters (U+200B) embedded in ESG sub-page title tags. Two separate "Responsible AI" pages (/legal/responsible-ai/ and /environmental-social-and-governance/responsible-ai/) create duplicate content and keyword cannibalization. No Terms of Service or Cookie Policy page exists on the site.</div>
+                <div class="gap-detail-label">Competitive Benchmark</div>
+                <div class="gap-detail-value">Balto.ai runs dedicated comparison pages for virtually every competitor, capturing high-intent purchase-ready traffic. These are the highest-converting organic visitors on any SaaS site.</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Cost</div>
-                <div class="gap-detail-value">Duplicate content signals confuse search engines. Dead pages in Google's index waste crawl budget and erode site quality signals. Double-slash URLs break link equity flow. Invisible Unicode pollutes title tags in search results. Wrong CEO attribution on ESG page undermines credibility during enterprise due diligence.</div>
+                <div class="gap-detail-value">Missing the highest-intent organic traffic — buyers actively comparing solutions. Every "vs" search where Afiniti doesn't appear is a buyer who considers only competitors.</div>
               </div>
               <div class="gap-detail">
                 <div class="gap-detail-label">Fix Complexity</div>
-                <div class="gap-detail-value highlight">Low-Medium — 301 redirects, deindex requests, one-line template fixes for duplicated copyright and double-slash URLs, content updates for ESG page, consolidation of duplicate Responsible AI pages.</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="gap-card">
-            <div class="gap-header" onclick="toggleGap(this)">
-              <h4>Gap 13: Subdomain SEO Hygiene Exposes Brand</h4>
-              <span class="gap-toggle">+</span>
-            </div>
-            <div class="gap-content">
-              <div class="gap-detail">
-                <div class="gap-detail-label">Status</div>
-                <div class="gap-detail-value">Three active subdomains discovered — portal.afiniti.com, selfservice.afiniti.com, and careers.afiniti.com — none with noindex tags despite being login/authentication pages that should not appear in search results.</div>
-              </div>
-              <div class="gap-detail">
-                <div class="gap-detail-label">Brand Leakage</div>
-                <div class="gap-detail-value critical">portal.afiniti.com login page meta description references "TMobile Portal" — a client name leak visible in search results. selfservice.afiniti.com displays third-party BIO-key International branding including their copyright ("© 2009-2021 BIO-key International"), diluting Afiniti's brand when indexed.</div>
-              </div>
-              <div class="gap-detail">
-                <div class="gap-detail-label">Content Cannibalization</div>
-                <div class="gap-detail-value">careers.afiniti.com duplicates content from the main domain's /careers/ and /jobs/ pages. Every job listing shares an identical generic meta description ("Join us in our journey to change the world"), eliminating keyword differentiation between roles.</div>
-              </div>
-              <div class="gap-detail">
-                <div class="gap-detail-label">Fix Complexity</div>
-                <div class="gap-detail-value highlight">Low — add noindex meta tags to portal and selfservice subdomains. Consolidate careers to either subdomain or main domain. Fix TMobile meta description leak.</div>
+                <div class="gap-detail-value highlight">Medium — 5 initial pages: /compare/afiniti-vs-cresta/, /compare/afiniti-vs-observe-ai/, /compare/nice-alternatives/, /compare/genesys-alternatives/, /compare/five9-ai-optimization/.</div>
               </div>
             </div>
           </div>
@@ -752,7 +490,7 @@
 
           <div class="gap-card">
             <div class="gap-header" onclick="toggleGap(this)">
-              <h4>Gap 14: No Reddit, YouTube, or Community Presence</h4>
+              <h4>Gap 12: No Reddit, YouTube, or Community Presence</h4>
               <span class="gap-toggle">+</span>
             </div>
             <div class="gap-content">
@@ -1001,7 +739,7 @@
             <strong style="color: var(--white);">Afiniti's strategic pivot to Outcome Orchestration is the right move.</strong> The partnership velocity is impressive. The "no rip and replace" positioning is sound. The proof points are real.
           </p>
           <p style="margin-bottom: 16px;">
-            <strong style="color: #ef4444;">But the execution gap between the vision and the ground reality is the kind of gap that enterprise buyers notice and competitors exploit.</strong> Lorem ipsum on live pages. Zero organic rankings. Three vaporware products. No analyst coverage. The credibility window is narrow and closing.
+            <strong style="color: var(--turquoise);">The website cleanup shows operational momentum.</strong> The remaining gap between the vision being communicated and the market reality — zero organic rankings, products still in development, no analyst coverage, no review platform presence — is the gap that competitors will exploit. The site looks credible now; the discoverability infrastructure behind it does not yet exist.
           </p>
           <p style="color: var(--gray-400);">
             The most time-sensitive opportunity is "Outcome Orchestration" category ownership. Every week without a pillar page, glossary hub, and supporting content cluster is a week where that advantage erodes. The programs that follow are about claiming that territory before someone else does.
@@ -1021,9 +759,9 @@
   <section class="section" id="roadmap">
     <div class="container">
       <span class="section-label">Priority Action Plan</span>
-      <h2>Emergency Fixes → Foundation → Velocity → Scale</h2>
+      <h2>Foundation → Content Velocity → Distribution → Scale</h2>
       <p class="section-intro">
-        26 actions organized across 5 time horizons. Week 1 requires no strategy — just execution. Each subsequent phase builds on the one before it. The most urgent fix is the lorem ipsum. Not because it matters to SEO — it doesn't, directly — but because it signals to every buyer, partner, and analyst who visits the site that this company doesn't sweat the details.
+        21 actions organized across 5 time horizons. Week 1 closes the one remaining technical issue. Each subsequent phase builds on the one before it. The most time-sensitive opportunity is "Outcome Orchestration" category ownership — every week without a pillar page and glossary hub is a week where that advantage erodes.
       </p>
 
       <!-- Phase Accordion -->
@@ -1037,53 +775,17 @@
               <span class="week-theme">Emergency Fixes</span>
             </div>
             <div class="week-header-right">
-              <span class="tier-pill tier1"><span class="tier-pill-icon">🔴</span> 7 Actions</span>
+              <span class="tier-pill tier1"><span class="tier-pill-icon">🔴</span> 1 Action</span>
               <span class="week-toggle">▼</span>
             </div>
           </div>
           <div class="week-content">
-            <p style="color: var(--gray-400); font-size: 0.9rem; margin-bottom: 20px; padding-top: 16px;">No strategy required, just execution. These are embarrassments that can be fixed today.</p>
+            <p style="color: var(--gray-400); font-size: 0.9rem; margin-bottom: 20px; padding-top: 16px;">The site's visual and navigational issues have been resolved. The one remaining technical fix closes the stale index issue.</p>
             <div style="display: flex; flex-direction: column; gap: 12px;">
               <div class="deliverable-card tier1">
-                <div class="deliverable-name">1. Replace lorem ipsum on /industries/</div>
+                <div class="deliverable-name">1. Submit removal requests via Google Search Console</div>
                 <div class="deliverable-meta">
-                  <span style="color: var(--gray-400); font-size: 0.85rem;">Write 1-2 sentence descriptions for each industry card. 30 minutes of work.</span>
-                </div>
-              </div>
-              <div class="deliverable-card tier1">
-                <div class="deliverable-name">2. Fix duplicated footer copyright + double-slash URLs</div>
-                <div class="deliverable-meta">
-                  <span style="color: var(--gray-400); font-size: 0.85rem;">Template rendering bugs — fix //legal/patents/ and //industries/insurance-form/ internal links. Fix /legal/ duplicate card rendering.</span>
-                </div>
-              </div>
-              <div class="deliverable-card tier1">
-                <div class="deliverable-name">3. Add 301 redirects for all legacy URLs</div>
-                <div class="deliverable-meta">
-                  <span style="color: var(--gray-400); font-size: 0.85rem;">/products/ → /products/afiniti-pairing/ | /products/experienceai/ → /products/afiniti-pairing/ | /products/experience-ai-plus/ → /products/afiniti-pairing/ | /products/experience-ai-elite/ → /products/afiniti-pairing/ | /products/afiniti-inside/ → /products/afiniti-pairing/ | /what-we-do → / | /contact-us-sales/ → /contact/ | /contact-us-investor/ → /contact/ | /contact-us-partnerships/ → /contact/ | /verizon/ → /</span>
-                </div>
-              </div>
-              <div class="deliverable-card tier1">
-                <div class="deliverable-name">4. Submit deindex requests</div>
-                <div class="deliverable-meta">
-                  <span style="color: var(--gray-400); font-size: 0.85rem;">Remove /resources/ (410), all 10+ legacy /news/detail/* URLs, and all legacy URLs still appearing in Google's index.</span>
-                </div>
-              </div>
-              <div class="deliverable-card tier1">
-                <div class="deliverable-name">5. Fix /contact/ page — migrate to new nav template</div>
-                <div class="deliverable-meta">
-                  <span style="color: var(--gray-400); font-size: 0.85rem;">Still serving OLD nav template with 2025 copyright and discontinued eXperienceAI product references.</span>
-                </div>
-              </div>
-              <div class="deliverable-card tier1">
-                <div class="deliverable-name">6. Add noindex to portal and selfservice subdomains</div>
-                <div class="deliverable-meta">
-                  <span style="color: var(--gray-400); font-size: 0.85rem;">portal.afiniti.com leaks "TMobile Portal" in meta. selfservice.afiniti.com shows BIO-key branding. Both indexed by Google.</span>
-                </div>
-              </div>
-              <div class="deliverable-card tier1">
-                <div class="deliverable-name">7. Fix ESG page CEO attribution + invisible Unicode</div>
-                <div class="deliverable-meta">
-                  <span style="color: var(--gray-400); font-size: 0.85rem;">CEO quote attributes Hassan Afzal (not current CEO Jerome Kapelus). Zero-width space U+200B embedded in ESG sub-page title tags.</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem;">Legacy URLs still appearing in search results with outdated cached descriptions. Add noindex meta tags to any 410 response templates to prevent re-crawling.</span>
                 </div>
               </div>
             </div>
@@ -1098,7 +800,7 @@
               <span class="week-theme">Technical Foundation</span>
             </div>
             <div class="week-header-right">
-              <span class="tier-pill tier1"><span class="tier-pill-icon">🔴</span> 4 Actions</span>
+              <span class="tier-pill tier1"><span class="tier-pill-icon">🔴</span> 5 Actions</span>
               <span class="week-toggle">▼</span>
             </div>
           </div>
@@ -1106,22 +808,22 @@
             <p style="color: var(--gray-400); font-size: 0.9rem; margin-bottom: 20px; padding-top: 16px;">Infrastructure that every subsequent program depends on.</p>
             <div style="display: flex; flex-direction: column; gap: 12px;">
               <div class="deliverable-card tier1">
-                <div class="deliverable-name">8. Deploy robots.txt + XML sitemap</div>
+                <div class="deliverable-name">2. Verify and fix robots.txt + XML sitemap</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-seo"><span class="badge-icon"></span>SEO</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; margin-left: 8px;">Standard WordPress configuration. Submit to Google Search Console.</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem; margin-left: 8px;">Confirm these are accessible to crawlers; if suppressed by a security plugin, enable standard WordPress generation.</span>
                 </div>
               </div>
               <div class="deliverable-card tier1">
-                <div class="deliverable-name">9. Add structured data site-wide</div>
+                <div class="deliverable-name">3. Add structured data site-wide</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-seo"><span class="badge-icon"></span>SEO</span>
                   <span class="function-badge secondary badge-aeo"><span class="badge-icon"></span>AEO</span>
-                  <span style="color: var(--gray-400); font-size: 0.85rem; margin-left: 8px;">Organization schema (homepage), FAQPage (/products/afiniti-pairing/), Article (all blog posts), BreadcrumbList (site-wide).</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem; margin-left: 8px;">Organization schema (homepage), FAQPage (/products/afiniti-pairing/), Article (all blog posts), BreadcrumbList (site-wide), VideoObject (testimonials).</span>
                 </div>
               </div>
               <div class="deliverable-card tier1">
-                <div class="deliverable-name">10. Publish the "Outcome Orchestration" pillar page</div>
+                <div class="deliverable-name">4. Publish the "Outcome Orchestration" pillar page</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-seo"><span class="badge-icon"></span>SEO</span>
                   <span class="function-badge secondary badge-aeo"><span class="badge-icon"></span>AEO</span>
@@ -1130,11 +832,19 @@
                 </div>
               </div>
               <div class="deliverable-card tier1">
-                <div class="deliverable-name">11. Launch the /definitions/ glossary hub</div>
+                <div class="deliverable-name">5. Launch the /definitions/ glossary hub</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-aeo"><span class="badge-icon"></span>AEO</span>
                   <span class="function-badge secondary badge-seo"><span class="badge-icon"></span>SEO</span>
                   <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">5 initial pages targeting high-volume keywords. Replicate Genesys's AEO gold standard.</span>
+                </div>
+              </div>
+              <div class="deliverable-card tier1">
+                <div class="deliverable-name">6. Rebuild /resources/ as content hub</div>
+                <div class="deliverable-meta">
+                  <span class="function-badge primary badge-content"><span class="badge-icon"></span>Content</span>
+                  <span class="function-badge secondary badge-seo"><span class="badge-icon"></span>SEO</span>
+                  <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">Currently returns 410. Rebuild as the hub linking all gated and ungated content, or deindex and redirect to /blogs/.</span>
                 </div>
               </div>
             </div>
@@ -1157,7 +867,7 @@
             <p style="color: var(--gray-400); font-size: 0.9rem; margin-bottom: 20px; padding-top: 16px;">Foundation is set. Now fill the content void at velocity.</p>
             <div style="display: flex; flex-direction: column; gap: 12px;">
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">12. Increase blog publishing to 2x/week</div>
+                <div class="deliverable-name">7. Increase blog publishing to 2x/week</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-content"><span class="badge-icon"></span>Content</span>
                   <span class="function-badge secondary badge-seo"><span class="badge-icon"></span>SEO</span>
@@ -1165,7 +875,7 @@
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">13. Publish first 3 competitor comparison pages</div>
+                <div class="deliverable-name">8. Publish first 3 competitor comparison pages</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-seo"><span class="badge-icon"></span>SEO</span>
                   <span class="function-badge secondary badge-product"><span class="badge-icon"></span>Product Mktg</span>
@@ -1173,7 +883,7 @@
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">14. Build and launch ROI calculator</div>
+                <div class="deliverable-name">9. Build and launch ROI calculator</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
                   <span class="function-badge secondary badge-product"><span class="badge-icon"></span>Product Mktg</span>
@@ -1181,7 +891,7 @@
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">15. Create first 2 downloadable case studies</div>
+                <div class="deliverable-name">10. Create first 2 downloadable case studies</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-product"><span class="badge-icon"></span>Product Mktg</span>
                   <span class="function-badge secondary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
@@ -1189,7 +899,7 @@
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">16. Create G2 profile and begin review generation</div>
+                <div class="deliverable-name">11. Create G2 profile and begin review generation</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-aeo"><span class="badge-icon"></span>AEO</span>
                   <span class="function-badge secondary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
@@ -1216,7 +926,7 @@
             <p style="color: var(--gray-400); font-size: 0.9rem; margin-bottom: 20px; padding-top: 16px;">Content exists. Now distribute it and build third-party authority.</p>
             <div style="display: flex; flex-direction: column; gap: 12px;">
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">17. Launch YouTube content series</div>
+                <div class="deliverable-name">12. Launch YouTube content series</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-social"><span class="badge-icon"></span>Social</span>
                   <span class="function-badge secondary badge-aeo"><span class="badge-icon"></span>AEO</span>
@@ -1224,14 +934,14 @@
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">18. Begin analyst briefing outreach</div>
+                <div class="deliverable-name">13. Begin analyst briefing outreach</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-analyst"><span class="badge-icon"></span>Analyst</span>
                   <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">Gartner, Forrester, IDC. Target Forrester Conversation Intelligence Wave where Cresta achieved Leader status.</span>
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">19. Activate partner co-marketing</div>
+                <div class="deliverable-name">14. Activate partner co-marketing</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-partnerships"><span class="badge-icon"></span>Partnerships</span>
                   <span class="function-badge secondary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
@@ -1239,7 +949,7 @@
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">20. Begin Reddit community presence</div>
+                <div class="deliverable-name">15. Begin Reddit community presence</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-community"><span class="badge-icon"></span>Community</span>
                   <span class="function-badge secondary badge-aeo"><span class="badge-icon"></span>AEO</span>
@@ -1247,7 +957,7 @@
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">21. Commission original research report</div>
+                <div class="deliverable-name">16. Commission original research report</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-content"><span class="badge-icon"></span>Content</span>
                   <span class="function-badge secondary badge-analyst"><span class="badge-icon"></span>Analyst</span>
@@ -1274,7 +984,7 @@
             <p style="color: var(--gray-400); font-size: 0.9rem; margin-bottom: 20px; padding-top: 16px;">Programs compound. Scale what works, measure everything, build authority.</p>
             <div style="display: flex; flex-direction: column; gap: 12px;">
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">22. Publish original research report</div>
+                <div class="deliverable-name">17. Publish original research report</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-content"><span class="badge-icon"></span>Content</span>
                   <span class="function-badge secondary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
@@ -1282,28 +992,28 @@
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">23. Expand competitor comparison library to 10+ pages</div>
+                <div class="deliverable-name">18. Expand competitor comparison library to 10+ pages</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-seo"><span class="badge-icon"></span>SEO</span>
                   <span class="function-badge secondary badge-product"><span class="badge-icon"></span>Product Mktg</span>
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">24. Scale case study library to cover all 5 industries</div>
+                <div class="deliverable-name">19. Scale case study library to cover all 5 industries</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-product"><span class="badge-icon"></span>Product Mktg</span>
                   <span class="function-badge secondary badge-demandgen"><span class="badge-icon"></span>Demand Gen</span>
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">25. Target 100+ G2 reviews</div>
+                <div class="deliverable-name">20. Target 100+ G2 reviews</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-aeo"><span class="badge-icon"></span>AEO</span>
                   <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">Competitive parity with Balto. Integrate G2 badges on all landing pages and partner listings.</span>
                 </div>
               </div>
               <div class="deliverable-card tier2">
-                <div class="deliverable-name">26. Achieve first analyst mention in published research</div>
+                <div class="deliverable-name">21. Achieve first analyst mention in published research</div>
                 <div class="deliverable-meta">
                   <span class="function-badge primary badge-analyst"><span class="badge-icon"></span>Analyst</span>
                   <span style="color: var(--gray-400); font-size: 0.85rem; display: block; margin-top: 8px;">Research note, market guide, or Forrester Wave inclusion. The longest compound cycle in the program.</span>
@@ -1317,7 +1027,7 @@
 
       <!-- Phase Progression Chart -->
       <div class="tier-shift-chart">
-        <div class="tier-shift-title">The Progression: Emergency → Foundation → Velocity → Distribution → Compound</div>
+        <div class="tier-shift-title">The Progression: Cleanup → Foundation → Velocity → Distribution → Compound</div>
         <div class="tier-shift-rows">
           <div class="tier-shift-row">
             <span class="tier-shift-label">Week 1</span>
@@ -1325,15 +1035,15 @@
               <div class="tier-shift-segment triage" style="width: 100%;"></div>
               <div class="tier-shift-segment pipeline" style="width: 0%;"></div>
             </div>
-            <span class="tier-shift-percent">100% Emergency</span>
+            <span class="tier-shift-percent">Index Cleanup</span>
           </div>
           <div class="tier-shift-row">
             <span class="tier-shift-label">Month 1</span>
             <div class="tier-shift-bar">
-              <div class="tier-shift-segment triage" style="width: 70%;"></div>
-              <div class="tier-shift-segment pipeline" style="width: 30%;"></div>
+              <div class="tier-shift-segment triage" style="width: 30%;"></div>
+              <div class="tier-shift-segment pipeline" style="width: 70%;"></div>
             </div>
-            <span class="tier-shift-percent">70% Fix / 30% Build</span>
+            <span class="tier-shift-percent">30% Fix / 70% Build</span>
           </div>
           <div class="tier-shift-row">
             <span class="tier-shift-label">Mo 2-3</span>
@@ -1420,8 +1130,8 @@
             </div>
             <div class="program-metrics">
               <div class="metric-item">
-                <span class="metric-type">Immediate Site Fixes Required</span>
-                <span class="metric-value">/resources/ → rebuild as content hub | /products/ → 301 to /products/afiniti-pairing/ | Add robots.txt + XML sitemap | Deploy Organization, FAQPage, BreadcrumbList, Article schema site-wide | Fix duplicated footer copyright</span>
+                <span class="metric-type">Site Infrastructure Needed</span>
+                <span class="metric-value">/resources/ → rebuild as content hub | Verify robots.txt + XML sitemap accessibility | Deploy Organization, FAQPage, BreadcrumbList, Article schema site-wide | Add self-referencing canonical tags via Yoast or RankMath | Deindex stale cached pages via Google Search Console</span>
               </div>
               <div class="metric-item">
                 <span class="metric-type">Realistic Trajectory</span>
